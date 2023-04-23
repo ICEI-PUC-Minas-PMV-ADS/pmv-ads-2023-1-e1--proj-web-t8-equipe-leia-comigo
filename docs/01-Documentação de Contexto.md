@@ -5,6 +5,7 @@ O hábito da leitura tem sido cada vez menos presente na vida das pessoas, em es
 Com o avanço das tecnologias digitais, tem se tornado cada vez mais fácil o acesso a livros de literatura, em especial aqueles que são de domínio público. No entanto, muitas vezes esses livros são disponibilizados de forma pouco atrativa para as novas gerações, que preferem conteúdos mais visuais e interativos.
 
 
+
 ## Problema
 
 O problema que se busca resolver com este projeto é a falta de um ambiente digital que torne a leitura de livros de literatura mais acessível e atrativa para as novas gerações, ao mesmo tempo em que se valorize o patrimônio cultural da humanidade representado pelos livros de domínio público.
