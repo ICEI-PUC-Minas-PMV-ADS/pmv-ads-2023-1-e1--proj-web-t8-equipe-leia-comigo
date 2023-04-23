@@ -6,19 +6,21 @@
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O objetivo geral deste trabalho é a criação de um site que disponibilize livros, resenhas e podcasts de literatura de domínio público de forma visualmente atraente e interativa, de modo a incentivar a leitura para as novas gerações.
+
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Matheus Henrique Oliveira Silva
+* Lucas Bezerra Sampaio
+* Pedro Henrique Ferreira Amorim
+*	Marcylio de Alencar Ferreira Lima
+* o	Victor Santana Ballestrini de Oliveira
 
 ## Orientador
 
-* Nome completo do professor 1
-
+* Marco Rodrigo Costa
+          
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
