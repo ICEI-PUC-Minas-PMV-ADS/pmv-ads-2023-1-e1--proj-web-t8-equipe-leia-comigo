@@ -15,13 +15,14 @@ O problema que se busca resolver com este projeto é a falta de um ambiente digi
 O objetivo geral deste trabalho é a criação de um site que disponibilize livros de literatura de domínio público de forma visualmente atraente e interativa, de modo a incentivar a leitura nas novas gerações.
 
 Como objetivos específicos, pode-se ressaltar:
-●	disponibilizar uma base de dados ampla e variada de livros de literatura de domínio público;
 
-●	criar uma interface gráfica atrativa e amigável para as novas gerações;
+* disponibilizar uma base de dados ampla e variada de livros de literatura de domínio público;
 
-●	disponibilizar conteúdos audiovisuais relacionados aos livros, como vídeos de canais do Youtube que fazem review dos livros e podcasts que comentam sobre as obras;
+* criar uma interface gráfica atrativa e amigável para as novas gerações;
 
-●	criar um ambiente interativo para os usuários, permitindo que estes possam interagir entre si e com o conteúdo do site.
+* disponibilizar conteúdos audiovisuais relacionados aos livros, como vídeos de canais do Youtube que fazem review dos livros e podcasts que comentam sobre as obras;
+
+* criar um ambiente interativo para os usuários, permitindo que estes possam interagir entre si e com o conteúdo do site.
 
 ## Justificativa
 
