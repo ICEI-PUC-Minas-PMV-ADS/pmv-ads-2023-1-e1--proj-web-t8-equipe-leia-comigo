@@ -14,8 +14,8 @@ O objetivo geral deste trabalho é a criação de um site que disponibilize livr
 * Matheus Henrique Oliveira Silva
 * Lucas Bezerra Sampaio
 * Pedro Henrique Ferreira Amorim
-*	Marcylio de Alencar Ferreira Lima
-* o	Victor Santana Ballestrini de Oliveira
+* Marcylio de Alencar Ferreira Lima
+* Victor Santana Ballestrini de Oliveira
 
 ## Orientador
 
