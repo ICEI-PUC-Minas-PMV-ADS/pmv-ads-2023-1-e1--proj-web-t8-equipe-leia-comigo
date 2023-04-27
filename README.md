@@ -1,10 +1,10 @@
-# TÍTULO DO PROJETO
+# LEIA COMIGO
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SOFTWARE`
 
-`DISCIPLINA`
+`DESENVOLVIMENTO DE APLICAÇÃO WEB FRON-END`
 
-`SEMESTRE`
+`2023.1`
 
 O objetivo geral deste trabalho é a criação de um site que disponibilize livros, resenhas e podcasts de literatura de domínio público de forma visualmente atraente e interativa, de modo a incentivar a leitura para as novas gerações.
 
