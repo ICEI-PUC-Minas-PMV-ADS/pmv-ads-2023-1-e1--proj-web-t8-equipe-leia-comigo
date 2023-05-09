@@ -1,0 +1,95 @@
+/*https://codepen.io/olucianonet/pen/NWGreJy?editors=1100*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: rgb(250, 225, 192);
+}
+
+.main-menu-components{
+  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 10%,transparent);
+  min-height: 50px;
+}
+
+.logo-icon{
+  top: 0px;
+  left: 15px;
+  width: 250px;
+  height: 30px;
+  margin: auto;
+  position: relative;
+}
+
+
+nav{
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  right: 0;
+}
+
+
+nav li{
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+.search-information{
+  background-color: blue;
+  width: 100px;
+  height: 50px;
+
+}
+
+nav div .perfil-icon{
+}
+
+.main-menu-components{
+  display: inline-flex;
+  
+}
+
+
+.logo-icon a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+
+.main-components li a{
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-components li a:hover{
+  background: rgb(246, 246, 246);
+  color: #333;
+}
+
+
+.perfil-icon{
+  position: relative;
+  top: 0px;
+  left: 550px;
+}
+
+.main-menu{
+  top: 0px;
+  position: relative;
+}
+
+.highlights-main{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: 480px;
+  background-color: aqua;
+}
