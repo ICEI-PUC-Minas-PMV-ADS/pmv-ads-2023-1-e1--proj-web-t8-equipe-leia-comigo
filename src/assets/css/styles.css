@@ -11,61 +11,71 @@ body{
   background-color: rgb(250, 225, 192);
 }
 
+.highlights-main{
+  position: static;
+  width: auto;
+}
+
+.highlights-main img{
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  align-items: normal;
+  align-self: normal;
+  block-size: auto;
+  box-sizing: content-box;
+  clip: auto;
+  display: block;
+  flex-basis: auto;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  resize: none;
+  z-index: 0;
+}
+
 .main-menu-components{
+  align-items: center;
+  display: flex;
+  background-color: transparent;
   background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 10%,transparent);
-  min-height: 50px;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 0;
+  padding-top: 0;
+  z-index: 1;
 }
 
 .logo-icon{
-  top: 0px;
-  left: 15px;
-  width: 250px;
-  height: 30px;
-  margin: auto;
-  position: relative;
-}
-
-
-nav{
-  width: 1000px;
-  height: auto;
-  margin: auto;
-  right: 0;
-}
-
-
-nav li{
-  display: inline-block;
-  margin: 0 0 0 15px;
-}
-
-.search-information{
-  background-color: blue;
-  width: 100px;
-  height: 50px;
-
-}
-
-nav div .perfil-icon{
-}
-
-.main-menu-components{
-  display: inline-flex;
-  
-}
-
-
-.logo-icon a{
+  display: block;
   color: #fff;
   text-decoration: none;
   font-size: 32px;
+  top: 10px;
+  left: 20px;
+  position: absolute;
+  vertical-align: middle;
 }
 
+.main-components{
+  position: absolute;
+  top: 25px;
+  left: 350px;
+}
+
+.main-components li{
+  display: inline-flex;
+}
 
 .main-components li a{
   list-style: none;
   color: #fff;
   text-decoration: none;
+  padding-left: 30px;
+
 }
 
 .main-components li a:hover{
@@ -73,23 +83,24 @@ nav div .perfil-icon{
   color: #333;
 }
 
+.search-information{
+  background-color: blue;
+  width: 100px;
+  height: 30px;
+  top: 15px;
+  left: 700px;
+  position: absolute;
+  display: flex;
+}
 
 .perfil-icon{
-  position: relative;
-  top: 0px;
-  left: 550px;
+  background-color: green;
+  width: 100px;
+  height: 30px;
+  top: 15px;
+  left: 800px;
+  position: absolute;
+  display: flex;
 }
 
-.main-menu{
-  top: 0px;
-  position: relative;
-}
 
-.highlights-main{
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: auto;
-  height: 480px;
-  background-color: aqua;
-}
