@@ -1,106 +1,219 @@
-/*https://codepen.io/olucianonet/pen/NWGreJy?editors=1100*/
-
-*{
+/* Zerando margens */
+* {
   margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+/* Fonte arial e fundo preto */
+.body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  background-color: rgb(250, 225, 192);
+  background-color: #111111;
 }
 
-.highlights-main{
-  position: static;
-  width: auto;
+/* Configuração do tamanho da fonte */
+.nav__logo {
+  width: 100px;
+  object-fit: contain;
 }
 
-.highlights-main img{
-  position: absolute;
-  width: 100%;
-  background-size: cover;
-  align-items: normal;
-  align-self: normal;
-  block-size: auto;
-  box-sizing: content-box;
-  clip: auto;
-  display: block;
-  flex-basis: auto;
-  flex-direction: row;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  resize: none;
-  z-index: 0;
+/* Configuração do tamanho do menu */
+.select_menu{
+  width: 650px;
+  object-fit: contain;
 }
 
-.main-menu-components{
-  align-items: center;
-  display: flex;
-  background-color: transparent;
-  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 10%,transparent);
-  height: 70px;
-  width: 100%;
-  position: relative;
-  padding-bottom: 0;
-  padding-top: 0;
-  z-index: 1;
+/* Configuração do espaçamento para o menu */
+.menu_spacing{
+  width: 60%;
 }
 
-.logo-icon{
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  font-size: 32px;
-  top: 10px;
-  left: 20px;
-  position: absolute;
-  vertical-align: middle;
-}
-
-.main-components{
-  position: absolute;
-  top: 25px;
-  left: 350px;
-}
-
-.main-components li{
+/* Configuração do estilo da lista */
+.components_li{
   display: inline-flex;
 }
 
-.main-components li a{
+/* Configuraçções da lista */
+.components_li a{
   list-style: none;
   color: #fff;
   text-decoration: none;
-  padding-left: 30px;
-
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.main-components li a:hover{
+/* Configuração de quando a lista for coberta pelo mouse */
+
+.components_li a:hover{
   background: rgb(246, 246, 246);
   color: #333;
 }
 
-.search-information{
-  background-color: blue;
-  width: 100px;
-  height: 30px;
-  top: 15px;
-  left: 700px;
-  position: absolute;
-  display: flex;
-}
-
-.perfil-icon{
-  background-color: green;
-  width: 100px;
-  height: 30px;
-  top: 15px;
-  left: 800px;
-  position: absolute;
-  display: flex;
+/* Configuração da imagem de "avatar" */
+.nav__avatar {
+  width: 30px;
+  object-fit: contain;
+  margin-right: 20px;
 }
 
 
+/* Configuranção do menu */
+.nav {
+  position: fixed; 
+  top: 0;
+  width: 100%; 
+  display: flex;
+  background-color: transparent;
+  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 10%,transparent);
+  justify-content: space-between; 
+  padding: 20px; 
+  z-index: 1; 
+  transition-timing-function: ease-in; 
+  transition: all 0.5s;
+}
+
+/* Configuração da imagem de fundo do banner */
+.banner {
+  background-image: url('/assets/img/Destaques/peterpan.png');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  height: 448px;
+}
+
+/* Configuração da margen, padding e altura da div banner */
+.banner__contents {
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
+}
+
+/* Configuração dos títulos dos banners*/
+.banner__title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+/* Configuração da descrição dos banners */
+.banner__description {
+  width: 85%;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  max-width: 1900px;
+  height: 350px;
+  object-fit: contain;
+}
+
+/* Configuração dos botões dos banners */
+.banner__button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none; 
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem; 
+  padding-right: 2rem;
+  margin-right: 1rem; 
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+/* Comfiguração da animação e cor dos botões quando sobrepostos */
+.banner__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+/* Configuração que posiciona o banner e aplica um fade out na imagem que vai ficando
+com a cor do conteúdo que vem a seguir */
+.banner--fadeBottom {
+  margin-top: 145px;
+  height: 7.4rem;
+  background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+/* Configuração da linha de posters */
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+/* Configuração de responsividade dos posters */
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+/* Configuração de tamanho do poster quando sobreposto */
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+/* Configuração da barra de rolagem dos posters */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Configuração de dimensão dos posters de livros*/
+.row__posterLarge {
+  max-height: 250px;
+}
+
+/* Configuração de dimensão dos posters sem serem livros*/
+.row_specificPoster{
+  max-height: 180px;
+}
+
+/* O poster de livro cresce mais quando selecionado */
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
+
+/* Cor branca e margem esquerda de 20px */
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+/* cor de fundo preta */
+.nav__black {
+  background-color: #111;
+}
+
+
+/* Criando o conteiner do footer */
+.main_footer {
+  display: flex;
+  width: 100%; 
+  background-color: #fff;
+  height: 80px;
+}
+
+
+/* Configuração do estilo da lista de footer */
+.list_of_footers{
+  display: inline-flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Configuraçções do conteudo da lista */
+.list_of_footers a{
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  padding-left: 25px;
+  padding-right: 25px;
+}
