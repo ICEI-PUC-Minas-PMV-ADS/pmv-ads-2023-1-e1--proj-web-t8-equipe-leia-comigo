@@ -22,11 +22,6 @@
   object-fit: contain;
 }
 
-/* Configuração do espaçamento para o menu */
-.menu_spacing{
-  width: 60%;
-}
-
 /* Configuração do estilo da lista */
 .components_li{
   display: inline-flex;
@@ -69,6 +64,11 @@
   z-index: 1; 
   transition-timing-function: ease-in; 
   transition: all 0.5s;
+}
+
+/* Configuração do espaçamento para o menu */
+.main__menu{
+  display: flex;
 }
 
 /* Configuração da imagem de fundo do banner */
