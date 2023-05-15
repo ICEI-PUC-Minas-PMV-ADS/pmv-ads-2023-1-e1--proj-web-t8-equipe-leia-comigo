@@ -1,15 +1,31 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
+# 1.0 Home page 
+![](/docs/img/homePage.png)
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+Nesta página, tela principal do sistema,  o usuário poderá visualizar conteúdos diversos.  A estrutura de dados é toda baseada no modelo JSON.
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
+## 1.1 Requisitios atendidos
+- RF-01 O site deve apresentar na página principal uma seleção dinâmica de livros de domínio público obtidos por meio de canais de informações da Internet (API).
+- RF-02 O site deve apresentar, para cada livro, uma imagem correspondente à capa do livro apresentado (thumbnail).
+- RF-05 O site deve apresentar, para cada livro, uma imagem correspondente à capa do livro apresentado (thumbnail).
 
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+## 1.2 Artefatos da funcionalidade
+- index.html
+- style.css
+
+## 1.3 Estrutura de dados
+
+```javascript
+{
+    "livros": {
+        "id": 1,
+        "titulo": "O mágico de oz",
+        "lancamento": "01-01-2021",
+        "autor": "L Frank Baum"
+    }
+}
+```
+
+## 1.4 Instruções de acesso
+Abra um navegador de internet e informe a seguinte URL: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/blob/main/src/index.html
