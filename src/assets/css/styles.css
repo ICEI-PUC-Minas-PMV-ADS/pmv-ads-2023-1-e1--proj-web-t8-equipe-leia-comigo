@@ -73,13 +73,15 @@
 
 /* Configuração da imagem de fundo do banner */
 .banner {
-  background-image: url('/src/assets/img/Destaques/peterpan.png');
+
+  /* background-image: url('/src/assets/img/Podcasts/historia_FM.png');*/
   background-size: cover;
   background-position: center center;
   color: white;
   object-fit: contain;
   height: 448px;
 }
+
 
 /* Configuração da margen, padding e altura da div banner */
 .banner__contents {
