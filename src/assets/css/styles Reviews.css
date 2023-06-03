@@ -142,7 +142,6 @@ com a cor do conteúdo que vem a seguir */
 .row__poster {
   width: 100%;
   object-fit: contain;
-  max-height: 100px;
   margin-right: 10px;
   transition: transform 450ms;
 }
@@ -172,7 +171,8 @@ com a cor do conteúdo que vem a seguir */
 
 /* Configuração de dimensão dos posters sem serem livros*/
 .row_specificPoster{
-  max-height: 180px;
+  width: 250px;
+  height: 350px;
 }
 
 /* O poster de livro cresce mais quando selecionado */
@@ -197,7 +197,7 @@ com a cor do conteúdo que vem a seguir */
   display: flex;
   width: 100%; 
   background-color: #fff;
-  height: 80px;
+  height: 80px;  
 }
 
 
