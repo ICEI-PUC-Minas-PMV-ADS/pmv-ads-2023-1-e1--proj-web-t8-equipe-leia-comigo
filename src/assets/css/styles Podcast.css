@@ -175,6 +175,23 @@ com a cor do conteúdo que vem a seguir */
   height: 350px;
 }
 
+.title_description{
+  font-size: medium;
+  margin-right: 10px;
+  margin-left: 20px;
+  max-width: 25ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title_description:hover{
+  overflow: visible;
+  text-overflow: unset;
+  white-space:normal;
+}
+
+
 /* O poster de livro cresce mais quando selecionado */
 .row__posterLarge:hover {
   transform: scale(1.09);
