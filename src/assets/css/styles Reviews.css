@@ -143,7 +143,50 @@ com a cor do conteúdo que vem a seguir */
   width: 100%;
   object-fit: contain;
   margin-right: 10px;
+  z-index: 0;
   transition: transform 450ms;
+}
+
+
+
+.arrow-left1,.arrow-left2,.arrow-left3,.arrow-left4{
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  font-size: 40px;
+  height: 350px;
+  width: 40px;
+  text-align: center;
+  color:#fff;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  opacity: 0.6;
+  background: linear-gradient(to left, transparent 0%, black 100%);
+}
+
+.arrow-right1,.arrow-right2,.arrow-right3,.arrow-right4{
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: auto;
+  font-size: 40px;
+  line-height: 350px;
+  width: 40px;
+  text-align: center;
+  color:#fff;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  opacity: 0.6;
+  background: linear-gradient(to right, transparent 0%, black 100%);
+}
+
+.arrow-left1:hover,.arrow-right1:hover,.arrow-left2:hover,.arrow-right2:hover,.arrow-left3:hover,.arrow-right3:hover,.arrow-left4:hover,.arrow-right4:hover{
+  opacity: 1;
 }
 
 /* Configuração de responsividade dos posters */
@@ -164,6 +207,11 @@ com a cor do conteúdo que vem a seguir */
   display: none;
 }
 
+.row__posters{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Configuração de dimensão dos posters de livros*/
 .row__posterLarge {
   max-height: 250px;
@@ -174,6 +222,23 @@ com a cor do conteúdo que vem a seguir */
   width: 250px;
   height: 350px;
 }
+
+.title_description{
+  font-size: medium;
+  margin-right: 10px;
+  margin-left: 20px;
+  max-width: 25ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title_description:hover{
+  overflow: visible;
+  text-overflow: unset;
+  white-space:normal;
+}
+
 
 /* O poster de livro cresce mais quando selecionado */
 .row__posterLarge:hover {
