@@ -123,7 +123,7 @@ controls4.forEach(control => {
         }
 
         items4[currentItem4].scrollIntoView({
-            inline: "center",
+            inline: "start",
             behavior: "smooth",
         });
     });
