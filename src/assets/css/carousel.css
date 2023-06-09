@@ -20,9 +20,17 @@ body{
     text-align: center;
 }
 
+.titulos{
+    width: 100%;
+    text-align: start;
+    padding: 20px;
+    color: white;
+}
+
 .carousel{
+    padding: 0;
     height: 250px;
-    width: 80%;
+    width: 90%;
     position: relative;
 }
 
@@ -31,22 +39,73 @@ body{
     color: white;
     font-weight: bold;
     height: 100%;
-    width: 45px;
+    min-width: 25px;
     line-height: 250px;
     font-size: 25px;
     text-align: center;
     background-color: lightgreen;
     font-family: sans-serif;
     top: 0;
-    z-index: 3;
+    z-index: 1;
 }
 
 .carousel .switchLeft{
     position: absolute;
-    left: -50px;
+    left: -20px;
 }
 
 .carousel .switchRight{
     position: absolute;
-    right: -50px;
+    right: -20px;
 }
+
+
+.carousel-box{
+    min-height: 250px;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 20px !important;
+    display: flex;
+    align-items: center;
+}
+
+.carousel a{
+    user-select: none;
+}
+
+.row__posters img{
+    min-width: 147px;
+    max-width: 147px;
+    height: 200px;
+    background-size: 200px 100px;
+    background-color: lightgreen;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.row__posters:hover {
+    transform: scale(1.1);
+}
+
+.title_description{
+    font-size: medium;
+    margin-right: 10px;
+    margin-left: 20px;
+    color: white;
+    min-width: 147px;
+    max-width: 147px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .title_description:hover{
+    overflow: visible;
+    text-overflow: unset;
+    white-space:normal;
+  }
