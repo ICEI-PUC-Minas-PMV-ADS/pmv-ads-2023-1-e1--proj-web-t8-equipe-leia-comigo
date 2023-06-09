@@ -153,50 +153,50 @@ var podcastsObject = [
 
 var articlesObject = [
     {
-        "id": "artigos_0",
-        "type": "artigos",
+        "id": "articles_0",
+        "type": "articles",
         "image": "/src/assets/img/Artigos/a_importancia_da_atividade_fisica_para_criancas.jpg",
         "description": "A importância da física para crianças"
     },
     {
-        "id": "artigos_1",
-        "type": "artigos",
+        "id": "articles_1",
+        "type": "articles",
         "image": "/src/assets/img/Artigos/a_moderna_administracao_hospitalar.jpg",
         "description": "A moderna Administração Hospitalar"
     },
     {
-        "id": "artigos_2",
-        "type": "artigos",
+        "id": "articles_2",
+        "type": "articles",
         "image": "/src/assets/img/Artigos/aproximacao_entre_as_nacoes_de_aceleracao_social_do_tempo.png",
         "description": "Aproximação entre as nações de aceleração social do tempo"
     },
     {
-        "id": "artigos_3",
-        "type": "artigos",
+        "id": "articles_3",
+        "type": "articles",
         "image": "/src/assets/img/Artigos/as_possibilidades_que_as_novas_tecnologias_e_educacao_a_distancia_podem_trazer.jpg",
         "description": "As possibilidades que as novas tecnologias e educação a distância podem trazer"
     },
     {
-        "id": "artigos_4",
-        "type": "artigos",
+        "id": "articles_4",
+        "type": "articles",
         "image": "/src/assets/img/Artigos/boas_praticas_na_gestao_municipal.jpg",
         "description": "Boas práticas na Gestão Municipal"
     },
     {
-        "id": "artigos_5",
-        "type": "artigos",
+        "id": "articles_5",
+        "type": "articles",
         "image": "/src/assets/img/Artigos/levando_a_programacao_para_a_sala_de_aula.jpg",
         "description": "Levando a programação para a Sala de Aula"
     },
     {
-        "id": "artigos_6",
-        "type": "artigos",
+        "id": "articles_6",
+        "type": "articles",
         "image": "/src/assets/img/Artigos/modelo_de_triagem_de_inibidores_de_ntpdases.jpg",
         "description": "Modelo de Triagem de inibidores de Ntpdases"
     },
     {
-        "id": "artigos_7",
-        "type": "artigos",
+        "id": "articles_7",
+        "type": "articles",
         "image": "/src/assets/img/Artigos/ressignificancia_dos_animais_domesticos.jpg",
         "description": "Ressignificancia dos Animais Domésticos"
     }
@@ -346,125 +346,129 @@ for (var i = 0; i < reviwesObject.length; i++) {
 
 const sliders_books = document.getElementById("book");
 
-var scrollPerClick;
-var imagePadding = 20;
-var scrollAmount = 0;
+var scrollPerClick_books;
+var imagePadding_books = 20;
+var scrollAmount_books = 0;
 
 function sliderScrollLeft_books(){
     sliders_books.scrollTo({
         top: 0,
-        left: (scrollAmount -= scrollPerClick),
+        left: (scrollAmount_books -= scrollPerClick_books),
         behavior: "smooth"
     });
 
-    if (scrollAmount < 0 ) {
-            scrollAmount = 0;
+    if (scrollAmount_books < 0 ) {
+            scrollAmount_books = 0;
     }
 }
 
 function sliderScrollRight_books(){
-    if (scrollAmount <= sliders_books.scrollWidth - sliders_books.clientWidth){
+    if (scrollAmount_books <= sliders_books.scrollWidth - sliders_books.clientWidth){
         sliders_books.scrollTo({
             top: 0,
-            left: (scrollAmount += scrollPerClick),
+            left: (scrollAmount_books += scrollPerClick_books),
             behavior: "smooth"
         });
     }
 }
+
+scrollPerClick_books = document.querySelector(".img-books_0").clientWidth + imagePadding_books;
 
 
 // Construindo funcao de movimentacao do carrossel podcasts
 
 const sliders_podcasts = document.getElementById("podcast");
 
-var scrollPerClick;
-var imagePadding = 20;
-var scrollAmount = 0;
+var scrollPerClick_podcast;
+var imagePadding_podcasts = 20;
+var scrollAmount_podcasts = 0;
 
 function sliderScrollLeft_podcasts(){
     sliders_podcasts.scrollTo({
         top: 0,
-        left: (scrollAmount -= scrollPerClick),
+        left: (scrollAmount_podcasts -= scrollPerClick_podcast),
         behavior: "smooth"
     });
 
-    if (scrollAmount < 0 ) {
-            scrollAmount = 0;
+    if (scrollAmount_podcasts < 0 ) {
+            scrollAmount_podcasts = 0;
     }
 }
 
 function sliderScrollRight_podcasts(){
-    if (scrollAmount <= sliders_podcasts.scrollWidth - sliders_podcasts.clientWidth){
+    if (scrollAmount_podcasts <= sliders_podcasts.scrollWidth - sliders_podcasts.clientWidth){
         sliders_podcasts.scrollTo({
             top: 0,
-            left: (scrollAmount += scrollPerClick),
+            left: (scrollAmount_podcasts += scrollPerClick_podcast),
             behavior: "smooth"
         });
     }
 }
+
+scrollPerClick_podcast = document.querySelector(".img-podcasts_0").clientWidth + imagePadding_podcasts;
 
 
 // Construindo funcao de movimentacao do carrossel articles
 
 const sliders_articles = document.getElementById("article");
 
-var scrollPerClick;
-var imagePadding = 20;
-var scrollAmount = 0;
+var scrollPerClick_articles;
+var imagePadding_articles = 20;
+var scrollAmount_articles = 0;
 
 function sliderScrollLeft_articles(){
     sliders_articles.scrollTo({
         top: 0,
-        left: (scrollAmount -= scrollPerClick),
+        left: (scrollAmount_articles -= scrollPerClick_articles),
         behavior: "smooth"
     });
 
-    if (scrollAmount < 0 ) {
-            scrollAmount = 0;
+    if (scrollAmount_articles < 0 ) {
+            scrollAmount_articles = 0;
     }
 }
 
 function sliderScrollRight_articles(){
-    if (scrollAmount <= sliders_articles.scrollWidth - sliders_articles.clientWidth){
+    if (scrollAmount_articles <= sliders_articles.scrollWidth - sliders_articles.clientWidth){
         sliders_articles.scrollTo({
             top: 0,
-            left: (scrollAmount += scrollPerClick),
+            left: (scrollAmount_articles += scrollPerClick_articles),
             behavior: "smooth"
         });
     }
 }
+
+scrollPerClick_articles = document.querySelector(".img-articles_0").clientWidth + imagePadding_articles;
 
 
 // Construindo funcao de movimentacao do carrossel reviews
 
 const sliders_reviews = document.getElementById("review");
 
-var scrollPerClick;
-var imagePadding = 20;
-var scrollAmount = 0;
+var scrollPerClick_reviews;
+var imagePadding_reviews = 20;
+var scrollAmount_reviews = 0;
 
 function sliderScrollLeft_reviews(){
     sliders_reviews.scrollTo({
         top: 0,
-        left: (scrollAmount -= scrollPerClick),
+        left: (scrollAmount_reviews -= scrollPerClick_reviews),
         behavior: "smooth"
     });
 
-    if (scrollAmount < 0 ) {
-            scrollAmount = 0;
+    if (scrollAmount_reviews < 0 ) {
+            scrollAmount_reviews = 0;
     }
 }
 
 function sliderScrollRight_reviews(){
-    if (scrollAmount <= sliders_reviews.scrollWidth - sliders_reviews.clientWidth){
+    if (scrollAmount_reviews <= sliders_reviews.scrollWidth - sliders_reviews.clientWidth){
         sliders_reviews.scrollTo({
             top: 0,
-            left: (scrollAmount += scrollPerClick),
+            left: (scrollAmount_reviews += scrollPerClick_reviews),
             behavior: "smooth"
         });
     }
 }
 
-// Adiquirindo tamanho do primeiro card para usa-lo de parametro do tamanho de movimentacao
-
-scrollPerClick = document.querySelector(".img-books_0").clientWidth + imagePadding;
+scrollPerClick_reviews = document.querySelector(".img-reviews_0").clientWidth + imagePadding_reviews;
