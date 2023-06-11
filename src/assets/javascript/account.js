@@ -1,41 +1,36 @@
+let user = JSON.parse(sessionStorage.getItem('user'));
 
-let user =  sessionStorage.getItem('user');  
-/*
-    {
-    name: 'Lucas',
-    email: 'lucas05sampaio@gmail.com',
-    password: 'lucas'
+if (!user){
+    user = {
+        name: '',
+        password: '',
+        email: ''
+    }
 }
-*/
 
 const handleShowOptions = () => {
     const box = document.querySelector('.box');
-    box.style.display = 'block' 
+    box.style.display = 'block'
 }
 
 const handleUnshowOptions = () => {
     const box = document.querySelector('.box');
-    box.style.display = 'none' 
+    box.style.display = 'none'
 }
 
 const handleLogout = () => {
-    if (!user)  
-         return
-
-    const usuarioVazio = {}
-    sessionStorage.setItem('user', JSON.stringify(usuarioVazio))
-}
-
-const handleLogin = () => {
-    if (user) {
-        alert('Faça logout antes de prosseguir');
+    if (!user.password)
         return
-    }
 
+    user = {
+        name: '',
+        password: '',
+        email: ''
+    }
 }
 
 const handleLoadMyAccount = () => {
-    if (!user) {
+    if (!user.password) {
         alert('Realize o login primeiro!')
         return
     }
@@ -43,15 +38,15 @@ const handleLoadMyAccount = () => {
     popup.style.display = 'block'
 
     let nome = popup.querySelector('#nome')
-    nome.innerHTML = user.name
+    nome.value = user.name
 
-    
+
     let gmail = popup.querySelector('#gmail')
-    gmail.innerHTML = user.email
+    gmail.value = user.email
 
-    
+
     let senha = popup.querySelector('#senha')
-    senha.innerHTML = user.password
+    senha.value = user.password
 }
 
 const handleCloseMyAccount = () => {
@@ -60,7 +55,7 @@ const handleCloseMyAccount = () => {
 }
 
 const handleLoadLogin = () => {
-    if (user) {
+    if (user.password) {
         handleLoadMyAccount()
         return
     }
@@ -68,10 +63,34 @@ const handleLoadLogin = () => {
     form.style.display = 'block'
 }
 
-const handleDoLogin = () => {
+const handleDoLogin = (email, password) => {
+    let storageUser = JSON.parse(sessionStorage.getItem('user'))
+    if (!storageUser) {
+        return {error: 1, msg: 'É preciso realizar um cadastro antes de logar'}
+    }
 
+    if (storageUser.password !== password) {
+        return {error: 1, msg: 'Senha ou E-mail inválidos'}
+    }
+
+    if (storageUser.email !== email) {
+        return {error: 1, msg: 'Senha ou E-mail inválidos'}
+    }
+
+    user = storageUser
+    return {error: 1, msg: ''}
 }
 
-const handleDoRegister = () => {
-    
+const handleDoRegister = (email, password, name) => {
+    const newUser = {
+        email,
+        password,
+        name
+    }
+
+    sessionStorage.setItem('user', JSON.stringify(newUser))
+    user = JSON.parse(sessionStorage.getItem('user'))
+    return {error: 0, msg: ''}
 }
+
+

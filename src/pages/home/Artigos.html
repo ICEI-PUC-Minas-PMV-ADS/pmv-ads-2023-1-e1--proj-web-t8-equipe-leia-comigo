@@ -129,80 +129,6 @@
     <!-- Suspense -->
     <div class="row">
       <h2>Suspense</h2>
-      <!-- <div class="row__posters">
-        <button class="arrow-right2 control2" aria-label="Next Poster">❯</button>
-        <button class="arrow-left2 control2" aria-label="Previous Poster">❮</button>
-        <div class="item2 row__poster">
-          <iframe class="row_specificPoster" src="https://www.youtube.com/embed/kSp9E644hgI"
-            title="Um dos melhores livros de suspense dos últimos tempos: VERITY, da Colleen Hoover" frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h2 class="title_description">Um dos melhores livros de suspense dos últimos tempos: VERITY, da Colleen Hoover
-          </h2>
-        </div>
-
-        <div class="item2 row__poster">
-          <iframe class="row_specificPoster" src="https://www.youtube.com/embed/Wic8QLdMz1k"
-            title="LIVROS POLICIAIS, DE MISTÉRIO E DETETIVE: NUNCA PERDEM A GRAÇA!" frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h2 class="title_description">LIVROS POLICIAIS, DE MISTÉRIO E DETETIVE: NUNCA PERDEM A GRAÇA!</h2>
-        </div>
-
-        <div class="item2 row__poster">
-          <iframe class="row_specificPoster" src="https://www.youtube.com/embed/LqyOanuJs0A"
-            title="LI O MELHOR LIVRO DE SUSPENSE DO ANO | vlog de leitura SEM SPOILER A Última casa da rua Needless"
-            frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h2 class="title_description">LI O MELHOR LIVRO DE SUSPENSE DO ANO | vlog de leitura SEM SPOILER A Última casa
-            da rua Needless</h2>
-        </div>
-
-        <div class="item2 row__poster">
-          <iframe class="row_specificPoster" src="https://www.youtube.com/embed/DUCcGKmfqbM"
-            title="o livro que define um thriller psicológico perfeito 🔪" frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h2 class="title_description">o livro que define um thriller psicológico perfeito 🔪</h2>
-        </div>
-
-        <div class="item2 row__poster">
-          <iframe class="row_specificPoster" src="https://www.youtube.com/embed/Q5mkotqbkE8"
-            title="LIVROS DA DARKSIDE PARA PERTURBAR O PSICOLÓGICO" frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h2 class="title_description">LIVROS DA DARKSIDE PARA PERTURBAR O PSICOLÓGICO</h2>
-        </div>
-
-        <div class="item2 row__poster">
-          <iframe class="row_specificPoster" src="https://www.youtube.com/embed/JTTW-Eaw8rc"
-            title="Resenha livro O Historiador- Elizabeth Kostova #booktuber #resenha #literatura #vampiro #dracula"
-            frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h2 class="title_description">Resenha livro O Historiador- Elizabeth Kostova #booktuber #resenha #literatura
-            #vampiro #dracula</h2>
-        </div>
-
-        <div class="item2 row__poster">
-          <iframe class="row_specificPoster" src="https://www.youtube.com/embed/vRztHU7qavo"
-            title="MELHOR LIVRO DE SUSPENSE DE 2021- O enigma do quarto 622| resenha #2" frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h2 class="title_description">MELHOR LIVRO DE SUSPENSE DE 2021- O enigma do quarto 622| resenha #2</h2>
-        </div>
-
-        <div class="item2 row__poster">
-          <iframe class="row_specificPoster" src="https://www.youtube.com/embed/S88wmiCvNdI"
-            title="CONTOS DE SUSPENSE E TERROR DO EDGAR ALLAN POE | MARTIN CLARET | RESENHA - DIA DE LIVRO"
-            frameborder="1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          <h2 class="title_description">CONTOS DE SUSPENSE E TERROR DO EDGAR ALLAN POE | MARTIN CLARET | RESENHA - DIA
-            DE LIVRO</h2>
-        </div>
-      </div> -->
     </div>
 
     <!-- Romance -->
@@ -352,117 +278,177 @@
       </div>
     </div> -->
 
-  </div>
+    </div>
 
+    <div class="popup">
+      <div class="modal">
+        <div class="closeIcon" onclick="handleCloseMyAccount()">X</div>
+        <div class="modalTitle">Informações da conta</div>
+        <div class="modalContent">
+          <div class="infoBox">
+            <div class="personalInfo">
+              <label>Usuário: </label>
+              <input type="text" class="value" id="nome" disabled></input>
+            </div>
 
-  
-  <div class="popup">
-    <div class="modal">
-      <div class="closeIcon" onclick="handleCloseMyAccount()">X</div>
-      <div class="modalTitle">Informações da conta</div>
-      <div class="modalContent">
+            <div class="personalInfo">
+              <label>E-mail:</label>
+              <input type="email" class="value" id="gmail" disabled></input>
+            </div>
 
-        <div class="infoBox">
-          <div class="personalInfo">
-            <label>Usuário: </label>
-            <div class="value" id="nome"></div>
+            <div class="personalInfo">
+              <label>Senha:</label>
+              <input type="password" class="value" id="senha" disabled>
+                
+              </input>
+              <img class="eyeOff" src="/src/assets/img/images/eyeOff.svg" alt="">
+            </div>
+
           </div>
 
-          <div class="personalInfo">
-            <label>E-mail:</label>
-            <div class="value" id="gmail"></div>
-          </div>
-
-          <div class="personalInfo">
-            <label>Senha:</label>
-            <input type="password" class="value" id="senha"></input>
-          </div>
-
+          <img class="profileIcon" src="/src/assets/img/Menu/avatar.png" alt="">
         </div>
-
-        <img src="/src/assets/img/Menu/avatar.png" alt="">
       </div>
     </div>
-  </div>
 
-  <div class="box-form">
-   <div class="box-form-login">
-      <h2>Login</h2>
-      <form action="#" class="formulario">
-        <div class="inputForm">
-          <input type="mail" id="email" placeholder="Preencha com seu e-mail"/>
-        </div>
+    <div class="box-form">
+      <div class="box-form-login">
+        <div class="closeForm" onclick="handleCloseForm()">X</div>
 
-        <div class="inputForm">
-          <input type="password" id="senha" placeholder="Senha"/>
-        </div>
-        <button type="submit">Entrar</button>
-        <div class="registre-se">Ainda não possui uma conta? <span class="register-link" onclick="handleRegisterForm()">Registre-se</span></div>
-      </form>
-   </div>
+        <h2>Login</h2>
+        <form action="#" class="formulario">
+          <div class="inputForm">
+            <input type="mail" id="lEmail" placeholder="Preencha com seu e-mail" />
+          </div>
 
-   <div class="box-form-registrar">
-    <h2>Registrar</h2>
-    <form action="#">
-      <div class="inputForm">
-        <input type="name" placeholder="Nome de usuário"/>
+          <div class="inputForm">
+            <input type="password" id="lPassword" placeholder="Senha" />
+          </div>
+          <button onClick="handleLogin()">Entrar</button>
+          <div class="registre-se">Ainda não possui uma conta? <span class="register-link"
+              onclick="handleRegisterForm()">Registre-se</span></div>
+        </form>
       </div>
 
-      <div class="inputForm">
-        <input type="mail" placeholder="Preencha com seu e-mail"/>
+      <div class="box-form-registrar">
+        <div class="closeForm" onclick="handleCloseForm()">X</div>
+
+        <h2>Registrar</h2>
+        <form action="#">
+          <div class="inputForm">
+            <input type="name" id="rName" placeholder="Nome de usuário" />
+          </div>
+
+          <div class="inputForm">
+            <input type="mail" id="rEmail" placeholder="Preencha com seu e-mail" />
+          </div>
+
+
+          <div class="inputForm">
+            <input type="password" id="rPassword" placeholder="Senha" />
+          </div>
+          <button onclick="handleRegister()">Criar conta</button>
+          <div class="registre-se">Já possui uma conta? <span class="login-link"
+              onclick="handleLoginForm()">Logue</span></div>
+        </form>
       </div>
+    </div>
+    <!-- Footer -->
+    <div class="main_footer">
+      <ul class="list_of_footers">
+        <li class="footer_list"><a href="#">Avisos legais</a></li>
+        <li class="footer_list"><a href="#">Termos de Uso</a></li>
+        <li class="footer_list"><a href="#">Entre em contato</a></li>
+      </ul>
+    </div>
+
+    <script src="/src/assets/javascript/scripts.js"></script>
+    <script>
+      // Lógica dos formulários de login e registrar
+      const registerLink = document.querySelector('.register-link')
+      const loginLink = document.querySelector('.login-link')
+
+      const login = document.querySelector('.box-form-login')
+      const register = document.querySelector('.box-form-registrar')
+      const form = document.querySelector('.box-form')
+
+      const inputPassword = document.querySelector('#senha')
 
 
-      <div class="inputForm">
-        <input type="password" placeholder="Senha"/>
-      </div>
-      <button type="submit" class="btnLogin" onclick="handleSubmitAccount()">Criar conta</button>
-      <div class="registre-se">Já possui uma conta? <span class="login-link" onclick="handleLoginForm()">Logue</span></div>
-    </form>
- </div>
-  </div>
-  <!-- Footer -->
-  <div class="main_footer">
-    <ul class="list_of_footers">
-      <li class="footer_list"><a href="#">Avisos legais</a></li>
-      <li class="footer_list"><a href="#">Termos de Uso</a></li>
-      <li class="footer_list"><a href="#">Entre em contato</a></li>
-    </ul>
-  </div>
-
-  <script src="/src/assets/javascript/scripts.js"></script>
-  <script>
-    // Lógica dos formulários de login e registrar
-    const registerLink = document.querySelector('.register-link')
-    const loginLink = document.querySelector('.login-link')
-
-    const login = document.querySelector('.box-form-login')
-    const register = document.querySelector('.box-form-registrar')
-
-
-    const handleRegisterForm = () => {
+      const handleRegisterForm = () => {
         login.style.display = 'none'
         register.style.display = "inline"
-    }
-
-    const handleLoginForm = () => {
-      login.style.display = 'inline'
-      register.style.display = 'none'
-    }
-
-    const handleEnterSystem = (isLogin) => {
-      
-      if (isLogin) {
-        
-
-        handleDoLogin()
-      } else {
-
-
-        handleDoRegister()
       }
-    }
-  </script> 
+
+      const handleLoginForm = () => {
+        login.style.display = 'inline'
+        register.style.display = 'none'
+      }
+
+      const handleLogin = () => {
+        const email = document.querySelector('#lEmail')
+        const senha = document.querySelector('#lPassword  ')
+
+        if (!email.value || !senha.value) {
+          alert('Preencha todos os campos para prosseguir')
+          return
+        }
+        const result = handleDoLogin(email.value, senha.value)
+
+        if (result.error !== 0) {
+          alert(result.msg)
+          return
+        }
+
+        form.style.display = 'none'
+
+      }
+
+      const handleRegister = () => {
+        const email = document.querySelector('#rName')
+        const name = document.querySelector('#rName')
+        const password = document.querySelector('#rPassword')
+
+        if (!email.value || !name.value || !password.value) {
+          alert('Preencha todas as informações para prosseguir')
+          return
+        }
+
+        const result = handleDoRegister(email.value, password.value, name.value)
+
+        if (result.error !== 0) {
+          alert(result.msg)
+          return
+        }
+
+        form.style.display = 'none'
+        register.style.display = 'none'
+        login.style.display = 'block'
+      }
+
+      document.querySelector('.eyeOff').addEventListener('click', () => {
+        const type = inputPassword.getAttribute('type') == 'password' ? 'text' : 'password'
+        inputPassword.setAttribute('type', type)
+
+        const img = document.querySelector('.eyeOff')
+
+        type == 'text'
+          ? img.src = '/src/assets/img/images/eyeOn.svg'
+          : img.src = '/src/assets/img/images/eyeOff.svg'
+
+      })
+
+      document.querySelector('.closeForm').addEventListener('click', () => {
+        console.log('eoi')
+        form.style.display = 'none'
+      })
+
+      const handleCloseForm = () => {
+        form.style.display = 'none'
+        register.style.display = 'none'
+      }
+
+    </script>
 </body>
 
 </html>
