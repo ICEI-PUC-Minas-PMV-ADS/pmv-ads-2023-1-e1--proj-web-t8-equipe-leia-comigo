@@ -102,62 +102,71 @@ var booksObject = [
 
 var podcastsObject = [
     {
-    "id": "podcasts_0",
-    "type": "podcasts",
-    "content": "https://www.youtube.com/embed/DB7zm6a1THg",
-    "description": "5 podcasts de literatura que você precisa ouvir | Bruna Miranda #445",
-    "image": "https://i.ytimg.com/vi/DB7zm6a1THg/maxresdefault.jpg"
+        "id": "podcasts_0",
+        "id_modal": "modal_podcasts_0",
+        "type": "podcasts",
+        "content": "https://www.youtube.com/embed/DB7zm6a1THg",
+        "description": "5 podcasts de literatura que você precisa ouvir | Bruna Miranda #445",
+        "image": "https://i.ytimg.com/vi/DB7zm6a1THg/maxresdefault.jpg"
     },
     {
-    "id": "podcasts_1",
-    "type": "podcasts",
-    "content": "https://www.youtube.com/embed/MKzOAOu8Zes",
-    "description": "PEDRO LOOS (CIÊNCIA TODO DIA) - Inteligência Ltda. Podcast #821",
-    "image": "https://i.ytimg.com/vi/MKzOAOu8Zes/maxresdefault.jpg"
+        "id": "podcasts_1",
+        "id_modal": "modal_podcasts_1",
+        "type": "podcasts",
+        "content": "https://www.youtube.com/embed/MKzOAOu8Zes",
+        "description": "PEDRO LOOS (CIÊNCIA TODO DIA) - Inteligência Ltda. Podcast #821",
+        "image": "https://i.ytimg.com/vi/MKzOAOu8Zes/maxresdefault.jpg"
     },
     {
-    "id": "podcasts_2",
-    "type": "podcasts",
-    "content": "https://www.youtube.com/embed/zGE_AEqd72w",
-    "description": "ENIGMAS DO UNIVERSO: SÉRGIO SACANI E PEDRO PALLOTTA - Inteligência Ltda. Podcast #789",
-    "image": "https://i.ytimg.com/vi/zGE_AEqd72w/maxresdefault.jpg"
+        "id": "podcasts_2",
+        "id_modal": "modal_podcasts_2",
+        "type": "podcasts",
+        "content": "https://www.youtube.com/embed/zGE_AEqd72w",
+        "description": "ENIGMAS DO UNIVERSO: SÉRGIO SACANI E PEDRO PALLOTTA - Inteligência Ltda. Podcast #789",
+        "image": "https://i.ytimg.com/vi/zGE_AEqd72w/maxresdefault.jpg"
     },
     {
-    "id": "podcasts_3",
-    "type": "podcasts",
-    "content": "https://www.youtube.com/embed/akuCdwGTo0Y",
-    "description": "AFFONSO SOLANO E AFONSO TRESDÊ - Ciência Sem Fim #171",
-    "image": "https://i.ytimg.com/vi/akuCdwGTo0Y/maxresdefault.jpg"
+        "id": "podcasts_3",
+        "id_modal": "modal_podcasts_3",
+        "type": "podcasts",
+        "content": "https://www.youtube.com/embed/akuCdwGTo0Y",
+        "description": "AFFONSO SOLANO E AFONSO TRESDÊ - Ciência Sem Fim #171",
+        "image": "https://i.ytimg.com/vi/akuCdwGTo0Y/maxresdefault.jpg"
     },
     {
-    "id": "podcasts_4",
-    "type": "podcasts",
-    "content": "https://www.youtube.com/embed/JQ-wVpjSnkA",
-    "description": "CIÊNCIA VISITA FLOW PODCAST - Ciência Sem Fim #141",
-    "image": "https://i.ytimg.com/vi/JQ-wVpjSnkA/maxresdefault.jpg"
+        "id": "podcasts_4",
+        "id_modal": "modal_podcasts_4",
+        "type": "podcasts",
+        "content": "https://www.youtube.com/embed/JQ-wVpjSnkA",
+        "description": "CIÊNCIA VISITA FLOW PODCAST - Ciência Sem Fim #141",
+        "image": "https://i.ytimg.com/vi/JQ-wVpjSnkA/maxresdefault.jpg"
     },
     {
-    "id": "podcasts_5",
-    "type": "podcasts",
-    "content": "https://www.youtube.com/embed/fWB5nniPzcE",
-    "description": "Diário Econômico: podcast do Banco Original e Canal Rural - 31/5/2023 | Canal Rural",
-    "image": "https://i.ytimg.com/vi/f0MiYLvuaEI/maxresdefault.jpg"
+        "id": "podcasts_5",
+        "id_modal": "modal_podcasts_5",
+        "type": "podcasts",
+        "content": "https://www.youtube.com/embed/fWB5nniPzcE",
+        "description": "Diário Econômico: podcast do Banco Original e Canal Rural - 31/5/2023 | Canal Rural",
+        "image": "https://i.ytimg.com/vi/f0MiYLvuaEI/maxresdefault.jpg"
     },
     {
-    "id": "podcasts_6",
-    "type": "podcasts",
-    "content": "https://www.youtube.com/embed/d32tDaqjeb8",
-    "description": "DEBATE: EVOLUCIONISMO X CRIACIONISMO - Inteligência Ltda. Podcast #829",
-    "image": "https://i.ytimg.com/vi/d32tDaqjeb8/maxresdefault.jpg"
+        "id": "podcasts_6",
+        "id_modal": "modal_podcasts_6",
+        "type": "podcasts",
+        "content": "https://www.youtube.com/embed/d32tDaqjeb8",
+        "description": "DEBATE: EVOLUCIONISMO X CRIACIONISMO - Inteligência Ltda. Podcast #829",
+        "image": "https://i.ytimg.com/vi/d32tDaqjeb8/maxresdefault.jpg"
     },
     {
-    "id": "podcasts_7",
-    "type": "podcasts",
-    "content": "https://www.youtube.com/embed/lAWGDijOIro",
-    "description": "RICHARD RASMUSSEN - TICARACATICAST | EP 292",
-    "image": "https://i.ytimg.com/vi/lAWGDijOIro/mqdefault.jpg"
+        "id": "podcasts_7",
+        "id_modal": "modal_podcasts_7",
+        "type": "podcasts",
+        "content": "https://www.youtube.com/embed/lAWGDijOIro",
+        "description": "RICHARD RASMUSSEN - TICARACATICAST | EP 292",
+        "image": "https://i.ytimg.com/vi/lAWGDijOIro/mqdefault.jpg"
     }
 ]
+
 
 
 var articlesObject = [
@@ -337,10 +346,12 @@ for (var i = 0; i < booksObject.length; i++) {
 
 for (var i = 0; i < podcastsObject.length; i++) {
     const cards_podcasts = document.getElementById(podcastsObject[i].id);
-    const html_podcasts = `<img class="img-${podcastsObject[i].id} slider-img" src="${podcastsObject[i].image}" />
+    const html_podcasts = `<img class="img-${podcastsObject[i].id} slider-img" src="${podcastsObject[i].image}" onclick="replaceWithIframe_podcast(event)"/>
     <h2 class="title_description">${podcastsObject[i].description}</h2>`;
     cards_podcasts.insertAdjacentHTML("beforeend", html_podcasts);
 }
+
+
 
 // Construindo e preenchendo o conteudo que ira ficar em cada card do carrossel de articles
 
@@ -355,10 +366,25 @@ for (var i = 0; i < articlesObject.length; i++) {
 
 for (var i = 0; i < reviewsObject.length; i++) {
     const cards_reviews = document.getElementById(reviewsObject[i].id);
-    const html_reviews = `<img class="img-${reviewsObject[i].id} slider-img" src="${reviewsObject[i].image}" />
+    const html_reviews = `<img class="img-${reviewsObject[i].id} slider-img" src="${reviewsObject[i].image} " onclick="replaceWithIframe_review(event)"/>
     <h2 class="title_description">${reviewsObject[i].description}</h2>`;
     cards_reviews.insertAdjacentHTML("beforeend", html_reviews);
 }
+
+
+for (var i = 0; i < podcastsObject.length; i++) {
+    var podcastChange = document.getElementById(podcastsObject[i].id);
+    podcastChange.classList.add("css_personalizado_videos");
+}
+
+
+for (var i = 0; i < reviewsObject.length; i++) {
+    var reviewChange = document.getElementById(reviewsObject[i].id);
+    reviewChange.classList.add("css_personalizado_videos");
+}
+
+
+
 
 // Construindo funcao de movimentacao do carrossel books
 
@@ -490,3 +516,86 @@ function sliderScrollRight_reviews(){
 }
 
 scrollPerClick_reviews = document.querySelector(".img-reviews_0").clientWidth + imagePadding_reviews;
+
+
+
+  // Funcao para substituir a img do podcast por iframe
+
+function replaceWithIframe_podcast(event) {
+    var parentId = event.currentTarget.parentNode.id;
+    var parentElement = document.getElementById(parentId);
+    
+    var iframe = document.createElement("iframe");
+    var title_iframe = document.createElement("h2");
+  
+    var src_iframe;
+    var description_iframe;
+  
+    for (var i = 0; i < podcastsObject.length; i++) {
+      if (podcastsObject[i].id === parentId) {
+        src_iframe = podcastsObject[i].content;
+        description_iframe = podcastsObject[i].description;
+        break;  // Para o loop após encontrar a correspondência
+      }
+    }
+  
+    console.log(src_iframe);
+    iframe.src = src_iframe;
+    iframe.frameborder = "1";
+    iframe.allowFullscreen = true;  // Habilita o modo de tela cheia
+    iframe.playbackRate = 1;  // Define a velocidade de reprodução para 1.5x
+  
+    title_iframe.innerHTML = description_iframe;
+    title_iframe.classList.add("title_description");
+  
+    parentElement.innerHTML = "";  // Limpa o conteúdo atual do elemento
+  
+    var container = document.createElement("div");
+    container.appendChild(iframe);
+    container.appendChild(title_iframe);
+  
+    parentElement.appendChild(container);
+  }
+  
+
+
+
+
+  // Funcao para substituir a img do review por iframe
+
+  function replaceWithIframe_review(event) {
+    var parentId = event.currentTarget.parentNode.id;
+    var parentElement = document.getElementById(parentId);
+    
+    var iframe = document.createElement("iframe");
+    var title_iframe = document.createElement("h2");
+  
+    var src_iframe;
+    var description_iframe;
+  
+    for (var i = 0; i < reviewsObject.length; i++) {
+      if (reviewsObject[i].id === parentId) {
+        src_iframe = reviewsObject[i].content;
+        description_iframe = reviewsObject[i].description;
+        break;  // Para o loop após encontrar a correspondência
+      }
+    }
+  
+    console.log(src_iframe);
+    iframe.src = src_iframe;
+    iframe.frameborder = "1";
+    iframe.allowFullscreen = true;  
+    iframe.playbackRate = 1;  
+  
+    title_iframe.innerHTML = description_iframe;
+    title_iframe.classList.add("title_description");
+  
+    parentElement.innerHTML = "";  // Limpa o conteúdo atual do elemento
+  
+    var container = document.createElement("div");
+    container.appendChild(iframe);
+    container.appendChild(title_iframe);
+  
+    parentElement.appendChild(container);
+  }
+  

@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  min-width: 350px;
 }
 
 /* Configuração do tamanho da fonte */
@@ -44,6 +45,7 @@
 
 .components_li a:hover{
   background: rgb(246, 246, 246);
+  border-radius: 10px;
   color: #333;
 }
 
@@ -66,8 +68,6 @@
   justify-content: space-between; 
   padding: 20px; 
   z-index: 1; 
-  transition-timing-function: ease-in; 
-  transition: all 0.5s;
 }
 
 /* Configuração do espaçamento para o menu */
@@ -91,6 +91,7 @@
   margin-left: 30px;
   padding-top: 140px;
   height: 190px;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* Configuração dos títulos dos banners*/
@@ -131,7 +132,6 @@
 .banner__button:hover {
   color: #000;
   background-color: #e6e6e6;
-  transition: all 0.2s;
 }
 
 /* Configuração que posiciona o banner e aplica um fade out na imagem que vai ficando
@@ -161,6 +161,7 @@ com a cor do conteúdo que vem a seguir */
 .carousel .switchLeft,
 .carousel .switchRight{
   color: white;
+  text-shadow: 2px 2px 5px black;
   font-weight: bold;
   height: 100%;
   min-width: 25px;  
@@ -175,12 +176,12 @@ com a cor do conteúdo que vem a seguir */
 
 .carousel .switchLeft{
   position: absolute;
-  left: -30px;
+  left: -20px;
 }
 
 .carousel .switchRight{
   position: absolute;
-  right: -30px;
+  right: -20px;
 }
 
 
@@ -205,12 +206,61 @@ com a cor do conteúdo que vem a seguir */
   max-width: 147px;
   height: 200px;
   background-size: 200px 100px;
-  background-color: lightgreen;
+  background-color: black;
   margin: 5px 5px;
   cursor: pointer;
-  transition: 0.5s ease;
   z-index: 2;
 }
+
+
+.row__posters iframe{
+  min-width: 147px;
+  max-width: 147px;
+  height: 200px;
+  background-size: 200px 100px;
+  background-color: black;
+  margin: 5px 5px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+.css_personalizado_videos {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 15px 15px;
+}
+
+.css_personalizado_videos img{
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.carousel-box#podcast h2,
+.carousel-box#review h2{
+  min-width: 300px;
+  max-width: 300px;
+  margin-left: 5px;
+
+}
+
+
+.carousel#reviews{
+  height: 300px;
+}
+
+.carousel-box#podcast h2:hover,
+.carousel-box#review h2:hover{
+  overflow: visible;
+  text-overflow: unset;
+  white-space:normal;
+  margin-left: 5px;
+}
+
+.css_personalizado_videos:hover {
+  transform: scale(1.1);
+}
+
 
 .row__posters:hover {
   transform: scale(1.1);
@@ -258,11 +308,47 @@ com a cor do conteúdo que vem a seguir */
 }
 
 /* Configuraçções do conteudo da lista */
-.list_of_footers a{
+.list_of_footers a {
   text-align: center;
   color: #000;
   text-decoration: none;
-  font-size: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
+
+}
+
+@media (max-width: 500px) {
+  .list_of_footers a {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  .list_of_footers a {
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 900px) {
+  .list_of_footers a {
+    font-size: 19px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+
+.css_personalizado_videos iframe{
+    min-width: 300px;
+    max-width: 300px;
+    margin: 15px 15px;
+}
+
+
+.css_personalizado_videos iframe{
+    min-width: 300px;
+    max-width: 300px;
+    margin: 15px 15px;
 }
