@@ -103,7 +103,6 @@ var booksObject = [
 var podcastsObject = [
     {
         "id": "podcasts_0",
-        "id_modal": "modal_podcasts_0",
         "type": "podcasts",
         "content": "https://www.youtube.com/embed/DB7zm6a1THg",
         "description": "5 podcasts de literatura que você precisa ouvir | Bruna Miranda #445",
@@ -111,7 +110,6 @@ var podcastsObject = [
     },
     {
         "id": "podcasts_1",
-        "id_modal": "modal_podcasts_1",
         "type": "podcasts",
         "content": "https://www.youtube.com/embed/MKzOAOu8Zes",
         "description": "PEDRO LOOS (CIÊNCIA TODO DIA) - Inteligência Ltda. Podcast #821",
@@ -119,7 +117,6 @@ var podcastsObject = [
     },
     {
         "id": "podcasts_2",
-        "id_modal": "modal_podcasts_2",
         "type": "podcasts",
         "content": "https://www.youtube.com/embed/zGE_AEqd72w",
         "description": "ENIGMAS DO UNIVERSO: SÉRGIO SACANI E PEDRO PALLOTTA - Inteligência Ltda. Podcast #789",
@@ -127,7 +124,6 @@ var podcastsObject = [
     },
     {
         "id": "podcasts_3",
-        "id_modal": "modal_podcasts_3",
         "type": "podcasts",
         "content": "https://www.youtube.com/embed/akuCdwGTo0Y",
         "description": "AFFONSO SOLANO E AFONSO TRESDÊ - Ciência Sem Fim #171",
@@ -135,7 +131,6 @@ var podcastsObject = [
     },
     {
         "id": "podcasts_4",
-        "id_modal": "modal_podcasts_4",
         "type": "podcasts",
         "content": "https://www.youtube.com/embed/JQ-wVpjSnkA",
         "description": "CIÊNCIA VISITA FLOW PODCAST - Ciência Sem Fim #141",
@@ -143,7 +138,6 @@ var podcastsObject = [
     },
     {
         "id": "podcasts_5",
-        "id_modal": "modal_podcasts_5",
         "type": "podcasts",
         "content": "https://www.youtube.com/embed/fWB5nniPzcE",
         "description": "Diário Econômico: podcast do Banco Original e Canal Rural - 31/5/2023 | Canal Rural",
@@ -151,7 +145,6 @@ var podcastsObject = [
     },
     {
         "id": "podcasts_6",
-        "id_modal": "modal_podcasts_6",
         "type": "podcasts",
         "content": "https://www.youtube.com/embed/d32tDaqjeb8",
         "description": "DEBATE: EVOLUCIONISMO X CRIACIONISMO - Inteligência Ltda. Podcast #829",
@@ -159,13 +152,13 @@ var podcastsObject = [
     },
     {
         "id": "podcasts_7",
-        "id_modal": "modal_podcasts_7",
         "type": "podcasts",
         "content": "https://www.youtube.com/embed/lAWGDijOIro",
         "description": "RICHARD RASMUSSEN - TICARACATICAST | EP 292",
         "image": "https://i.ytimg.com/vi/lAWGDijOIro/mqdefault.jpg"
     }
 ]
+
 
 
 
