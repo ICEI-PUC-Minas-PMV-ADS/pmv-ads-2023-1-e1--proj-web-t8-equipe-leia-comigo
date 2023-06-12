@@ -532,7 +532,6 @@ function replaceWithIframe_podcast(event) {
       }
     }
   
-    console.log(src_iframe);
     iframe.src = src_iframe;
     iframe.frameborder = "1";
     iframe.allowFullscreen = true;  // Habilita o modo de tela cheia
@@ -574,7 +573,6 @@ function replaceWithIframe_podcast(event) {
       }
     }
   
-    console.log(src_iframe);
     iframe.src = src_iframe;
     iframe.frameborder = "1";
     iframe.allowFullscreen = true;  

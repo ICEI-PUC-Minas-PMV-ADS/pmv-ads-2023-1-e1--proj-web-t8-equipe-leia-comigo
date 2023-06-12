@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Leia Comigo</title>
     <link rel="stylesheet" href="/src/assets/css/styles.css"/>
+    <script src="/src/assets/javascript/account.js"></script>
   </head>
 
   <body>
@@ -23,9 +24,20 @@
           </ul>
         </div>
 
-        <img class="nav__avatar" src="/src/assets/img/Menu/avatar.png" alt="" />
+        <div class="accountGroup">
+          <img class="nav__avatar" src="/src/assets/img/Menu/avatar.png" alt="" onmouseover="handleShowOptions()"
+            onmouseout="handleUnshowOptions()" />
+          <div class="box" onmouseover="handleShowOptions()" onmouseout="handleUnshowOptions()">
+            <div class="options" onclick="handleLoadMyAccount()">Minha Conta</div>
+  
+            <div class="options" onclick="handleLoadLogin()">Entrar</div>
+  
+            <div class="options" onclick="handleLogout()">Sair</div>
+          </div>
+        </div>
       </div>
 
+    
       <!-- header -->
       <header class="banner">
           <div class="banner__contents">
@@ -68,6 +80,81 @@
       </div>
 
     </div>
+
+    
+    <div class="popup">
+      <div class="modal">
+        <div class="closeIcon" onclick="handleCloseMyAccount()">X</div>
+        <div class="modalTitle">Informações da conta</div>
+        <div class="modalContent">
+          <div class="infoBox">
+            <div class="personalInfo">
+              <label>Usuário: </label>
+              <input type="text" class="value" id="nome" disabled></input>
+            </div>
+
+            <div class="personalInfo">
+              <label>E-mail:</label>
+              <input type="email" class="value" id="gmail" disabled></input>
+            </div>
+
+            <div class="personalInfo">
+              <label>Senha:</label>
+              <input type="password" class="value" id="senha" disabled>
+                
+              </input>
+              <img class="eyeOff" src="/src/assets/img/images/eyeOff.svg" alt="">
+            </div>
+
+          </div>
+
+          <img class="profileIcon" src="/src/assets/img/Menu/avatar.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="box-form">
+      <div class="box-form-login">
+        <div class="closeForm" onclick="handleCloseForm()">X</div>
+
+        <h2>Login</h2>
+        <form action="#" class="formulario">
+          <div class="inputForm">
+            <input type="mail" id="lEmail" placeholder="Preencha com seu e-mail" />
+          </div>
+
+          <div class="inputForm">
+            <input type="password" id="lPassword" placeholder="Senha" />
+          </div>
+          <button onClick="handleLogin()">Entrar</button>
+          <div class="registre-se">Ainda não possui uma conta? <span class="register-link"
+              onclick="handleRegisterForm()">Registre-se</span></div>
+        </form>
+      </div>
+
+      <div class="box-form-registrar">
+        <div class="closeForm" onclick="handleCloseForm()">X</div>
+
+        <h2>Registrar</h2>
+        <form action="#">
+          <div class="inputForm">
+            <input type="name" id="rName" placeholder="Nome de usuário" />
+          </div>
+
+          <div class="inputForm">
+            <input type="mail" id="rEmail" placeholder="Preencha com seu e-mail" />
+          </div>
+
+
+          <div class="inputForm">
+            <input type="password" id="rPassword" placeholder="Senha" />
+          </div>
+          <button onclick="handleRegister()">Criar conta</button>
+          <div class="registre-se">Já possui uma conta? <span class="login-link"
+              onclick="handleLoginForm()">Logue</span></div>
+        </form>
+      </div>
+    </div>
     <!-- Footer -->
     <div class="main_footer">
       <ul class="list_of_footers">
@@ -78,5 +165,91 @@
     </div>
     <script src="/src/assets/javascript/scripts.js"></script>
     <script src="/src/assets/javascript/home.js"></script>
+    <script>
+      // Lógica dos formulários de login e registrar
+      const registerLink = document.querySelector('.register-link')
+      const loginLink = document.querySelector('.login-link')
+
+      const login = document.querySelector('.box-form-login')
+      const register = document.querySelector('.box-form-registrar')
+      const form = document.querySelector('.box-form')
+
+      const inputPassword = document.querySelector('#senha')
+
+
+      const handleRegisterForm = () => {
+        login.style.display = 'none'
+        register.style.display = "inline"
+      }
+
+      const handleLoginForm = () => {
+        login.style.display = 'inline'
+        register.style.display = 'none'
+      }
+
+      const handleLogin = () => {
+        const email = document.querySelector('#lEmail')
+        const senha = document.querySelector('#lPassword  ')
+
+        if (!email.value || !senha.value) {
+          alert('Preencha todos os campos para prosseguir')
+          return
+        }
+        const result = handleDoLogin(email.value, senha.value)
+
+        if (result.error !== 0) {
+          alert(result.msg)
+          return
+        }
+
+        form.style.display = 'none'
+
+      }
+
+      const handleRegister = () => {
+        const email = document.querySelector('#rName')
+        const name = document.querySelector('#rName')
+        const password = document.querySelector('#rPassword')
+
+        if (!email.value || !name.value || !password.value) {
+          alert('Preencha todas as informações para prosseguir')
+          return
+        }
+
+        const result = handleDoRegister(email.value, password.value, name.value)
+
+        if (result.error !== 0) {
+          alert(result.msg)
+          return
+        }
+
+        form.style.display = 'none'
+        register.style.display = 'none'
+        login.style.display = 'block'
+      }
+
+      document.querySelector('.eyeOff').addEventListener('click', () => {
+        const type = inputPassword.getAttribute('type') == 'password' ? 'text' : 'password'
+        inputPassword.setAttribute('type', type)
+
+        const img = document.querySelector('.eyeOff')
+
+        type == 'text'
+          ? img.src = '/src/assets/img/images/eyeOn.svg'
+          : img.src = '/src/assets/img/images/eyeOff.svg'
+
+      })
+
+      document.querySelector('.closeForm').addEventListener('click', () => {
+        form.style.display = 'none'
+      })
+
+      const handleCloseForm = () => {
+        form.style.display = 'none'
+        register.style.display = 'none'
+        login.style.display = 'block'
+      }
+
+    </script>
   </body>
 </html>

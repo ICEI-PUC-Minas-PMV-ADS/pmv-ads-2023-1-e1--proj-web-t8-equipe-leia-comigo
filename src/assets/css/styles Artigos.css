@@ -44,6 +44,7 @@
   color: #333;
 }
 
+/*CONFIGURAÇÃO REFERENTE A POPUP "MINHA CONTA" */
 .accountGroup {
   display: flex;
   flex-direction: column;
@@ -60,7 +61,6 @@
 
 }
 
-/*CONFIGURAÇÃO REFERENTE A POPUP "MINHA CONTA" */
 .box {
   display: flex;
   flex-direction: column;

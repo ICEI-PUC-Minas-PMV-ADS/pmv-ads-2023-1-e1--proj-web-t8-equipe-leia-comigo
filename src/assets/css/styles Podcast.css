@@ -22,18 +22,18 @@
 }
 
 /* Configuração do tamanho do menu */
-.select_menu{
+.select_menu {
   width: 650px;
   object-fit: contain;
 }
 
 /* Configuração do estilo da lista */
-.components_li{
+.components_li {
   display: inline-flex;
 }
 
 /* Configuraçções da lista */
-.components_li a{
+.components_li a {
   list-style: none;
   color: #fff;
   text-decoration: none;
@@ -43,7 +43,7 @@
 
 /* Configuração de quando a lista for coberta pelo mouse */
 
-.components_li a:hover{
+.components_li a:hover {
   background: rgb(246, 246, 246);
   border-radius: 10px;
   color: #333;
@@ -57,21 +57,65 @@
 }
 
 
+/*CONFIGURAÇÃO REFERENTE A POPUP "MINHA CONTA" */
+.accountGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 10px;
+}
+
+/* Configuração da imagem de "avatar" */
+.nav__avatar {
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
+
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  background-color: rgb(215, 215, 215);
+
+  padding: 1em 1em;
+  border-radius: 1px;
+  display: none;
+}
+
+.box .options {
+  font-size: .9em;
+  margin: .5em 0em;
+
+  font-weight: 500;
+
+}
+
+.box .options:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
 /* Configuranção do menu */
 .nav {
-  position: fixed; 
+  position: fixed;
   top: 0;
-  width: 100%; 
+  width: 100%;
   display: flex;
   background-color: transparent;
-  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 10%,transparent);
-  justify-content: space-between; 
-  padding: 20px; 
-  z-index: 1; 
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 10%, transparent);
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 1;
 }
 
 /* Configuração do espaçamento para o menu */
-.main__menu{
+.main__menu {
   display: flex;
 }
 
@@ -118,14 +162,14 @@
   cursor: pointer;
   color: #fff;
   outline: none;
-  border: none; 
+  border: none;
   font-weight: 700;
   border-radius: 0.2vw;
-  padding-left: 2rem; 
+  padding-left: 2rem;
   padding-right: 2rem;
-  margin-right: 1rem; 
-  padding-top: 0.5rem; 
-  padding-bottom: 0.5rem; 
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: rgba(51, 51, 51, 0.5);
 }
 
@@ -143,14 +187,14 @@ com a cor do conteúdo que vem a seguir */
   background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
 
-.titulos{
+.titulos {
   width: 100%;
   text-align: start;
   padding: 20px;
   color: white;
 }
 
-.carousel{
+.carousel {
   padding: 0;
   height: 250px;
   width: 90%;
@@ -160,12 +204,12 @@ com a cor do conteúdo que vem a seguir */
 }
 
 .carousel .switchLeft,
-.carousel .switchRight{
+.carousel .switchRight {
   color: white;
   text-shadow: 2px 2px 5px black;
   font-weight: bold;
   height: 100%;
-  min-width: 25px;  
+  min-width: 25px;
   line-height: 250px;
   font-size: 45px;
   text-align: center;
@@ -175,18 +219,18 @@ com a cor do conteúdo que vem a seguir */
   z-index: 1;
 }
 
-.carousel .switchLeft{
+.carousel .switchLeft {
   position: absolute;
   left: -20px;
 }
 
-.carousel .switchRight{
+.carousel .switchRight {
   position: absolute;
   right: -20px;
 }
 
 
-.carousel-box{
+.carousel-box {
   min-height: 250px;
   width: auto;
   overflow: hidden;
@@ -198,11 +242,11 @@ com a cor do conteúdo que vem a seguir */
   align-items: center;
 }
 
-.carousel a{
+.carousel a {
   user-select: none;
 }
 
-.row__posters img{
+.row__posters img {
   min-width: 147px;
   max-width: 147px;
   height: 200px;
@@ -214,7 +258,7 @@ com a cor do conteúdo que vem a seguir */
 }
 
 
-.row__posters iframe{
+.row__posters iframe {
   min-width: 147px;
   max-width: 147px;
   height: 200px;
@@ -232,7 +276,7 @@ com a cor do conteúdo que vem a seguir */
   margin: 15px 15px;
 }
 
-.css_personalizado_videos img{
+.css_personalizado_videos img {
   min-width: 300px;
   max-width: 300px;
 }
@@ -247,7 +291,7 @@ com a cor do conteúdo que vem a seguir */
   transform: scale(1.1);
 }
 
-.title_description{
+.title_description {
   font-size: medium;
   color: white;
   min-width: 300px;
@@ -258,11 +302,12 @@ com a cor do conteúdo que vem a seguir */
   white-space: nowrap;
 }
 
-.title_description:hover{
+.title_description:hover {
   overflow: visible;
   text-overflow: unset;
-  white-space:normal;
+  white-space: normal;
 }
+
 /* cor de fundo preta */
 .nav__black {
   background-color: #111;
@@ -272,19 +317,19 @@ com a cor do conteúdo que vem a seguir */
 /* Criando o conteiner do footer */
 .main_footer {
   display: flex;
-  width: 100%; 
+  width: 100%;
   background-color: #fff;
-  height: 80px;  
+  height: 80px;
 }
 
-.carousel#healths{
+.carousel#healths {
   height: 300px;
 }
 
 
 
 /* Configuração do estilo da lista de footer */
-.list_of_footers{
+.list_of_footers {
   display: inline-flex;
   list-style: none;
   width: 100%;
@@ -325,15 +370,198 @@ com a cor do conteúdo que vem a seguir */
 }
 
 
-.css_personalizado_videos iframe{
-    min-width: 300px;
-    max-width: 300px;
-    margin: 15px 15px;
+.css_personalizado_videos iframe {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 15px 15px;
 }
 
 
-.css_personalizado_videos iframe{
-    min-width: 300px;
-    max-width: 300px;
-    margin: 15px 15px;
+.css_personalizado_videos iframe {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 15px 15px;
+}
+
+
+
+.popup {
+  position: fixed;
+  background-color: rgba(76, 76, 76, 0.8);
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 50Vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(34, 34, 34, 0.988);
+
+  position: relative;
+
+  color: white;
+  padding: 1em 0em;
+
+  width: 100%;
+
+}
+
+.modal img {
+  cursor: pointer;
+}
+
+.modal .closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  cursor: pointer;
+
+  font-size: 1.5em;
+}
+
+.modalTitle {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.modalContent {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 1em 2em 0em 2em;
+}
+
+.profileIcon {
+  max-width: 13em;
+  margin-left: 10em;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.personalInfo {
+  display: flex;
+  flex-direction: row;
+  margin: .8em 0em;
+  align-items: center;
+}
+
+.personalInfo label {
+  width: 4.5em;
+}
+
+.personalInfo input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  color: rgba(152, 152, 152, 0.9);
+
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.box-form {
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 50vh;
+  min-width: 50vw;
+  background: black;
+
+  padding: 3em;
+  display: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-form form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.box-form button {
+  padding: 1em 3em;
+
+  cursor: pointer;
+}
+
+.box-form h2 {
+  color: white;
+  text-align: center;
+
+  margin-bottom: 2em;
+}
+
+.inputForm {
+  width: 100%;
+}
+
+.inputForm input {
+  background-color: #333;
+  color: white;
+  border: 1px solid transparent;
+  outline: none;
+
+  padding: 1em;
+  margin: 1em 0em;
+  width: 100%;
+
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.registre-se {
+  color: #333;
+  text-align: center;
+  margin-top: 2em;
+  font-size: .9em;
+}
+
+.box-form-login {
+  display: block;
+}
+
+
+.box-form-registrar {
+  display: none;
+}
+
+.register-link {
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.login-link {
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.closeForm {
+  color: white;
+  text-align: right;
+
+  cursor: pointer;
 }
