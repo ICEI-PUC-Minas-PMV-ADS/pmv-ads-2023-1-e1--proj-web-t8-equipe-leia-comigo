@@ -6,7 +6,7 @@
   <link rel="icon" type="img/logo_leia" href="/src/assets/img/Menu/logo_leia.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leia Comigo</title>
-  <link rel="stylesheet" href="/src/assets/css/styles Reviews.css" />
+  <link rel="stylesheet" href="/src/assets/css/styles Podcast.css" />
   <script src="/src/assets/javascript/account.js"></script>
 </head>
 
@@ -17,12 +17,13 @@
       <div class="main__menu">
         <img class="nav__logo" src="/src/assets/img/Menu/logo_leia.png" alt="" />
         <ul class="select_menu">
-          <li class="components_li"><a href="/src/pages/home/index.html">Inicio</a></li>
+          <li class="components_li"><a href="/src/pages/index.html">Inicio</a></li>
           <li class="components_li"><a href="#">Livros</a></li>
-          <li class="components_li"><a href="/src/pages/home/Podcasts.html">Podcasts</a></li>
-          <li class="components_li"><a href="#">Artigos</a></li>
-          <li class="components_li"><a href="/src/pages/home/Reviews.html">Reviews</a></li>
+          <li class="components_li"><a href="/src/pages/Podcasts.html">Podcasts</a></li>
+          <li class="components_li"><a href="/src/pages/Artigos.html">Artigos</a></li>
+          <li class="components_li"><a href="/src/pages/Reviews.html">Reviews</a></li>
         </ul>
+
       </div>
 
       <div class="accountGroup">
@@ -41,7 +42,7 @@
     <!-- header -->
     <header class="banner">
       <div class="banner__contents">
-        <h1 class="banner__title">Os 3 Livros Que Fizeram Eu Não Desistir da Programação (e o que aprendi com eles)</h1>
+        <h1 class="banner__title">MANO BROWN - Podpah #351</h1>
         <div class="banner__buttons">
           <button class="banner__button">Assistir</button>
         </div>
@@ -50,31 +51,31 @@
     </header>
 
     <div class="titulos">
-      <h2>Aventura</h2>
+      <h2>Atualidade</h2>
     </div>
 
-    <div class="carousel" id="adventures">
-    </div>
-
-    <div class="titulos">
-      <h2>Suspense</h2>
-    </div>
-
-    <div class="carousel" id="thrillers">
+    <div class="carousel" id="presents">
     </div>
 
     <div class="titulos">
-      <h2>Romance</h2>
+      <h2>Ciência</h2>
     </div>
 
-    <div class="carousel" id="romances">
+    <div class="carousel" id="sciences">
     </div>
 
     <div class="titulos">
-      <h2>Terror</h2>
+      <h2>História</h2>
     </div>
 
-    <div class="carousel" id="horrors">
+    <div class="carousel" id="historys">
+    </div>
+
+    <div class="titulos">
+      <h2>Saúde</h2>
+    </div>
+
+    <div class="carousel" id="healths">
     </div>
 
   </div>
@@ -161,7 +162,7 @@
     </ul>
   </div>
   <script src="/src/assets/javascript/scripts.js"></script>
-  <script src="/src/assets/javascript/reviews.js"></script>
+  <script src="/src/assets/javascript/podcast.js"></script>
   <script>
     // Lógica dos formulários de login e registrar
     const registerLink = document.querySelector('.register-link')
@@ -204,7 +205,7 @@
     }
 
     const handleRegister = () => {
-      const email = document.querySelector('#rEmail')
+      const email = document.querySelector('#rName')
       const name = document.querySelector('#rName')
       const password = document.querySelector('#rPassword')
 
@@ -244,7 +245,6 @@
     const handleCloseForm = () => {
       form.style.display = 'none'
       register.style.display = 'none'
-      login.style.display = 'block'
     }
 
   </script>
