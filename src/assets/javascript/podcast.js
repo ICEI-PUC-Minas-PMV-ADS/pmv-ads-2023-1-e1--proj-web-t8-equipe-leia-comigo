@@ -275,8 +275,6 @@ var healthsObject = [
     }
 ]
 
-  
-
 // Construindo Div das Box do carrossel e adicionando botoes de movimentacao do carrossel
 
 for (var i = 0; i < pageObjects.length; i++) {
