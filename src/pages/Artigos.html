@@ -17,19 +17,19 @@
     <!-- nav -->
     <div id="nav" class="nav">
       <div class="main__menu">
-        <img class="nav__logo" src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Menu/logo_leia.png" alt="" />
+        <img class="nav__logo" src="../assets/img/Menu/logo_leia.png"  alt="" />
         <ul class="select_menu">
-          <li class="components_li"><a href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/pages/index.html">Inicio</a></li>
+          <li class="components_li"><a href="../pages/index.html">Inicio</a></li>
           <li class="components_li"><a href="#">Livros</a></li>
-          <li class="components_li"><a href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/pages/Podcasts.html">Podcasts</a></li>
-          <li class="components_li"><a href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/pages/Artigos.html">Artigos</a></li>
-          <li class="components_li"><a href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/pages/Reviews.html">Reviews</a></li>
+          <li class="components_li"><a href="../pages/Podcasts.html">Podcasts</a></li>
+          <li class="components_li"><a href="..//pages/Artigos.html">Artigos</a></li>
+          <li class="components_li"><a href="../pages/Reviews.html">Reviews</a></li>
           <li class="components_li"><a href="#">Minha Lista</a></li>
         </ul>
       </div>
 
       <div class="accountGroup">
-        <img class="nav__avatar" src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Menu/avatar.png" alt="" onmouseover="handleShowOptions()"
+        <img class="nav__avatar" src="../assets/img/Menu/avatar.png" alt="" onmouseover="handleShowOptions()"
           onmouseout="handleUnshowOptions()" />
         <div class="box" onmouseover="handleShowOptions()" onmouseout="handleUnshowOptions()">
           <div class="options" onclick="handleLoadMyAccount()">Minha Conta</div>
@@ -97,12 +97,12 @@
               <input type="password" class="value" id="senha" disabled>
                 
               </input>
-              <img class="eyeOff" src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/images/eyeOff.svg" alt="">
+              <img class="eyeOff" src="../assets/img/images/eyeOff.svg" alt="">
             </div>
 
           </div>
 
-          <img class="profileIcon" src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Menu/avatar.png" alt="">
+          <img class="profileIcon" src="../assets/img/Menu/avatar.png" alt="">
         </div>
       </div>
     </div>
@@ -229,8 +229,8 @@
         const img = document.querySelector('.eyeOff')
 
         type == 'text'
-          ? img.src = '/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/images/eyeOn.svg'
-          : img.src = '/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/images/eyeOff.svg'
+          ? img.src = '../assets/img/images/eyeOn.svg'
+          : img.src = '../assets/img/images/eyeOff.svg'
 
       })
 

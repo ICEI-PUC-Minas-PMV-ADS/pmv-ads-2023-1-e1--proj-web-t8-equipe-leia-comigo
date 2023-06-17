@@ -29,73 +29,73 @@ var booksObject = [
     {
         "id":"books_0",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/a_carta_roubada.png",
+        "image": "../assets/img/Livros/a_carta_roubada.png",
         "description": "A Carta Roubada - Edgar Allan Poe" 
     },
     {
         "id":"books_1",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/a_ilha_do_teousoro.png",
+        "image": "../assets/img/Livros/a_ilha_do_teousoro.png",
         "description": "A Ilha do Tesouro - Robert Louis Stevenson" 
     },
     {
         "id":"books_2",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/a_ilustre_casa_de_ramires.png",
+        "image": "../assets/img/Livros/a_ilustre_casa_de_ramires.png",
         "description": "A Ilustre Casa de Ramires - Eça de Queiroz" 
     },
     {
         "id":"books_3",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/a_recompensa_do_soldado.png",
+        "image": "../assets/img/Livros/a_recompensa_do_soldado.png",
         "description": "A recompensa do soldado - William Faulkner" 
     },
     {
         "id":"books_4",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/cancao_do_exilio.png",
+        "image": "../assets/img/Livros/cancao_do_exilio.png",
         "description": "Canção do Exílio - Gonçalves Dias" 
     },
     {
         "id":"books_5",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/charneca_em_flor.png",
+        "image": "../assets/img/Livros/charneca_em_flor.png",
         "description": "Charneca em Flor - Florbela Espanca" 
     },
     {
         "id":"books_6",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/eu_e_outras_poesias.png",
+        "image": "../assets/img/Livros/eu_e_outras_poesias.png",
         "description": "Eu e outras poesias - Augusto dos Anjos" 
     },
     {
         "id":"books_8",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/o_cortico.png",
+        "image": "../assets/img/Livros/o_cortico.png",
         "description": "O Cortiço - Aluísio Azevedo" 
     },
     {
         "id":"books_9",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/o_cortico.png",
+        "image": "../assets/img/Livros/o_cortico.png",
         "description": "O Cortiço - Aluísio Azevedo" 
     },
     {
         "id":"books_10",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/o_cortico.png",
+        "image": "../assets/img/Livros/o_cortico.png",
         "description": "O Cortiço - Aluísio Azevedo" 
     },
     {
         "id":"books_11",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/o_cortico.png",
+        "image": "../assets/img/Livros/o_cortico.png",
         "description": "O Cortiço - Aluísio Azevedo" 
     },
     {
         "id":"books_12",
         "type": "books",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Livros/o_cortico.png",
+        "image": "../assets/img/Livros/o_cortico.png",
         "description": "O Cortiço - Aluísio Azevedo" 
     }
 ]
@@ -163,49 +163,49 @@ var articlesObject = [
     {
         "id": "articles_0",
         "type": "articles",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Artigos/a_importancia_da_atividade_fisica_para_criancas.jpg",
+        "image": "../assets/img/Artigos/a_importancia_da_atividade_fisica_para_criancas.jpg",
         "description": "A importância da física para crianças"
     },
     {
         "id": "articles_1",
         "type": "articles",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Artigos/a_moderna_administracao_hospitalar.jpg",
+        "image": "../assets/img/Artigos/a_moderna_administracao_hospitalar.jpg",
         "description": "A moderna Administração Hospitalar"
     },
     {
         "id": "articles_2",
         "type": "articles",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Artigos/aproximacao_entre_as_nacoes_de_aceleracao_social_do_tempo.png",
+        "image": "../assets/img/Artigos/aproximacao_entre_as_nacoes_de_aceleracao_social_do_tempo.png",
         "description": "Aproximação entre as nações de aceleração social do tempo"
     },
     {
         "id": "articles_3",
         "type": "articles",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Artigos/as_possibilidades_que_as_novas_tecnologias_e_educacao_a_distancia_podem_trazer.jpg",
+        "image": "../assets/img/Artigos/as_possibilidades_que_as_novas_tecnologias_e_educacao_a_distancia_podem_trazer.jpg",
         "description": "As possibilidades que as novas tecnologias e educação a distância podem trazer"
     },
     {
         "id": "articles_4",
         "type": "articles",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Artigos/boas_praticas_na_gestao_municipal.jpg",
+        "image": "../assets/img/Artigos/boas_praticas_na_gestao_municipal.jpg",
         "description": "Boas práticas na Gestão Municipal"
     },
     {
         "id": "articles_5",
         "type": "articles",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Artigos/levando_a_programacao_para_a_sala_de_aula.jpg",
+        "image": "../assets/img/Artigos/levando_a_programacao_para_a_sala_de_aula.jpg",
         "description": "Levando a programação para a Sala de Aula"
     },
     {
         "id": "articles_6",
         "type": "articles",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Artigos/modelo_de_triagem_de_inibidores_de_ntpdases.jpg",
+        "image": "../assets/img/Artigos/modelo_de_triagem_de_inibidores_de_ntpdases.jpg",
         "description": "Modelo de Triagem de inibidores de Ntpdases"
     },
     {
         "id": "articles_7",
         "type": "articles",
-        "image": "/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Artigos/ressignificancia_dos_animais_domesticos.jpg",
+        "image": "../assets/img/Artigos/ressignificancia_dos_animais_domesticos.jpg",
         "description": "Ressignificancia dos Animais Domésticos"
     }
 ]

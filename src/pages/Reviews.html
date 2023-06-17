@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="img/logo_leia" href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Menu/logo_leia.png">
+  <link rel="icon" type="img/logo_leia" href="../assets/img/Menu/logo_leia.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leia Comigo</title>
-  <link rel="stylesheet" href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/css/styles_reviews.css" />
-  <script src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/javascript/account.js"></script>
+  <link rel="stylesheet" href="../assets/css/styles_reviews.css" />
+  <script src="../assets/javascript/account.js"></script>
 </head>
 
 <body>
@@ -15,18 +15,18 @@
     <!-- nav -->
     <div id="nav" class="nav">
       <div class="main__menu">
-        <img class="nav__logo" src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Menu/logo_leia.png" alt="" />
+        <img class="nav__logo" src="../assets/img/Menu/logo_leia.png" alt="" />
         <ul class="select_menu">
-          <li class="components_li"><a href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/pages/index.html">Inicio</a></li>
+          <li class="components_li"><a href="../pages/index.html">Inicio</a></li>
           <li class="components_li"><a href="#">Livros</a></li>
-          <li class="components_li"><a href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/pages/Podcasts.html">Podcasts</a></li>
-          <li class="components_li"><a href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/pages/Artigos.html">Artigos</a></li>
-          <li class="components_li"><a href="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/pages/Reviews.html">Reviews</a></li>
+          <li class="components_li"><a href="../pages/Podcasts.html">Podcasts</a></li>
+          <li class="components_li"><a href="../pages/Artigos.html">Artigos</a></li>
+          <li class="components_li"><a href="../pages/Reviews.html">Reviews</a></li>
         </ul>
       </div>
 
       <div class="accountGroup">
-        <img class="nav__avatar" src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Menu/avatar.png" alt="" onmouseover="handleShowOptions()"
+        <img class="nav__avatar" src="../assets/img/Menu/avatar.png" alt="" onmouseover="handleShowOptions()"
           onmouseout="handleUnshowOptions()" />
         <div class="box" onmouseover="handleShowOptions()" onmouseout="handleUnshowOptions()">
           <div class="options" onclick="handleLoadMyAccount()">Minha Conta</div>
@@ -100,12 +100,12 @@
             <input type="password" class="value" id="senha" disabled>
 
             </input>
-            <img class="eyeOff" src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/images/eyeOff.svg" alt="">
+            <img class="eyeOff" src="../assets/img/images/eyeOff.svg" alt="">
           </div>
 
         </div>
 
-        <img class="profileIcon" src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/Menu/avatar.png" alt="">
+        <img class="profileIcon" src="../assets/img/Menu/avatar.png" alt="">
       </div>
     </div>
   </div>
@@ -160,8 +160,8 @@
       <li class="footer_list"><a href="#">Entre em contato</a></li>
     </ul>
   </div>
-  <script src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/javascript/scripts.js"></script>
-  <script src="/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/javascript/reviews.js"></script>
+  <script src="../assets/javascript/scripts.js"></script>
+  <script src="../assets/javascript/reviews.js"></script>
   <script>
     // Lógica dos formulários de login e registrar
     const registerLink = document.querySelector('.register-link')
@@ -232,8 +232,8 @@
       const img = document.querySelector('.eyeOff')
 
       type == 'text'
-        ? img.src = '/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/images/eyeOn.svg'
-        : img.src = '/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo/src/assets/img/images/eyeOff.svg'
+        ? img.src = '../assets/img/images/eyeOn.svg'
+        : img.src = '../assets/img/images/eyeOff.svg'
 
     })
 
