@@ -5,7 +5,7 @@
     <link rel="icon" type="img/logo_leia" href="../assets/img/Menu/logo_leia.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Leia Comigo</title>
-    <link rel="stylesheet" href="../assets/css/styles.css"/>
+    <link rel="stylesheet" href="../assets/css/books.css"/>
     <script src="../assets/javascript/account.js"></script>
   </head>
 
@@ -36,7 +36,6 @@
           </div>
         </div>
       </div>
-
     
       <!-- header -->
       <header class="banner">
@@ -53,30 +52,30 @@
       </header>
 
       <div class="titulos">
-        <h2>Livros</h2>
+        <h2>Aventura</h2>
       </div>
 
-      <div class="carousel" id="books">
+      <div class="carousel" id="adventures">
       </div>
       <div class="titulos">
-        <h2>Podcasts</h2>
+        <h2>Terror</h2>
       </div>
 
-      <div class="carousel" id="podcasts">
-      </div>
-
-      <div class="titulos">
-        <h2>Artigos</h2>
-      </div>
-
-      <div class="carousel" id="articles">
+      <div class="carousel" id="horrors">
       </div>
 
       <div class="titulos">
-        <h2>Reviews</h2>
+        <h2>Suspense</h2>
       </div>
 
-      <div class="carousel" id="reviews">
+      <div class="carousel" id="thrillers">
+      </div>
+
+      <div class="titulos">
+        <h2>Romance</h2>
+      </div>
+
+      <div class="carousel" id="romances">
       </div>
 
     </div>
@@ -164,7 +163,7 @@
       </ul>
     </div>
     <script src="../assets/javascript/scripts.js"></script>
-    <script src="../assets/javascript/home.js"></script>
+    <script src="../assets/javascript/books.js"></script>
     <script>
       // Lógica dos formulários de login e registrar
       const registerLink = document.querySelector('.register-link')
@@ -251,5 +250,22 @@
       }
 
     </script>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <h2 class="title-of-modal">A Carta Roubada - Edgar Allan Poe</h2>
+        <button class="close-button-modal">&times;</button>
+      </div>
+      <div class="modal-image">
+        <img src="https://valeugutenberg.files.wordpress.com/2017/05/a-carta-roubada-poe.jpg" alt="imagem-teste">
+      </div>
+      <div class="modal-summary">
+        <p class="content-of-modal">(Resumo de 'A Carta Roubada') Nessa emocionante aventura, acompanhamos um renomado detetive enquanto ele investiga o misterioso desaparecimento de uma valiosa carta que contém a chave de um segredo escandaloso. Com tramas astutas e reviravoltas inesperadas, Edgar Allan Poe leva os leitores em uma jornada de suspense pelas profundezas do engano humano e da intriga</p>
+      </div>
+      <div class="modal-download">
+        <div><button class="download-button">Download</button></div>
+      </div>
+    </div>
+
   </body>
 </html>
