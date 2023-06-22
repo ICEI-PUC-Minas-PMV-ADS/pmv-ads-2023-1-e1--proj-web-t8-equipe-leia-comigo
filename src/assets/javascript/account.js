@@ -19,20 +19,23 @@ const handleUnshowOptions = () => {
 }
 
 const handleLogout = () => {
-    if (!user.password)
+    if (!user.password) {
+        handleUnshowOptions()
         return
+    }
 
     user = {
         name: '',
         password: '',
         email: ''
     }
+
+    handleUnshowOptions()
 }
 
 const handleLoadMyAccount = () => {
     if (!user.password) {
-        alert('Realize o login primeiro!')
-        return
+        return {error: 1, msg: 'Realize o login para visualizar a conta'}
     }
     const popup = document.querySelector('.popup')
     popup.style.display = 'block'
@@ -40,13 +43,13 @@ const handleLoadMyAccount = () => {
     let nome = popup.querySelector('#nome')
     nome.value = user.name
 
-
     let gmail = popup.querySelector('#gmail')
     gmail.value = user.email
 
-
     let senha = popup.querySelector('#senha')
     senha.value = user.password
+
+    return {error: 0, msg: ''}
 }
 
 const handleCloseMyAccount = () => {
@@ -63,25 +66,25 @@ const handleLoadLogin = () => {
     form.style.display = 'block'
 }
 
-const handleDoLogin = (email, password) => {
+const handleLogin = (email, password) => {
     let storageUser = JSON.parse(sessionStorage.getItem('user'))
     if (!storageUser) {
-        return {error: 1, msg: 'É preciso realizar um cadastro antes de logar'}
+        return {error: 1, msg: 'É preciso realizar um cadastro antes de logar!'}
     }
 
     if (storageUser.password !== password) {
-        return {error: 1, msg: 'Senha ou E-mail inválidos'}
+        return {error: 1, msg: 'Senha ou E-mail inválidos!'}
     }
 
     if (storageUser.email !== email) {
-        return {error: 1, msg: 'Senha ou E-mail inválidos'}
+        return {error: 1, msg: 'Senha ou E-mail inválidos!'}
     }
 
     user = storageUser
-    return {error: 1, msg: ''}
+    return {error: 0, msg: ''}
 }
 
-const handleDoRegister = (email, password, name) => {
+const handleRegister = (email, password, name) => {
     const newUser = {
         email,
         password,
@@ -92,5 +95,4 @@ const handleDoRegister = (email, password, name) => {
     user = JSON.parse(sessionStorage.getItem('user'))
     return {error: 0, msg: ''}
 }
-
 

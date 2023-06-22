@@ -335,7 +335,6 @@ com a cor do conteúdo que vem a seguir */
   height: 80px;  
 }
 
-
 /* Configuração do estilo da lista de footer */
 .list_of_footers{
   display: inline-flex;
@@ -384,25 +383,22 @@ com a cor do conteúdo que vem a seguir */
     margin: 15px 15px;
 }
 
-
 .css_personalizado_videos iframe{
     min-width: 300px;
     max-width: 300px;
     margin: 15px 15px;
 }
 
-
-
-
 .popup {
   position: fixed;
-  background-color: rgba(76, 76, 76, 0.8);
 
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 50Vw;
+  max-width: 70Vw;
+  min-height: auto;
+  border-radius: 10px;
 
   display: flex;
   align-items: center;
@@ -410,29 +406,30 @@ com a cor do conteúdo que vem a seguir */
   display: none;
 }
 
-.modal {
+.popup .myAccount {
   display: flex;
   flex-direction: column;
 
-  background-color: rgba(34, 34, 34, 0.988);
+  background-color: black;
 
   position: relative;
 
   color: white;
-  padding: 1em 0em;
+  padding: 2em 0em;
 
   width: 100%;
+  border-radius: 10px;
 
 }
 
-.modal img {
+.myAccount img {
   cursor: pointer;
 }
 
-.modal .closeIcon {
+.myAccount .closeIcon {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 25px;
 
   cursor: pointer;
 
@@ -447,13 +444,14 @@ com a cor do conteúdo que vem a seguir */
 .modalContent {
   display: flex;
 
-  justify-content: space-between;
-  padding: 1em 2em 0em 2em;
+  justify-content: space-around;
+  padding: 2em;
+  min-width: 50vw;
 }
 
 .profileIcon {
   max-width: 13em;
-  margin-left: 10em;
+
 }
 
 .infoBox {
@@ -471,7 +469,8 @@ com a cor do conteúdo que vem a seguir */
 }
 
 .personalInfo label {
-  width: 4.5em;
+  font-weight: 600;
+  min-width: 4em;
 }
 
 .personalInfo input {
@@ -491,6 +490,7 @@ com a cor do conteúdo que vem a seguir */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 10px;
   
   min-height: 50vh;
   min-width: 50vw;
@@ -511,6 +511,9 @@ com a cor do conteúdo que vem a seguir */
 
 .box-form button {
   padding: 1em 3em;
+  border: none;
+
+  border-radius: 10px;
 
   cursor: pointer;
 }
@@ -535,6 +538,7 @@ com a cor do conteúdo que vem a seguir */
   padding: 1em;
   margin: 1em 0em;
   width: 100%;
+  border-radius: 10px;
 
   font-weight: 600;
   line-height: 10px;
@@ -545,6 +549,8 @@ com a cor do conteúdo que vem a seguir */
   text-align: center;
   margin-top: 2em;
   font-size: .9em;
+
+  font-weight: 800;
 }
 
 .box-form-login {
