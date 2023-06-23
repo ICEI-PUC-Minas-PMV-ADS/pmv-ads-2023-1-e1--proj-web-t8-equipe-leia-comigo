@@ -7,24 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leia Comigo</title>
   <link rel="stylesheet" href="../assets/css/styles_artigos.css" />
-  <script  src="../assets/javascript/account.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="../assets/javascript/account.js"></script>
 </head>
 
 <body>
-
-
   <div class="body">
     <!-- nav -->
     <div id="nav" class="nav">
       <div class="main__menu">
-        <img class="nav__logo" src="../assets/img/Menu/logo_leia.png"  alt="" />
+        <img class="nav__logo" src="../assets/img/Menu/logo_leia.png" alt="" />
         <ul class="select_menu">
           <li class="components_li"><a href="../pages/index.html">Inicio</a></li>
-          <li class="components_li"><a href="#">Livros</a></li>
+          <li class="components_li"><a href="../pages/Books.html">Livros</a></li>
           <li class="components_li"><a href="../pages/Podcasts.html">Podcasts</a></li>
-          <li class="components_li"><a href="..//pages/Artigos.html">Artigos</a></li>
+          <li class="components_li"><a href="../pages/Artigos.html">Artigos</a></li>
           <li class="components_li"><a href="../pages/Reviews.html">Reviews</a></li>
-          <li class="components_li"><a href="#">Minha Lista</a></li>
         </ul>
       </div>
 
@@ -32,7 +31,7 @@
         <img class="nav__avatar" src="../assets/img/Menu/avatar.png" alt="" onmouseover="handleShowOptions()"
           onmouseout="handleUnshowOptions()" />
         <div class="box" onmouseover="handleShowOptions()" onmouseout="handleUnshowOptions()">
-          <div class="options" onclick="handleLoadMyAccount()">Minha Conta</div>
+          <div class="options" onclick="handleClickMyAccount()">Minha Conta</div>
 
           <div class="options" onclick="handleLoadLogin()">Entrar</div>
 
@@ -44,208 +43,269 @@
     <!-- header -->
     <header class="banner">
       <div class="banner__contents">
-        <h1 class="banner__title"></h1>
+        <h1 class="banner__title">Peter Pan</h1>
         <div class="banner__buttons">
-          <button class="banner__button">Assistir</button>
-          <button class="banner__button">Minha Lista</button>
+          <button class="banner__button">Ler</button>
         </div>
-        <h1>AS AVENTURAS DE TOM SAWYER, de Mark Twain - Resenha</h1>
+        <h1 class="banner__description">
+          A história de Peter Pan nos mostra diversos e importantes valores, como por exemplo a amizade e a lealdade. O
+          autor descreve muito bem a importância de brincar e de sonhar, mas também aborda temas como a descoberta da
+          criança sobre o crescimento, as mudanças e também sobre o amadurecimento e suas responsabilidades.
+        </h1>
       </div>
       <div class="banner--fadeBottom"></div>
     </header>
 
-    <!-- Aventura -->
-    <div class="row">
+    <div class="titulos">
       <h2>Aventura</h2>
-    
     </div>
 
-    <!-- Suspense -->
-    <div class="row">
+    <div class="carousel" id="adventures">
+    </div>
+    <div class="titulos">
+      <h2>Terror</h2>
+    </div>
+
+    <div class="carousel" id="horrors">
+    </div>
+
+    <div class="titulos">
       <h2>Suspense</h2>
     </div>
 
-    <!-- Romance -->
-    <div class="row">
+    <div class="carousel" id="thrillers">
+    </div>
+
+    <div class="titulos">
       <h2>Romance</h2>
-     
     </div>
 
-    <!-- Terror -->
-    <div class="row">
-     
+    <div class="carousel" id="romances">
     </div>
 
-    <div class="popup">
-      <div class="modal">
-        <div class="closeIcon" onclick="handleCloseMyAccount()">X</div>
-        <div class="modalTitle">Informações da conta</div>
-        <div class="modalContent">
-          <div class="infoBox">
-            <div class="personalInfo">
-              <label>Usuário: </label>
-              <input type="text" class="value" id="nome" disabled></input>
-            </div>
+  </div>
 
-            <div class="personalInfo">
-              <label>E-mail:</label>
-              <input type="email" class="value" id="gmail" disabled></input>
-            </div>
 
-            <div class="personalInfo">
-              <label>Senha:</label>
-              <input type="password" class="value" id="senha" disabled>
-                
-              </input>
-              <img class="eyeOff" src="../assets/img/images/eyeOff.svg" alt="">
-            </div>
-
+  <div class="popup">
+    <div class="myAccount">
+      <div class="closeIcon" onclick="handleCloseMyAccount()">X</div>
+      <div class="modalTitle">Informações da conta</div>
+      <div class="modalContent">
+        <div class="infoBox">
+          <div class="personalInfo">
+            <label>Usuário: </label>
+            <input type="text" class="value" id="nome" disabled></input>
           </div>
 
-          <img class="profileIcon" src="../assets/img/Menu/avatar.png" alt="">
+          <div class="personalInfo">
+            <label>E-mail:</label>
+            <input type="email" class="value" id="gmail" disabled></input>
+          </div>
+
+          <div class="personalInfo">
+            <label>Senha:</label>
+            <input type="password" class="value" id="senha" disabled>
+
+            </input>
+            <img class="eyeOff" src="../assets/img/images/eyeOff.svg" alt="">
+          </div>
+
         </div>
+
+        <img class="profileIcon" src="../assets/img/Menu/avatar.png" alt="">
       </div>
     </div>
+  </div>
 
-    <div class="box-form">
-      <div class="box-form-login">
-        <div class="closeForm" onclick="handleCloseForm()">X</div>
+  <div class="box-form">
+    <div class="box-form-login">
+      <div class="closeForm" onclick="handleCloseForm()">X</div>
 
-        <h2>Login</h2>
-        <form action="#" class="formulario">
-          <div class="inputForm">
-            <input type="mail" id="lEmail" placeholder="Preencha com seu e-mail" />
-          </div>
+      <h2>Login</h2>
+      <form action="#" class="formulario">
+        <div class="inputForm">
+          <input type="mail" id="lEmail" placeholder="Preencha com seu e-mail" />
+        </div>
 
-          <div class="inputForm">
-            <input type="password" id="lPassword" placeholder="Senha" />
-          </div>
-          <button onClick="handleLogin()">Entrar</button>
-          <div class="registre-se">Ainda não possui uma conta? <span class="register-link"
-              onclick="handleRegisterForm()">Registre-se</span></div>
-        </form>
-      </div>
-
-      <div class="box-form-registrar">
-        <div class="closeForm" onclick="handleCloseForm()">X</div>
-
-        <h2>Registrar</h2>
-        <form action="#">
-          <div class="inputForm">
-            <input type="name" id="rName" placeholder="Nome de usuário" />
-          </div>
-
-          <div class="inputForm">
-            <input type="mail" id="rEmail" placeholder="Preencha com seu e-mail" />
-          </div>
-
-
-          <div class="inputForm">
-            <input type="password" id="rPassword" placeholder="Senha" />
-          </div>
-          <button onclick="handleRegister()">Criar conta</button>
-          <div class="registre-se">Já possui uma conta? <span class="login-link"
-              onclick="handleLoginForm()">Logue</span></div>
-        </form>
-      </div>
-    </div>
-    <!-- Footer -->
-    <div class="main_footer">
-      <ul class="list_of_footers">
-        <li class="footer_list"><a href="#">Avisos legais</a></li>
-        <li class="footer_list"><a href="#">Termos de Uso</a></li>
-        <li class="footer_list"><a href="#">Entre em contato</a></li>
-      </ul>
+        <div class="inputForm">
+          <input type="password" id="lPassword" placeholder="Senha" />
+        </div>
+        <button onClick="handleCallLogin()">Entrar</button>
+        <div class="registre-se">Ainda não possui uma conta? <span class="register-link"
+            onclick="handleLoadRegisterForm()">Registre-se</span></div>
+      </form>
     </div>
 
-    <script src="../assets/javascript/scripts.js"></script>
-    <script>
-      // Lógica dos formulários de login e registrar
-      const registerLink = document.querySelector('.register-link')
-      const loginLink = document.querySelector('.login-link')
+    <div class="box-form-registrar">
+      <div class="closeForm" onclick="handleCloseForm()">X</div>
 
-      const login = document.querySelector('.box-form-login')
-      const register = document.querySelector('.box-form-registrar')
-      const form = document.querySelector('.box-form')
+      <h2>Registrar</h2>
+      <form action="#">
+        <div class="inputForm">
+          <input type="name" id="rName" placeholder="Nome de usuário" />
+        </div>
 
-      const inputPassword = document.querySelector('#senha')
+        <div class="inputForm">
+          <input type="mail" id="rEmail" placeholder="Preencha com seu e-mail" />
+        </div>
 
 
-      const handleRegisterForm = () => {
-        login.style.display = 'none'
-        register.style.display = "inline"
+        <div class="inputForm">
+          <input type="password" id="rPassword" placeholder="Senha" />
+        </div>
+        <button onclick="handleCallRegister()">Criar conta</button>
+        <div class="registre-se">Já possui uma conta? <span class="login-link" onclick="handleLoadLoginForm()">Logue</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST BOOSTRAP -->
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="../assets/img/images/warningIcon.png" class="rounded me-2" width="30px" height="30px">
+        <strong class="me-auto">Aviso</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="main_footer">
+    <ul class="list_of_footers">
+      <li class="footer_list"><a href="#">Avisos legais</a></li>
+      <li class="footer_list"><a href="#">Termos de Uso</a></li>
+      <li class="footer_list"><a href="#">Entre em contato</a></li>
+    </ul>
+  </div>
+
+  <script src="../assets/javascript/scripts.js"></script>
+  <script src="../assets/javascript/artigos.js"></script>
+  <script>
+     // VARIÁVEIS REFERENTES AOS FORMULÁRIOS DA TELA
+     const registerLink = document.querySelector('.register-link')
+    const loginLink = document.querySelector('.login-link')
+
+    const loginForm = document.querySelector('.box-form-login')
+    const registerForm = document.querySelector('.box-form-registrar')
+    const formGeral = document.querySelector('.box-form')
+
+    const inputPassword = document.querySelector('#senha')
+
+    // VARIÁVEL PRA CONTROLE DO TOAST
+    const toast = document.getElementById('liveToast')
+    const toastBody = toast.querySelector('.toast-body')
+
+    const handleClickMyAccount = () => {
+      const response = handleLoadMyAccount()
+
+      if (response.error !== 0) {
+        toastBody.innerHTML = response.msg
+        bootstrap.Toast.getOrCreateInstance(toast).show()
+        return
+      }
+    }
+
+    const clearInputs = () => {
+      document.querySelector('#lEmail').value = ''
+      document.querySelector('#lPassword').value = ''
+
+      document.querySelector('#rEmail').value = ''
+      document.querySelector('#rName').value = ''
+      document.querySelector('#rPassword').value = ''
+    }
+
+    const handleCallLogin = () => {
+      const email = document.querySelector('#lEmail')
+      const senha = document.querySelector('#lPassword')
+
+      if (!email.value || !senha.value) {
+        toastBody.innerHTML = 'Preencha todos os campos para prosseguir!'
+        bootstrap.Toast.getOrCreateInstance(toast).show()
+        return
+      }
+      const response = handleLogin(email.value, senha.value)
+
+      if (response.error !== 0) {
+        toastBody.innerHTML = response.msg
+        bootstrap.Toast.getOrCreateInstance(toast).show()
+        return
       }
 
-      const handleLoginForm = () => {
-        login.style.display = 'inline'
-        register.style.display = 'none'
+      formGeral.style.display = 'none'
+      clearInputs()
+    }
+
+    const handleCallRegister = () => {
+      const email = document.querySelector('#rEmail')
+      const name = document.querySelector('#rName')
+      const password = document.querySelector('#rPassword')
+
+      if (!email.value || !name.value || !password.value) {
+        toastBody.innerHTML = 'Preencha todas as informações para prosseguir!'
+        bootstrap.Toast.getOrCreateInstance(toast).show()
+        return
+      }
+      const response = handleRegister(email.value, password.value, name.value)
+
+      if (response.error !== 0) {
+        toastBody.innerHTML = response.msg
+        bootstrap.Toast.getOrCreateInstance(toast).show()
+        return
       }
 
-      const handleLogin = () => {
-        const email = document.querySelector('#lEmail')
-        const senha = document.querySelector('#lPassword  ')
+      formGeral.style.display = 'none'
+      registerForm.style.display = 'none'
+      loginForm.style.display = 'block'
 
-        if (!email.value || !senha.value) {
-          alert('Preencha todos os campos para prosseguir')
-          return
-        }
-        const result = handleDoLogin(email.value, senha.value)
+      clearInputs()
+    }
 
-        if (result.error !== 0) {
-          alert(result.msg)
-          return
-        }
+    const handleLoadRegisterForm = () => {
+      loginForm.style.display = 'none'
+      registerForm.style.display = "inline"
 
-        form.style.display = 'none'
+      clearInputs()
+    }
 
-      }
+    const handleLoadLoginForm = () => {
+      loginForm.style.display = 'inline'
+      registerForm.style.display = 'none'
 
-      const handleRegister = () => {
-        const email = document.querySelector('#rName')
-        const name = document.querySelector('#rName')
-        const password = document.querySelector('#rPassword')
+      clearInputs()
+    }
 
-        if (!email.value || !name.value || !password.value) {
-          alert('Preencha todas as informações para prosseguir')
-          return
-        }
+    const handleCloseForm = () => {
+      formGeral.style.display = 'none'
+      registerForm.style.display = 'none'
+      loginForm.style.display = 'block'
 
-        const result = handleDoRegister(email.value, password.value, name.value)
+      clearInputs()
+    }
 
-        if (result.error !== 0) {
-          alert(result.msg)
-          return
-        }
+    document.querySelector('.eyeOff').addEventListener('click', () => {
+      const type = inputPassword.getAttribute('type') == 'password' ? 'text' : 'password'
+      inputPassword.setAttribute('type', type)
 
-        form.style.display = 'none'
-        register.style.display = 'none'
-        login.style.display = 'block'
-      }
+      const img = document.querySelector('.eyeOff')
 
-      document.querySelector('.eyeOff').addEventListener('click', () => {
-        const type = inputPassword.getAttribute('type') == 'password' ? 'text' : 'password'
-        inputPassword.setAttribute('type', type)
+      type == 'text'
+        ? img.src = '../assets/img/images/eyeOn.svg'
+        : img.src = '../assets/img/images/eyeOff.svg'
+    })
 
-        const img = document.querySelector('.eyeOff')
+    document.querySelector('.closeForm').addEventListener('click', () => {
+      formGeral.style.display = 'none'
+    })
 
-        type == 'text'
-          ? img.src = '../assets/img/images/eyeOn.svg'
-          : img.src = '../assets/img/images/eyeOff.svg'
-
-      })
-
-      document.querySelector('.closeForm').addEventListener('click', () => {
-        form.style.display = 'none'
-      })
-
-      const handleCloseForm = () => {
-        form.style.display = 'none'
-        register.style.display = 'none'
-        login.style.display = 'block'
-      }
-
-    </script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
-

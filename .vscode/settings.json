@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo"
+  "liveServer.settings.multiRootWorkspaceName": "pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }

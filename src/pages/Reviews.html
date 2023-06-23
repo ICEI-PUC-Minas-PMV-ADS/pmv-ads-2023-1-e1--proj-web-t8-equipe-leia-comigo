@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leia Comigo</title>
   <link rel="stylesheet" href="../assets/css/styles_reviews.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="../assets/javascript/account.js"></script>
 </head>
 
@@ -29,7 +31,7 @@
         <img class="nav__avatar" src="../assets/img/Menu/avatar.png" alt="" onmouseover="handleShowOptions()"
           onmouseout="handleUnshowOptions()" />
         <div class="box" onmouseover="handleShowOptions()" onmouseout="handleUnshowOptions()">
-          <div class="options" onclick="handleLoadMyAccount()">Minha Conta</div>
+          <div class="options" onclick="handleClickMyAccount()">Minha Conta</div>
 
           <div class="options" onclick="handleLoadLogin()">Entrar</div>
 
@@ -80,19 +82,19 @@
   </div>
 
   <div class="popup">
-    <div class="modal">
+    <div class="myAccount">
       <div class="closeIcon" onclick="handleCloseMyAccount()">X</div>
       <div class="modalTitle">Informações da conta</div>
       <div class="modalContent">
         <div class="infoBox">
           <div class="personalInfo">
             <label>Usuário: </label>
-            <input type="text" class="value" id="nome" disabled></input>
+            <input type="text" class="value" id="nome" disabled />
           </div>
 
           <div class="personalInfo">
             <label>E-mail:</label>
-            <input type="email" class="value" id="gmail" disabled></input>
+            <input type="email" class="value" id="gmail" disabled />
           </div>
 
           <div class="personalInfo">
@@ -123,9 +125,9 @@
         <div class="inputForm">
           <input type="password" id="lPassword" placeholder="Senha" />
         </div>
-        <button onClick="handleLogin()">Entrar</button>
+        <button onClick="handleCallLogin()">Entrar</button>
         <div class="registre-se">Ainda não possui uma conta? <span class="register-link"
-            onclick="handleRegisterForm()">Registre-se</span></div>
+            onclick="handleLoadRegisterForm()">Registre-se</span></div>
       </form>
     </div>
 
@@ -146,12 +148,27 @@
         <div class="inputForm">
           <input type="password" id="rPassword" placeholder="Senha" />
         </div>
-        <button onclick="handleRegister()">Criar conta</button>
-        <div class="registre-se">Já possui uma conta? <span class="login-link" onclick="handleLoginForm()">Logue</span>
+        <button onclick="handleCallRegister()">Criar conta</button>
+        <div class="registre-se">Já possui uma conta? <span class="login-link" onclick="handleLoadLoginForm()">Logue</span>
         </div>
       </form>
     </div>
   </div>
+
+  <!-- TOAST BOOSTRAP -->
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="../assets/img/images/warningIcon.png" class="rounded me-2" width="30px" height="30px">
+        <strong class="me-auto">Aviso</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <div class="main_footer">
     <ul class="list_of_footers">
@@ -163,66 +180,105 @@
   <script src="../assets/javascript/scripts.js"></script>
   <script src="../assets/javascript/reviews.js"></script>
   <script>
-    // Lógica dos formulários de login e registrar
+    // VARIÁVEIS REFERENTES AOS FORMULÁRIOS DA TELA
     const registerLink = document.querySelector('.register-link')
     const loginLink = document.querySelector('.login-link')
 
-    const login = document.querySelector('.box-form-login')
-    const register = document.querySelector('.box-form-registrar')
-    const form = document.querySelector('.box-form')
+    const loginForm = document.querySelector('.box-form-login')
+    const registerForm = document.querySelector('.box-form-registrar')
+    const formGeral = document.querySelector('.box-form')
 
     const inputPassword = document.querySelector('#senha')
 
+    // VARIÁVEL PRA CONTROLE DO TOAST
+    const toast = document.getElementById('liveToast')
+    const toastBody = toast.querySelector('.toast-body')
 
-    const handleRegisterForm = () => {
-      login.style.display = 'none'
-      register.style.display = "inline"
+    const handleClickMyAccount = () => {
+      const response = handleLoadMyAccount()
+
+      if (response.error !== 0) {
+        toastBody.innerHTML = response.msg
+        bootstrap.Toast.getOrCreateInstance(toast).show()
+        return
+      }
     }
 
-    const handleLoginForm = () => {
-      login.style.display = 'inline'
-      register.style.display = 'none'
+    const clearInputs = () => {
+      document.querySelector('#lEmail').value = ''
+      document.querySelector('#lPassword').value = ''
+
+      document.querySelector('#rEmail').value = ''
+      document.querySelector('#rName').value = ''
+      document.querySelector('#rPassword').value = ''
     }
 
-    const handleLogin = () => {
+    const handleCallLogin = () => {
       const email = document.querySelector('#lEmail')
-      const senha = document.querySelector('#lPassword  ')
+      const senha = document.querySelector('#lPassword')
 
       if (!email.value || !senha.value) {
-        alert('Preencha todos os campos para prosseguir')
+        toastBody.innerHTML = 'Preencha todos os campos para prosseguir!'
+        bootstrap.Toast.getOrCreateInstance(toast).show()
         return
       }
-      const result = handleDoLogin(email.value, senha.value)
+      const response = handleLogin(email.value, senha.value)
 
-      if (result.error !== 0) {
-        alert(result.msg)
+      if (response.error !== 0) {
+        toastBody.innerHTML = response.msg
+        bootstrap.Toast.getOrCreateInstance(toast).show()
         return
       }
 
-      form.style.display = 'none'
-
+      formGeral.style.display = 'none'
+      clearInputs()
     }
 
-    const handleRegister = () => {
+    const handleCallRegister = () => {
       const email = document.querySelector('#rEmail')
       const name = document.querySelector('#rName')
       const password = document.querySelector('#rPassword')
 
       if (!email.value || !name.value || !password.value) {
-        alert('Preencha todas as informações para prosseguir')
+        toastBody.innerHTML = 'Preencha todas as informações para prosseguir!'
+        bootstrap.Toast.getOrCreateInstance(toast).show()
+        return
+      }
+      const response = handleRegister(email.value, password.value, name.value)
+
+      if (response.error !== 0) {
+        toastBody.innerHTML = response.msg
+        bootstrap.Toast.getOrCreateInstance(toast).show()
         return
       }
 
-      const result = handleDoRegister(email.value, password.value, name.value)
+      formGeral.style.display = 'none'
+      registerForm.style.display = 'none'
+      loginForm.style.display = 'block'
 
-      if (result.error !== 0) {
-        alert(result.msg)
-        return
-      }
+      clearInputs()
+    }
 
-      form.style.display = 'none'
-      register.style.display = 'none'
-      login.style.display = 'block'
+    const handleLoadRegisterForm = () => {
+      loginForm.style.display = 'none'
+      registerForm.style.display = "inline"
+
+      clearInputs()
+    }
+
+    const handleLoadLoginForm = () => {
+      loginForm.style.display = 'inline'
+      registerForm.style.display = 'none'
+
+      clearInputs()
+    }
+
+    const handleCloseForm = () => {
+      formGeral.style.display = 'none'
+      registerForm.style.display = 'none'
+      loginForm.style.display = 'block'
+
+      clearInputs()
     }
 
     document.querySelector('.eyeOff').addEventListener('click', () => {
@@ -234,20 +290,16 @@
       type == 'text'
         ? img.src = '../assets/img/images/eyeOn.svg'
         : img.src = '../assets/img/images/eyeOff.svg'
-
     })
 
     document.querySelector('.closeForm').addEventListener('click', () => {
-      form.style.display = 'none'
+      formGeral.style.display = 'none'
     })
 
-    const handleCloseForm = () => {
-      form.style.display = 'none'
-      register.style.display = 'none'
-      login.style.display = 'block'
-    }
-
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

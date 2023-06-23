@@ -12,20 +12,20 @@
   <script src="../assets/javascript/account.js"></script>
 </head>
 
-  <body>
-    <div class="body">
-      <!-- nav -->
-      <div id="nav" class="nav">
-        <div class="main__menu">
-          <img class="nav__logo" src="../assets/img/Menu/logo_leia.png" alt="" />
-          <ul class="select_menu">
-            <li class="components_li"><a href="../pages/index.html">Inicio</a></li>
-            <li class="components_li"><a href="../pages/Books.html">Livros</a></li>
-            <li class="components_li"><a href="../pages/Podcasts.html">Podcasts</a></li>
-            <li class="components_li"><a href="../pages/Artigos.html">Artigos</a></li>
-            <li class="components_li"><a href="../pages/Reviews.html">Reviews</a></li>
-          </ul>
-        </div>
+<body>
+  <div class="body">
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <div class="main__menu">
+        <img class="nav__logo" src="../assets/img/Menu/logo_leia.png" alt="" />
+        <ul class="select_menu">
+          <li class="components_li"><a href="../pages/index.html">Inicio</a></li>
+          <li class="components_li"><a href="../pages/Books.html">Livros</a></li>
+          <li class="components_li"><a href="../pages/Podcasts.html">Podcasts</a></li>
+          <li class="components_li"><a href="../pages/Artigos.html">Artigos</a></li>
+          <li class="components_li"><a href="../pages/Reviews.html">Reviews</a></li>
+        </ul>
+      </div>
 
       <div class="accountGroup">
         <img class="nav__avatar" src="../assets/img/Menu/avatar.png" alt="" onmouseover="handleShowOptions()"
@@ -82,7 +82,7 @@
     <div class="carousel" id="reviews">
     </div>
   </div>
- 
+
   <div class="popup">
     <div class="myAccount">
       <div class="closeIcon" onclick="handleCloseMyAccount()">X</div>
@@ -91,12 +91,12 @@
         <div class="infoBox">
           <div class="personalInfo">
             <label>Usuário: </label>
-            <input type="text" class="value" id="nome" disabled></input>
+            <input type="text" class="value" id="nome" disabled />
           </div>
 
           <div class="personalInfo">
             <label>E-mail:</label>
-            <input type="email" class="value" id="gmail" disabled></input>
+            <input type="email" class="value" id="gmail" disabled />
           </div>
 
           <div class="personalInfo">
@@ -112,7 +112,7 @@
       </div>
     </div>
   </div>
- 
+
   <div class="box-form">
     <div class="box-form-login">
       <div class="closeForm" onclick="handleCloseForm()">X</div>
@@ -149,7 +149,8 @@
           <input type="password" id="rPassword" placeholder="Senha" />
         </div>
         <button onclick="handleCallRegister()">Criar conta</button>
-        <div class="registre-se">Já possui uma conta? <span class="login-link" onclick="handleLoadLoginForm()">Logue</span>
+        <div class="registre-se">Já possui uma conta? <span class="login-link"
+            onclick="handleLoadLoginForm()">Logue</span>
         </div>
       </form>
     </div>
@@ -164,10 +165,11 @@
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
       <div class="toast-body">
-        
+
       </div>
     </div>
   </div>
+  
   <!-- Footer -->
   <div class="main_footer">
     <ul class="list_of_footers">
@@ -216,7 +218,7 @@
     const handleCallLogin = () => {
       const email = document.querySelector('#lEmail')
       const senha = document.querySelector('#lPassword')
-      
+
       if (!email.value || !senha.value) {
         toastBody.innerHTML = 'Preencha todos os campos para prosseguir!'
         bootstrap.Toast.getOrCreateInstance(toast).show()
@@ -292,11 +294,10 @@
         : img.src = '../assets/img/images/eyeOff.svg'
     })
 
-  
-
     document.querySelector('.closeForm').addEventListener('click', () => {
       formGeral.style.display = 'none'
     })
+
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

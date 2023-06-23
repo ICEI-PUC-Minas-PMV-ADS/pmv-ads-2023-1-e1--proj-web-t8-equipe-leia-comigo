@@ -22,18 +22,18 @@
 }
 
 /* Configuração do tamanho do menu */
-.select_menu{
+.select_menu {
   width: 650px;
   object-fit: contain;
 }
 
 /* Configuração do estilo da lista */
-.components_li{
+.components_li {
   display: inline-flex;
 }
 
 /* Configuraçções da lista */
-.components_li a{
+.components_li a {
   list-style: none;
   color: #fff;
   text-decoration: none;
@@ -43,7 +43,7 @@
 
 /* Configuração de quando a lista for coberta pelo mouse */
 
-.components_li a:hover{
+.components_li a:hover {
   background: rgb(246, 246, 246);
   border-radius: 10px;
   color: #333;
@@ -64,7 +64,6 @@
   width: 30px;
   object-fit: contain;
   cursor: pointer;
-
 }
 
 /*CONFIGURAÇÃO REFERENTE A POPUP "MINHA CONTA" */
@@ -74,18 +73,17 @@
 
   text-align: center;
   background-color: rgb(215, 215, 215);
-  
+
   padding: 1em 1em;
   border-radius: 1px;
   display: none;
 }
 
 .box .options {
-  font-size: .9em;
-  margin: .5em 0em;
+  font-size: 0.9em;
+  margin: 0.5em 0em;
 
   font-weight: 500;
-
 }
 
 .box .options:hover {
@@ -97,26 +95,29 @@
 
 /* Configuranção do menu */
 .nav {
-  position: fixed; 
+  position: fixed;
   top: 0;
-  width: 100%; 
+  width: 100%;
   display: flex;
   background-color: transparent;
-  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 10%,transparent);
-  justify-content: space-between; 
-  padding: 20px; 
-  z-index: 1; 
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 10%,
+    transparent
+  );
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 1;
 }
 
 /* Configuração do espaçamento para o menu */
-.main__menu{
+.main__menu {
   display: flex;
 }
 
 /* Configuração da imagem de fundo do banner */
 .banner {
-
-  background-image: url('../img/Destaques/peterpan.png');
+  background-image: url("../img/Destaques/peterpan.png");
   background-size: cover;
   background-position: center center;
   color: white;
@@ -155,14 +156,14 @@
   cursor: pointer;
   color: #fff;
   outline: none;
-  border: none; 
+  border: none;
   font-weight: 700;
   border-radius: 0.2vw;
-  padding-left: 2rem; 
+  padding-left: 2rem;
   padding-right: 2rem;
-  margin-right: 1rem; 
-  padding-top: 0.5rem; 
-  padding-bottom: 0.5rem; 
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: rgba(51, 51, 51, 0.5);
 }
 
@@ -177,17 +178,22 @@ com a cor do conteúdo que vem a seguir */
 .banner--fadeBottom {
   margin-top: 145px;
   height: 7.4rem;
-  background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
 }
 
-.titulos{
+.titulos {
   width: 100%;
   text-align: start;
   padding: 20px;
   color: white;
 }
 
-.carousel{
+.carousel {
   padding: 0;
   height: 250px;
   width: 90%;
@@ -197,12 +203,12 @@ com a cor do conteúdo que vem a seguir */
 }
 
 .carousel .switchLeft,
-.carousel .switchRight{
+.carousel .switchRight {
   color: white;
   text-shadow: 2px 2px 5px black;
   font-weight: bold;
   height: 100%;
-  min-width: 25px;  
+  min-width: 25px;
   line-height: 250px;
   font-size: 45px;
   text-align: center;
@@ -212,18 +218,17 @@ com a cor do conteúdo que vem a seguir */
   z-index: 1;
 }
 
-.carousel .switchLeft{
+.carousel .switchLeft {
   position: absolute;
   left: -20px;
 }
 
-.carousel .switchRight{
+.carousel .switchRight {
   position: absolute;
   right: -20px;
 }
 
-
-.carousel-box{
+.carousel-box {
   min-height: 250px;
   width: auto;
   overflow: hidden;
@@ -235,11 +240,11 @@ com a cor do conteúdo que vem a seguir */
   align-items: center;
 }
 
-.carousel a{
+.carousel a {
   user-select: none;
 }
 
-.row__posters img{
+.row__posters img {
   min-width: 147px;
   max-width: 147px;
   height: 200px;
@@ -250,8 +255,7 @@ com a cor do conteúdo que vem a seguir */
   z-index: 2;
 }
 
-
-.row__posters iframe{
+.row__posters iframe {
   min-width: 147px;
   max-width: 147px;
   height: 200px;
@@ -261,7 +265,6 @@ com a cor do conteúdo que vem a seguir */
   cursor: pointer;
   z-index: 2;
 }
-
 
 .css_personalizado_videos {
   min-width: 300px;
@@ -269,29 +272,27 @@ com a cor do conteúdo que vem a seguir */
   margin: 15px 15px;
 }
 
-.css_personalizado_videos img{
+.css_personalizado_videos img {
   min-width: 300px;
   max-width: 300px;
 }
 
 .carousel-box#podcast h2,
-.carousel-box#review h2{
+.carousel-box#review h2 {
   min-width: 300px;
   max-width: 300px;
   margin-left: 5px;
-
 }
 
-
-.carousel#reviews{
+.carousel#reviews {
   height: 300px;
 }
 
 .carousel-box#podcast h2:hover,
-.carousel-box#review h2:hover{
+.carousel-box#review h2:hover {
   overflow: visible;
   text-overflow: unset;
-  white-space:normal;
+  white-space: normal;
   margin-left: 5px;
 }
 
@@ -299,12 +300,11 @@ com a cor do conteúdo que vem a seguir */
   transform: scale(1.1);
 }
 
-
 .row__posters:hover {
   transform: scale(1.1);
 }
 
-.title_description{
+.title_description {
   font-size: medium;
   margin-right: 10px;
   margin-left: 20px;
@@ -316,27 +316,26 @@ com a cor do conteúdo que vem a seguir */
   white-space: nowrap;
 }
 
-.title_description:hover{
+.title_description:hover {
   overflow: visible;
   text-overflow: unset;
-  white-space:normal;
+  white-space: normal;
 }
 /* cor de fundo preta */
 .nav__black {
   background-color: #111;
 }
 
-
 /* Criando o conteiner do footer */
 .main_footer {
   display: flex;
-  width: 100%; 
+  width: 100%;
   background-color: #fff;
-  height: 80px;  
+  height: 80px;
 }
 
 /* Configuração do estilo da lista de footer */
-.list_of_footers{
+.list_of_footers {
   display: inline-flex;
   list-style: none;
   width: 100%;
@@ -349,7 +348,6 @@ com a cor do conteúdo que vem a seguir */
   text-align: center;
   color: #000;
   text-decoration: none;
-
 }
 
 @media (max-width: 500px) {
@@ -376,17 +374,16 @@ com a cor do conteúdo que vem a seguir */
   }
 }
 
-
-.css_personalizado_videos iframe{
-    min-width: 300px;
-    max-width: 300px;
-    margin: 15px 15px;
+.css_personalizado_videos iframe {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 15px 15px;
 }
 
-.css_personalizado_videos iframe{
-    min-width: 300px;
-    max-width: 300px;
-    margin: 15px 15px;
+.css_personalizado_videos iframe {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 15px 15px;
 }
 
 .popup {
@@ -396,7 +393,7 @@ com a cor do conteúdo que vem a seguir */
   top: 50%;
   transform: translate(-50%, -50%);
 
-  max-width: 70Vw;
+  max-width: 70vw;
   min-height: auto;
   border-radius: 10px;
 
@@ -419,7 +416,6 @@ com a cor do conteúdo que vem a seguir */
 
   width: 100%;
   border-radius: 10px;
-
 }
 
 .myAccount img {
@@ -451,7 +447,6 @@ com a cor do conteúdo que vem a seguir */
 
 .profileIcon {
   max-width: 13em;
-
 }
 
 .infoBox {
@@ -464,7 +459,7 @@ com a cor do conteúdo que vem a seguir */
 .personalInfo {
   display: flex;
   flex-direction: row;
-  margin: .8em 0em;
+  margin: 0.8em 0em;
   align-items: center;
 }
 
@@ -478,10 +473,11 @@ com a cor do conteúdo que vem a seguir */
   outline: none;
   background-color: transparent;
 
-  color:rgba(152, 152, 152, 0.9);
+  color: rgba(152, 152, 152, 0.9);
 
   font-size: 1em;
   font-weight: 800;
+  width: 100%; 
 }
 
 .box-form {
@@ -491,7 +487,7 @@ com a cor do conteúdo que vem a seguir */
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  
+
   min-height: 50vh;
   min-width: 50vw;
   background: black;
@@ -548,19 +544,18 @@ com a cor do conteúdo que vem a seguir */
   color: #333;
   text-align: center;
   margin-top: 2em;
-  font-size: .9em;
+  font-size: 0.9em;
 
   font-weight: 800;
 }
 
 .box-form-login {
-  display: block;    
+  display: block;
 }
-
 
 .box-form-registrar {
   display: none;
-} 
+}
 
 .register-link {
   color: white;
