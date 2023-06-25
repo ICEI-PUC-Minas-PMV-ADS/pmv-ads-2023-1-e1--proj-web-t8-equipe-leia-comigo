@@ -27,101 +27,97 @@ var pageObjects = [
 
 var adventuresObject = [
   {
-    id: "adventures_0",
-    type: "adventure",
-    image: "../assets/img/Livros/a_carta_roubada.png",
-    description: "A Carta Roubada - Edgar Allan Poe",
-    content: "https://drive.google.com/file/d/1gidrZdfZKbLa9K5s0CoiitdhOB2ZPJ1v/preview"
+    "id": "adventures_0",
+    "type": "adventures",
+    "image": "https://www.lpm.com.br/livros/imagens/carta_roubada__a_9788525412775_9788525424693_hd.jpg",
+    "description": "A Carta Roubada - Edgar Allan Poe",
+    "content": "https://drive.google.com/file/d/1Ei63v5JSx0cYqY6DZhxhcZHjwZot3LuE/preview"
   },
   {
-    id: "adventures_1",
-    type: "adventure",
-    image: "../assets/img/Livros/a_ilha_do_teousoro.png",
-    description: "A Ilha do Tesouro - Robert Louis Stevenson",
-    content:
-      "(Resumo de 'A Ilha do Tesouro') Junte-se ao jovem Jim Hawkins em uma aventura perigosa em busca do tesouro escondido do Capitão Flint. Com uma tripulação de piratas audaciosos, mares traiçoeiros e um notório camarada de perna de pau, Robert Louis Stevenson tece um conto inesquecível de coragem, traição e a atração das riquezas enterradas.",
+    "id": "adventures_1",
+    "type": "adventures",
+    "image": "https://trechos.org/wp-content/uploads/2022/08/Livro-A-Ilha-do-Tesouro-por-Robert-Louis-Stevenson.jpg",
+    "description": "A Ilha do Tesouro - Robert Louis Stevenson",
+    "content": "https://drive.google.com/file/d/1hjIAnE5S_Ta5d1FJNwKOiZBxwm-bjGfz/preview"
   },
   {
-    id: "adventures_2",
-    type: "adventure",
-    image: "../assets/img/Livros/a_ilustre_casa_de_ramires.png",
-    description: "A Ilustre Casa de Ramires - Eça de Queiroz",
-    content:
-      "(Resumo de 'A Ilustre Casa de Ramires') Mergulhe no mundo da nobreza portuguesa enquanto Eça de Queiroz apresenta uma história cativante de amor, honra e transformação pessoal. Acompanhe a jornada de Gonçalo Mendes Ramires, um herói romântico dividido entre a tradição e a modernidade, enquanto ele navega pelas complexidades de sua ilustre família e da sociedade.",
+    "id": "adventures_2",
+    "type": "adventures",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/519IHxbSNyL.jpg",
+    "description": "A Ilustre Casa de Ramires - Eça de Queiroz",
+    "content": "https://drive.google.com/file/d/1IgoBTPh2lo2gskb_sk6LPFQ6UUCyw0NF/preview"
   },
   {
-    id: "adventures_3",
-    type: "adventure",
-    image: "../assets/img/Livros/a_recompensa_do_soldado.png",
-    description: "A Recompensa do Soldado - William Faulkner",
-    content:
-      "(Resumo de 'A Recompensa do Soldado') Nesse conto comovente ambientado no pós-guerra, William Faulkner explora as cicatrizes emocionais e dilemas morais enfrentados pelos soldados que retornam para casa. Com descrições vívidas e reflexões profundas, a história mergulha nas consequências da guerra e na busca pela redenção em um mundo para sempre transformado.",
+    "id": "adventures_3",
+    "type": "adventures",
+    "image": "https://www.baixelivros.com.br/media/2021/02/cancao-do-exilio.jpg",
+    "description": "Canção do Exílio - Gonçalves Dias",
+    "content": "https://drive.google.com/file/d/1kepxBj__USBs3JOpy81CFXLJKwy7qZAT/preview"
   },
   {
-    id: "adventures_4",
-    type: "adventure",
-    image: "../assets/img/Livros/cancao_do_exilio.png",
-    description: "Canção do Exílio - Gonçalves Dias",
-    content:
-      "(Resumo de 'Canção do Exílio') Viaje pelas paisagens exuberantes e pelas memórias nostálgicas de Gonçalves Dias, um dos maiores poetas brasileiros. Em sua obra icônica, ele celebra a terra natal e expressa a saudade dos lugares amados, criando um hino à identidade nacional e ao apego afetivo à pátria distante.",
+    "id": "adventures_4",
+    "type": "adventures",
+    "image": "https://livroecafe.com/wp-content/uploads/2022/12/charneca-em-flor.jpg",
+    "description": "Charneca em Flor - Florbela Espanca",
+    "content": "https://drive.google.com/file/d/1QbhzPWUmEOZwNIuaTEnv6jM01oJASebG/preview"
   },
   {
-    id: "adventures_5",
-    type: "adventure",
-    image: "../assets/img/Livros/charneca_em_flor.png",
-    description: "Charneca em Flor - Florbela Espanca",
-    content:
-      "(Resumo de 'Charneca em Flor') Adentre os versos sentimentais de Florbela Espanca enquanto ela tece uma tapeçaria de amor, paixão e introspecção. Com imagens comoventes e emoções cruas, essa coleção de poesias explora as complexidades das relações humanas, a fragilidade da existência e a busca de significado em um mundo repleto de beleza e tristeza.",
+    "id": "adventures_5",
+    "type": "adventures",
+    "image": "https://kbimages1-a.akamaihd.net/fe6e39d5-3ad6-475f-b235-7d09cc194a3e/1200/1200/False/eu-e-outras-poesias.jpg",
+    "description": "Eu e outras poesias - Augusto dos Anjos",
+    "content": "https://drive.google.com/file/d/1-JrUqt6hDwz_7n00dhtowzb9Oz3GIfmP/preview"
   },
   {
-    id: "adventures_6",
-    type: "adventure",
-    image: "../assets/img/Livros/eu_e_outras_poesias.png",
-    description: "Eu e outras poesias - Augusto dos Anjos",
-    content:
-      "(Resumo de 'Eu e outras poesias') Augusto dos Anjos convida os leitores a uma jornada pelas profundezas da psique humana, explorando temas de angústia existencial, mortalidade e a dicotomia da vida e da morte. Com seu estilo único e imagens assombrosas, essa coleção de poesias desafia noções convencionais e provoca reflexões sobre as complexidades da existência.",
+    "id": "adventures_6",
+    "type": "adventures",
+    "image": "https://www.baixelivros.com.br/media/2020/03/o-cortico.jpg",
+    "description": "O Cortiço - Aluísio Azevedo",
+    "content": "https://drive.google.com/file/d/1F4Vrq5-y2BHoIA_elfTCZAbBJejBcSvE/preview"
   },
   {
-    id: "adventures_8",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_7",
+    "type": "adventures",
+    "image": "https://m.media-amazon.com/images/I/815fFEIezPS._AC_UF1000,1000_QL80_.jpg",
+    "description": "O Tronco do Ipu - José de Alencar",
+    "content": "https://drive.google.com/file/d/1qrVz6hqAgB7u-u9sgqB1rVrIkERu04HC/preview"
   },
   {
-    id: "adventures_9",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_8",
+    "type": "adventures",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41hjFyBSP+L.jpg",
+    "description": "As Minas de Prata - José de Alencar",
+    "content": "https://drive.google.com/file/d/1VXYspoG9dqugwGGFh6sDzqTqCzq6jki6/preview"
   },
   {
-    id: "adventures_10",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_9",
+    "type": "adventures",
+    "image": "https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2016/10/viagens-na-minha-terra4.jpg",
+    "description": "Viagens na Minha Terra - Almeida Garrett",
+    "content": "https://drive.google.com/file/d/1GAi9q2w-rAZOy9O7EsWYNWRUPiB9AfxI/preview"
   },
   {
-    id: "adventures_11",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_10",
+    "type": "adventures",
+    "image": "https://2.bp.blogspot.com/-VggcG9SGvOQ/UlDCh9Bg56I/AAAAAAAAAxM/fP_9FQayxRQ/s1600/guarani-shared.jpg",
+    "description": "O Guarani - José de Alencar",
+    "content": "https://drive.google.com/file/d/1OlocUoC1CxqHxWmkU-I_N4SwLeEZgYzg/preview"
   },
   {
-    id: "adventures_12",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_11",
+    "type": "adventures",
+    "image": "https://tocalivros.s3.amazonaws.com/images/audiolivros/200/a/s/as-aventuras-de-tom-sawyer-mark-twain-1048369.jpg",
+    "description": "As Aventuras de Tom Sawyer - Mark Twain",
+    "content": "https://drive.google.com/file/d/164jhsZYhxxePmB5-aHIDMU4OGy5Egd0l/preview"
   },
-];
+  {
+    "id": "adventures_12",
+    "type": "adventures",
+    "image": "https://m.media-amazon.com/images/I/71UKvlLXALL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A Volta ao Mundo em 80 Dias - Júlio Verne",
+    "content": "https://drive.google.com/file/d/1x8NtxCmKx8dC0vD2SMpHN67BTtgKxIms/preview"
+  }
+]
 
 var horrorsObject = [
   {
