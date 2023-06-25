@@ -8,10 +8,10 @@ Os elementos do projeto são criados em várias plataformas e a tabela a seguir 
 
 |AMBIENTE| PLATAFORMA | LINK DE ACESSO |
 |--------------------|------------------------------------|----------------------------------------|
-|Repositório de código fonte |GitHub |  |
-|Documentos do projeto |GitHub |GitHub Leia Comigo |
-|Projeto de Interface e Wireframes |Figma |Figma Leia Comigo |
-|Gerenciamento do Projeto |GitHub Project |GitHub Leia Comigo - Project |
+|Repositório de código fonte |GitHub | [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo) |
+|Documentos do projeto |GitHub |[GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-equipe-leia-comigo) |
+|Projeto de Interface e Wireframes |Figma |[Figma Leia Comigo](https://www.figma.com/file/CYFmbgEJYvIrCXy8552Npp/Projeto-FrontEnd-Leia-Comigo?type=design&node-id=0-1&mode=design&t=PO2cYfbb6EjIpxfx-0) |
+|Gerenciamento do Projeto |GitHub Project |[GitHub Leia Comigo - Project](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/394) |
 
 ## Gerenciamento de Projeto
 

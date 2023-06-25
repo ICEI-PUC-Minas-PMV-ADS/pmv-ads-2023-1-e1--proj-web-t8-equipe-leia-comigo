@@ -1,19 +1,17 @@
 # Plano de Testes de Software
+A equipe trabalhou no planejamento dos testes a serem realizados na aplicação, com o objetivo de verificar os cumprimentos dos requisitos propostos no início desse projeto, conforme descrito no quadro dos casos de testes a seguir. Na seção seguinte, de registro de testes, são apresentados os resultados dos testes.
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
-
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| **Caso de Teste** 	| **CT-01 – Consultar dados** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-13 - Todas as telas devem apresentar uma lista de conteúdo correspondente para cada página, como livros, artigos, reviews, etc.  |
+| Objetivo do Teste 	| Verificar se o cliente tem acesso ao conteúdo das páginas |
+| Passos 	| - Acessar a aplicação. <br> - Visualizar conteúdos|
+|Critério de Êxito | - A pesquisa foi realizado com sucesso. |
+|  	|  	|
+|  	|  	|
+|  	|  	|
+| **Caso de Teste** 	| **CT-02 – Realizar um fluxo de usuário na página**	|
+|Requisito Associado | RF-13: O site deve apresentar um fluxo de login com telas, e lógica pra registrar e deslogar |
+| Objetivo do Teste 	| Validar se o usuário consegue logar na página, registrar e deslogar |
+| Passos 	| - Acessar a aplicação como usuário. <br> - Passar o mouse por cima da foto de perfil <br> - Clicar em entrar para poder ver o formulário |
+|Critério de Êxito | - Pesquisa realizada com sucesso. |
