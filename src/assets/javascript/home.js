@@ -27,78 +27,98 @@ var pageObjects = [
 
 var booksObject = [
     {
-        "id":"books_0",
-        "type": "books",
-        "image": "../assets/img/Livros/a_carta_roubada.png",
-        "description": "A Carta Roubada - Edgar Allan Poe" 
+      "id": "books_0",
+      "type": "books",
+      "image": "https://www.lpm.com.br/livros/imagens/carta_roubada__a_9788525412775_9788525424693_hd.jpg",
+      "description": "A Carta Roubada - Edgar Allan Poe",
+      "content": "https://drive.google.com/file/d/1Ei63v5JSx0cYqY6DZhxhcZHjwZot3LuE/preview"
     },
     {
-        "id":"books_1",
-        "type": "books",
-        "image": "../assets/img/Livros/a_ilha_do_teousoro.png",
-        "description": "A Ilha do Tesouro - Robert Louis Stevenson" 
+      "id": "books_1",
+      "type": "books",
+      "image": "https://trechos.org/wp-content/uploads/2022/08/Livro-A-Ilha-do-Tesouro-por-Robert-Louis-Stevenson.jpg",
+      "description": "A Ilha do Tesouro - Robert Louis Stevenson",
+      "content": "https://drive.google.com/file/d/1hjIAnE5S_Ta5d1FJNwKOiZBxwm-bjGfz/preview"
     },
     {
-        "id":"books_2",
-        "type": "books",
-        "image": "../assets/img/Livros/a_ilustre_casa_de_ramires.png",
-        "description": "A Ilustre Casa de Ramires - Eça de Queiroz" 
+      "id": "books_2",
+      "type": "books",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/519IHxbSNyL.jpg",
+      "description": "A Ilustre Casa de Ramires - Eça de Queiroz",
+      "content": "https://drive.google.com/file/d/1IgoBTPh2lo2gskb_sk6LPFQ6UUCyw0NF/preview"
     },
     {
-        "id":"books_3",
-        "type": "books",
-        "image": "../assets/img/Livros/a_recompensa_do_soldado.png",
-        "description": "A recompensa do soldado - William Faulkner" 
+      "id": "books_3",
+      "type": "books",
+      "image": "https://www.baixelivros.com.br/media/2021/02/cancao-do-exilio.jpg",
+      "description": "Canção do Exílio - Gonçalves Dias",
+      "content": "https://drive.google.com/file/d/1kepxBj__USBs3JOpy81CFXLJKwy7qZAT/preview"
     },
     {
-        "id":"books_4",
-        "type": "books",
-        "image": "../assets/img/Livros/cancao_do_exilio.png",
-        "description": "Canção do Exílio - Gonçalves Dias" 
+      "id": "books_4",
+      "type": "books",
+      "image": "https://livroecafe.com/wp-content/uploads/2022/12/charneca-em-flor.jpg",
+      "description": "Charneca em Flor - Florbela Espanca",
+      "content": "https://drive.google.com/file/d/1QbhzPWUmEOZwNIuaTEnv6jM01oJASebG/preview"
     },
     {
-        "id":"books_5",
-        "type": "books",
-        "image": "../assets/img/Livros/charneca_em_flor.png",
-        "description": "Charneca em Flor - Florbela Espanca" 
+      "id": "books_5",
+      "type": "books",
+      "image": "https://kbimages1-a.akamaihd.net/fe6e39d5-3ad6-475f-b235-7d09cc194a3e/1200/1200/False/eu-e-outras-poesias.jpg",
+      "description": "Eu e outras poesias - Augusto dos Anjos",
+      "content": "https://drive.google.com/file/d/1-JrUqt6hDwz_7n00dhtowzb9Oz3GIfmP/preview"
     },
     {
-        "id":"books_6",
-        "type": "books",
-        "image": "../assets/img/Livros/eu_e_outras_poesias.png",
-        "description": "Eu e outras poesias - Augusto dos Anjos" 
+      "id": "books_6",
+      "type": "books",
+      "image": "https://www.baixelivros.com.br/media/2020/03/o-cortico.jpg",
+      "description": "O Cortiço - Aluísio Azevedo",
+      "content": "https://drive.google.com/file/d/1F4Vrq5-y2BHoIA_elfTCZAbBJejBcSvE/preview"
     },
     {
-        "id":"books_8",
-        "type": "books",
-        "image": "../assets/img/Livros/o_cortico.png",
-        "description": "O Cortiço - Aluísio Azevedo" 
+      "id": "books_7",
+      "type": "books",
+      "image": "https://m.media-amazon.com/images/I/815fFEIezPS._AC_UF1000,1000_QL80_.jpg",
+      "description": "O Tronco do Ipu - José de Alencar",
+      "content": "https://drive.google.com/file/d/1qrVz6hqAgB7u-u9sgqB1rVrIkERu04HC/preview"
     },
     {
-        "id":"books_9",
-        "type": "books",
-        "image": "../assets/img/Livros/o_cortico.png",
-        "description": "O Cortiço - Aluísio Azevedo" 
+      "id": "books_8",
+      "type": "books",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41hjFyBSP+L.jpg",
+      "description": "As Minas de Prata - José de Alencar",
+      "content": "https://drive.google.com/file/d/1VXYspoG9dqugwGGFh6sDzqTqCzq6jki6/preview"
     },
     {
-        "id":"books_10",
-        "type": "books",
-        "image": "../assets/img/Livros/o_cortico.png",
-        "description": "O Cortiço - Aluísio Azevedo" 
+      "id": "books_9",
+      "type": "books",
+      "image": "https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2016/10/viagens-na-minha-terra4.jpg",
+      "description": "Viagens na Minha Terra - Almeida Garrett",
+      "content": "https://drive.google.com/file/d/1GAi9q2w-rAZOy9O7EsWYNWRUPiB9AfxI/preview"
     },
     {
-        "id":"books_11",
-        "type": "books",
-        "image": "../assets/img/Livros/o_cortico.png",
-        "description": "O Cortiço - Aluísio Azevedo" 
+      "id": "books_10",
+      "type": "books",
+      "image": "https://2.bp.blogspot.com/-VggcG9SGvOQ/UlDCh9Bg56I/AAAAAAAAAxM/fP_9FQayxRQ/s1600/guarani-shared.jpg",
+      "description": "O Guarani - José de Alencar",
+      "content": "https://drive.google.com/file/d/1OlocUoC1CxqHxWmkU-I_N4SwLeEZgYzg/preview"
     },
     {
-        "id":"books_12",
-        "type": "books",
-        "image": "../assets/img/Livros/o_cortico.png",
-        "description": "O Cortiço - Aluísio Azevedo" 
+      "id": "books_11",
+      "type": "books",
+      "image": "https://tocalivros.s3.amazonaws.com/images/audiolivros/200/a/s/as-aventuras-de-tom-sawyer-mark-twain-1048369.jpg",
+      "description": "As Aventuras de Tom Sawyer - Mark Twain",
+      "content": "https://drive.google.com/file/d/164jhsZYhxxePmB5-aHIDMU4OGy5Egd0l/preview"
+    },
+    {
+      "id": "books_12",
+      "type": "books",
+      "image": "https://m.media-amazon.com/images/I/71UKvlLXALL._AC_UF1000,1000_QL80_.jpg",
+      "description": "A Volta ao Mundo em 80 Dias - Júlio Verne",
+      "content": "https://drive.google.com/file/d/1x8NtxCmKx8dC0vD2SMpHN67BTtgKxIms/preview"
     }
 ]
+  
 
 var podcastsObject = [
     {
@@ -287,7 +307,7 @@ const cardsCreate_books = document.getElementById(pageObjects[0].id_card);
 for ( var i=0; i<booksObject.length; i++ ){
     cardsCreate_books.insertAdjacentHTML(
         "beforeend",
-        `<div class="row__posters" id="${booksObject[i].id}"></div>`
+        `<div class="row__posters" id="${booksObject[i].id}" onclick="openModal(event)"></div>`
     );
 }
 
@@ -585,4 +605,67 @@ function replaceWithIframe_podcast(event) {
   
     parentElement.appendChild(container);
   }
+
+
+
+
+  function openModal(event) {
+  var parentId = event.currentTarget.id;
+  const settingModal = document.getElementById("display-modal");
+  settingModal.innerHTML = "";
+  const divModalContent = `<div class="close-modal" id="close-modal"></div>
+                           <div class="modal-content" id="modal-content"></div>`;
+  settingModal.insertAdjacentHTML("beforeend", divModalContent);
+
+
+  const createCloseButtonModal = document.getElementById("close-modal");
+  createCloseButtonModal.insertAdjacentHTML(
+    "beforeend",
+    `<button class="close" onclick="removerBlur()">x</button>`
+  );
   
+
+  var iframe = document.createElement("iframe");
+  var src_iframe;
+
+  for (var i = 0; i < booksObject.length; i++) {
+    if (booksObject[i].id === parentId) {
+      src_iframe = booksObject[i].content;
+      break;  // Para o loop após encontrar a correspondência
+    }
+  }
+
+  iframe.src = src_iframe;
+
+
+  var container = document.getElementById("modal-content");
+  container.appendChild(iframe);
+
+  settingModal.appendChild(container);
+
+
+  let el = document.getElementById("display-modal");
+  el.style.display = 'block';
+
+  var elements = document.querySelectorAll('body > *:not(.display-modal)');
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.filter = 'blur(2px)';
+  }
+
+  scroll(0, 1);
+  
+}
+
+// Funcao desenvolvida para fechar o modal e as configuracoes do mesmo
+
+function removerBlur() {
+  var elements = document.querySelectorAll('body > *:not(.display-modal)');
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.filter = '';
+  }
+  let el = document.getElementById("display-modal");
+  el.style.display = 'none';
+}
+
+
