@@ -72,8 +72,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-09| O site deve permitir verificar os livros salvos, podcasts e resenhas para que os usuários possam acompanhar suas atividades e recomendações personalizadas. | MÉDIA |
 |RF-10| O site deve permitir que os usuários possam comentar sobre os livros, podcasts e resenhas, para compartilhar suas opiniões e sugestões com outros usuários. | MÉDIA |
 |RF-11| O site deve exibir os comentários registrados juntamente com o livro, o podcast ou a resenha exibido. | MÉDIA |
-
-
+|RF-12| Todas as telas devem apresentar uma lista de conteúdo correspondente para cada págnina, como livros, artigos, reviews, etc. |ALTA| 
+|RF-13| O site deve apresentar um fluxo de login com telas, e lógica pra registrar e deslogar| ALTA|
 
 ### Requisitos não Funcionais
 
