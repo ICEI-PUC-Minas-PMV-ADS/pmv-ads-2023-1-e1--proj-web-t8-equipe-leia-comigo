@@ -31,8 +31,7 @@ var adventuresObject = [
     type: "adventure",
     image: "../assets/img/Livros/a_carta_roubada.png",
     description: "A Carta Roubada - Edgar Allan Poe",
-    content:
-      "(Resumo de 'A Carta Roubada') Nessa emocionante aventura, acompanhamos um renomado detetive enquanto ele investiga o misterioso desaparecimento de uma valiosa carta que contém a chave de um segredo escandaloso. Com tramas astutas e reviravoltas inesperadas, Edgar Allan Poe leva os leitores em uma jornada de suspense pelas profundezas do engano humano e da intriga.",
+    content: "https://drive.google.com/file/d/1gidrZdfZKbLa9K5s0CoiitdhOB2ZPJ1v/preview"
   },
   {
     id: "adventures_1",
@@ -322,7 +321,7 @@ const cardsCreate_adventures = document.getElementById(pageObjects[0].id_card);
 for (var i = 0; i < adventuresObject.length; i++) {
   cardsCreate_adventures.insertAdjacentHTML(
     "beforeend",
-    `<div class="row__posters" id="${adventuresObject[i].id}"></div>`
+    `<div class="row__posters" id="${adventuresObject[i].id}" onclick="openModal(event)"></div>`
   );
 }
 
@@ -332,7 +331,7 @@ const cardsCreate_horrors = document.getElementById(pageObjects[1].id_card);
 for (var i = 0; i < horrorsObject.length; i++) {
   cardsCreate_horrors.insertAdjacentHTML(
     "beforeend",
-    `<div class="row__posters" id="${horrorsObject[i].id}"></div>`
+    `<div class="row__posters" id="${horrorsObject[i].id}" onclick="openModal(event)"></div>`
   );
 }
 
@@ -342,7 +341,7 @@ const cardsCreate_thrillers = document.getElementById(pageObjects[2].id_card);
 for (var i = 0; i < thrillersObject.length; i++) {
   cardsCreate_thrillers.insertAdjacentHTML(
     "beforeend",
-    `<div class="row__posters" id="${thrillersObject[i].id}"></div>`
+    `<div class="row__posters" id="${thrillersObject[i].id}" onclick="openModal(event)"></div>`
   );
 }
 
@@ -352,7 +351,7 @@ const cardsCreate_romances = document.getElementById(pageObjects[3].id_card);
 for (var i = 0; i < romancesObject.length; i++) {
   cardsCreate_romances.insertAdjacentHTML(
     "beforeend",
-    `<div class="row__posters" id="${romancesObject[i].id}"></div>`
+    `<div class="row__posters" id="${romancesObject[i].id}" onclick="openModal(event)"></div>`
   );
 }
 
@@ -360,7 +359,7 @@ for (var i = 0; i < romancesObject.length; i++) {
 
 for (var i = 0; i < adventuresObject.length; i++) {
   const cards_adventures = document.getElementById(adventuresObject[i].id);
-  const html_adventures = `<img class="img-${adventuresObject[i].id} slider-img" src="${adventuresObject[i].image}" />
+  const html_adventures = `<img class="img-${adventuresObject[i].id} slider-img" src="${adventuresObject[i].image}"/>
     <h2 class="title_description">${adventuresObject[i].description}</h2>`;
   cards_adventures.insertAdjacentHTML("beforeend", html_adventures);
 }
@@ -369,7 +368,7 @@ for (var i = 0; i < adventuresObject.length; i++) {
 
 for (var i = 0; i < horrorsObject.length; i++) {
   const cards_horrors = document.getElementById(horrorsObject[i].id);
-  const html_horrors = `<img class="img-${horrorsObject[i].id} slider-img" src="${horrorsObject[i].image}" onclick="replaceWithIframe_horror(event)"/>
+  const html_horrors = `<img class="img-${horrorsObject[i].id} slider-img" src="${horrorsObject[i].image}"/>
     <h2 class="title_description">${horrorsObject[i].description}</h2>`;
   cards_horrors.insertAdjacentHTML("beforeend", html_horrors);
 }
@@ -378,7 +377,7 @@ for (var i = 0; i < horrorsObject.length; i++) {
 
 for (var i = 0; i < thrillersObject.length; i++) {
   const cards_thrillers = document.getElementById(thrillersObject[i].id);
-  const html_thrillers = `<img class="img-${thrillersObject[i].id} slider-img" src="${thrillersObject[i].image}" />
+  const html_thrillers = `<img class="img-${thrillersObject[i].id} slider-img" src="${thrillersObject[i].image}"/>
     <h2 class="title_description">${thrillersObject[i].description}</h2>`;
   cards_thrillers.insertAdjacentHTML("beforeend", html_thrillers);
 }
@@ -387,7 +386,7 @@ for (var i = 0; i < thrillersObject.length; i++) {
 
 for (var i = 0; i < romancesObject.length; i++) {
   const cards_romances = document.getElementById(romancesObject[i].id);
-  const html_romances = `<img class="img-${romancesObject[i].id} slider-img" src="${romancesObject[i].image} " onclick="replaceWithIframe_romance(event)"/>
+  const html_romances = `<img class="img-${romancesObject[i].id} slider-img" src="${romancesObject[i].image}"/>
     <h2 class="title_description">${romancesObject[i].description}</h2>`;
   cards_romances.insertAdjacentHTML("beforeend", html_romances);
 }
@@ -537,3 +536,69 @@ function sliderScrollRight_romances() {
 
 scrollPerClick_romances =
   document.querySelector(".img-romances_0").clientWidth + imagePadding_romances;
+
+
+function openModal(){
+
+}
+
+
+// Funcao desenvolvida para abrir o modal e as configuracoes do mesmo
+
+function openModal(event) {
+  var parentId = event.currentTarget.id;
+  const settingModal = document.getElementById("display-modal");
+  settingModal.innerHTML = "";
+  const divModalContent = `<div class="close-modal" id="close-modal"></div>
+                           <div class="modal-content" id="modal-content"></div>`;
+  settingModal.insertAdjacentHTML("beforeend", divModalContent);
+
+
+  const createCloseButtonModal = document.getElementById("close-modal");
+  createCloseButtonModal.insertAdjacentHTML(
+    "beforeend",
+    `<button class="close" onclick="removerBlur()">x</button>`
+  );
+  
+
+  var iframe = document.createElement("iframe");
+  var src_iframe;
+
+  for (var i = 0; i < adventuresObject.length; i++) {
+    if (adventuresObject[i].id === parentId) {
+      src_iframe = adventuresObject[i].content;
+      break;  // Para o loop após encontrar a correspondência
+    }
+  }
+
+  iframe.src = src_iframe;
+
+
+  var container = document.getElementById("modal-content");
+  container.appendChild(iframe);
+
+  settingModal.appendChild(container);
+
+
+  let el = document.getElementById("display-modal");
+  el.style.display = 'block';
+
+  var elements = document.querySelectorAll('body > *:not(.display-modal)');
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.filter = 'blur(2px)';
+  }
+  
+}
+
+
+// Funcao desenvolvida para fechar o modal e as configuracoes do mesmo
+
+function removerBlur() {
+  var elements = document.querySelectorAll('body > *:not(.display-modal)');
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.filter = '';
+  }
+  let el = document.getElementById("display-modal");
+  el.style.display = 'none';
+}
