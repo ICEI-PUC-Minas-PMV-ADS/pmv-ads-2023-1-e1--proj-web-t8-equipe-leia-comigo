@@ -15,7 +15,6 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | | **Motivações:**  Laura adora assistir filmes e séries, mas tem dificuldade em encontrar livros que a interessem. Ela quer se sentir mais engajada com a leitura e aprender mais sobre o mundo..|
 | | **Frustrações:** Laura acha os livros de literatura antigos e chatos, e não sabe como escolher livros que a interessem. Ela se sente desanimada ao ler livros que não são do seu interesse e quer uma forma mais visual e interativa de descobrir novas obras.|
 | | **_Hobbies_, História:** Assistir filmes e séries, jogar videogames e conversar com os amigos..|
-tabela 1 - Persona Laura Carvalho
 
 
 
@@ -26,7 +25,7 @@ tabela 1 - Persona Laura Carvalho
 | | **Motivações:** Lucas sabe que a leitura é fundamental para seu desenvolvimento intelectual, mas tem dificuldade em encontrar tempo para ler livros de literatura. Ele quer se sentir mais motivado a ler e descobrir novas obras..|
 | | **Frustrações:** Lucas acha que os livros são muito longos e cansativos, e muitas vezes acaba desistindo de ler no meio do caminho. Ele quer uma forma mais acessível e visualmente atraente de descobrir novas obras..|
 | | **_Hobbies_, História:** Jogar videogames, assistir filmes e séries, tocar violão e estudar para o vestibular..|
-tabela 2 - Persona Lucas Gomes
+
 
 
 
@@ -37,7 +36,7 @@ tabela 2 - Persona Lucas Gomes
 | | **Motivações:** José tem vontade de dedicar mais tempo para a leitura, mas as obrigações do dia a dia, a falta de tempo dificulta o desenvolvimento da leitura, sem deixar de mencionar a dificuldade em encontrar bons livros que a interessem..|
 | | **Frustrações:** José acha que é difícil de se concentrar e se dedicar um tempo livre a leitura, e isso gera frustrações pois sabe que com a leitura pode se aprimorar cada vez mais seu intelecto. Precisa criar espaço e tempo para isso e criar uma lista de livros que o atraem, assim criando hábitos de leitura..|
 | | **_Hobbies_, História:** JAndar de bicicleta, jogar jogos de tabuleiro..|
-tabela 3 - Persona José Nascimento 
+
 
   
 ## Histórias de Usuários
@@ -47,9 +46,9 @@ A partir da compreensão do dia a dia das personas identificadas para o projeto,
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Laura Carvalho  |Visualizar livros de meu interesse particular de uma forma mais interativa           |Descobrir novas obras e adquirir conhecimento a partir delas|
-|Lucas Gomes       |Desenvolver meu nível intelectual de uma forma mais acessível e aumentar meu interesse na literatura|Para adquirir conhecimento e desenvolver meu nível intelectual e também me sentir mais motivado. |
-|José Nascimento      |Me dedicar mais tempo a literatura mesmo tendo pouco tempo|Quero desenvolver o hábito da leitura em meu cotidiano
+|Laura Carvalho      |Visualizar livros de meu interesse particular de uma forma mais interativa           |Descobrir novas obras e adquirir conhecimento a partir delas|
+|Lucas Gomes         |Desenvolver meu nível intelectual de uma forma mais acessível e aumentar meu interesse na literatura|Para adquirir conhecimento e desenvolver meu nível intelectual e também me sentir mais motivado.|
+|José Nascimento     |Me dedicar mais tempo a literatura mesmo tendo pouco tempo|Quero desenvolver o hábito da leitura em meu cotidiano
 
 
 O escopo funcional do projeto é definido pelos requisitos funcionais que descrevem as possibilidades de interação dos usuários, bem como pelos requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. A seguir, apresentamos esses requisitos para guiar a construção do sistema.
