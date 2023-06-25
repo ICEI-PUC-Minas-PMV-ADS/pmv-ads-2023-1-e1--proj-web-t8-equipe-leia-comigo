@@ -27,6 +27,10 @@ var pageObjects = [
 
 var presentsObject = [
     {
+        "id": "presents_x",
+        "content": "https://www.youtube.com/embed/aahyLNH4PrE"
+    },
+    {
         "id": "presents_0",
         "type": "presents",
         "content": "https://www.youtube.com/embed/RWs4K18ig-Q",
@@ -297,7 +301,7 @@ for (var i = 0; i < pageObjects.length; i++) {
 // Construindo div que ira armazenar todos os cards de classe row__posters dos presents
 
 const cardsCreate_presents = document.getElementById(pageObjects[0].id_card);
-for ( var i=0; i<presentsObject.length; i++ ){
+for ( var i=1; i<presentsObject.length; i++ ){
     cardsCreate_presents.insertAdjacentHTML(
         "beforeend",
         `<div class="row__posters" id="${presentsObject[i].id}"></div>`
@@ -337,7 +341,7 @@ for ( var i=0; i<healthsObject.length; i++ ){
 
 // Construindo e preenchendo o conteudo que ira ficar em cada card do carrossel de livros
 
-for (var i = 0; i < presentsObject.length; i++) {
+for (var i = 1; i < presentsObject.length; i++) {
     const cards_presents = document.getElementById(presentsObject[i].id);
     const html_presents = `<img class="img-${presentsObject[i].id} slider-img" src="${presentsObject[i].image}" onclick="replaceWithIframe_present(event)"/>
     <h2 class="title_description">${presentsObject[i].description}</h2>`;
@@ -392,7 +396,7 @@ for (var i = 0; i < historysObject.length; i++) {
 }
 
 
-for (var i = 0; i < presentsObject.length; i++) {
+for (var i = 1; i < presentsObject.length; i++) {
     var presentChange = document.getElementById(presentsObject[i].id);
     presentChange.classList.add("css_personalizado_videos");
 }
@@ -661,7 +665,7 @@ function replaceWithIframe_science(event) {
         var src_iframe;
         var description_iframe;
       
-        for (var i = 0; i < presentsObject.length; i++) {
+        for (var i = 1; i < presentsObject.length; i++) {
           if (presentsObject[i].id === parentId) {
             src_iframe = presentsObject[i].content;
             description_iframe = presentsObject[i].description;
@@ -685,3 +689,62 @@ function replaceWithIframe_science(event) {
       
         parentElement.appendChild(container);
       }
+
+        // Funcao desenvolvida para abrir o modal e as configuracoes do mesmo
+
+
+  function openModal(event) {
+    var parentId = event.currentTarget.id;
+    const settingModal = document.getElementById("display-modal");
+    settingModal.innerHTML = "";
+    const divModalContent = `<div class="close-modal" id="close-modal"></div>
+                             <div class="modal-content" id="modal-content"></div>`;
+    settingModal.insertAdjacentHTML("beforeend", divModalContent);
+  
+  
+    const createCloseButtonModal = document.getElementById("close-modal");
+    createCloseButtonModal.insertAdjacentHTML(
+      "beforeend",
+      `<button class="close" onclick="removerBlur()">x</button>`
+    );
+    
+  
+    var iframe = document.createElement("iframe");
+    var src_iframe;
+  
+
+    if (presentsObject[0].id === parentId) {
+        src_iframe = presentsObject[0].content;
+    }
+  
+    iframe.src = src_iframe;
+  
+    var container = document.getElementById("modal-content");
+    container.appendChild(iframe);
+  
+    settingModal.appendChild(container);
+  
+  
+    let el = document.getElementById("display-modal");
+    el.style.display = 'block';
+  
+    var elements = document.querySelectorAll('body > *:not(.display-modal)');
+  
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.filter = 'blur(2px)';
+    }
+  
+    scroll(0, 1);
+    
+  }
+  
+  // Funcao desenvolvida para fechar o modal e as configuracoes do mesmo
+  
+  function removerBlur() {
+    var elements = document.querySelectorAll('body > *:not(.display-modal)');
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.filter = '';
+    }
+    let el = document.getElementById("display-modal");
+    el.style.display = 'none';
+  }

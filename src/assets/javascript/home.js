@@ -27,6 +27,10 @@ var pageObjects = [
 
 var booksObject = [
     {
+        "id": "books_x",
+        "content": "https://drive.google.com/file/d/1k-pOf1K_p2ciE7qz10gffVWnzq1p6oqz/preview"
+    },
+    {
       "id": "books_0",
       "type": "books",
       "image": "https://www.lpm.com.br/livros/imagens/carta_roubada__a_9788525412775_9788525424693_hd.jpg",
@@ -304,7 +308,7 @@ for (var i = 0; i < pageObjects.length; i++) {
 // Construindo div que ira armazenar todos os cards de classe row__posters dos books
 
 const cardsCreate_books = document.getElementById(pageObjects[0].id_card);
-for ( var i=0; i<booksObject.length; i++ ){
+for ( var i=1; i<booksObject.length; i++ ){
     cardsCreate_books.insertAdjacentHTML(
         "beforeend",
         `<div class="row__posters" id="${booksObject[i].id}" onclick="openModal(event)"></div>`
@@ -344,7 +348,7 @@ for ( var i=0; i<reviewsObject.length; i++ ){
 
 // Construindo e preenchendo o conteudo que ira ficar em cada card do carrossel de livros
 
-for (var i = 0; i < booksObject.length; i++) {
+for (var i = 1; i < booksObject.length; i++) {
     const cards_books = document.getElementById(booksObject[i].id);
     const html_books = `<img class="img-${booksObject[i].id} slider-img" src="${booksObject[i].image}" />
     <h2 class="title_description">${booksObject[i].description}</h2>`;
@@ -607,6 +611,9 @@ function replaceWithIframe_podcast(event) {
   }
 
 
+
+
+  // Funcao desenvolvida para abrir o modal e as configuracoes do mesmo
 
 
   function openModal(event) {

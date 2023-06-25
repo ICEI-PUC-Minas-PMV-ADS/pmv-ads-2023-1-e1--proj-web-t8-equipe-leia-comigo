@@ -27,6 +27,10 @@ var pageObjects = [
 
 var adventuresObject = [
     {
+        "id": "adventures_x",
+        "content": "https://www.youtube.com/embed/Uh0Kn2aXEqY"
+    },
+    {
         "id": "adventures_0",
         "type": "adventures",
         "content": "https://www.youtube.com/embed/S1dokMiXfr4",
@@ -206,9 +210,9 @@ var horrorsObject = [
     {
         "id": "horrors_0",
         "type": "horrors",
-        "content": "https://www.youtube.com/embed/BAcXzhJPZWM",
-        "description": "IT: A Coisa (Stephen King): Livro e Filme | Mês do Horror - Ano V | Tatiana Feltrin",
-        "image": "https://i.ytimg.com/vi/BAcXzhJPZWM/maxresdefault.jpg"
+        "content": "https://www.youtube.com/embed/kXLV9Ws_IXQ",
+        "description": "IT - A COISA é bom? - Vale Crítica",
+        "image": "https://i.ytimg.com/vi/kXLV9Ws_IXQ/maxresdefault.jpg"
     },
     {
         "id": "horrors_1",
@@ -277,7 +281,7 @@ for (var i = 0; i < pageObjects.length; i++) {
 // Construindo div que ira armazenar todos os cards de classe row__posters dos adventures
 
 const cardsCreate_adventures = document.getElementById(pageObjects[0].id_card);
-for ( var i=0; i<adventuresObject.length; i++ ){
+for ( var i=1; i<adventuresObject.length; i++ ){
     cardsCreate_adventures.insertAdjacentHTML(
         "beforeend",
         `<div class="row__posters" id="${adventuresObject[i].id}"></div>`
@@ -317,7 +321,7 @@ for ( var i=0; i<horrorsObject.length; i++ ){
 
 // Construindo e preenchendo o conteudo que ira ficar em cada card do carrossel de livros
 
-for (var i = 0; i < adventuresObject.length; i++) {
+for (var i = 1; i < adventuresObject.length; i++) {
     const cards_adventures = document.getElementById(adventuresObject[i].id);
     const html_adventures = `<img class="img-${adventuresObject[i].id} slider-img" src="${adventuresObject[i].image}" onclick="replaceWithIframe_adventure(event)"/>
     <h2 class="title_description">${adventuresObject[i].description}</h2>`;
@@ -372,7 +376,7 @@ for (var i = 0; i < romancesObject.length; i++) {
 }
 
 
-for (var i = 0; i < adventuresObject.length; i++) {
+for (var i = 1; i < adventuresObject.length; i++) {
     var adventureChange = document.getElementById(adventuresObject[i].id);
     adventureChange.classList.add("css_personalizado_videos");
 }
@@ -591,77 +595,137 @@ function replaceWithIframe_thriller(event) {
   }
 
 
-    // Funcao para substituir a img do romance por iframe
+// Funcao para substituir a img do romance por iframe
 
-    function replaceWithIframe_romance(event) {
-        var parentId = event.currentTarget.parentNode.id;
-        var parentElement = document.getElementById(parentId);
-        
-        var iframe = document.createElement("iframe");
-        var title_iframe = document.createElement("h2");
-      
-        var src_iframe;
-        var description_iframe;
-      
-        for (var i = 0; i < romancesObject.length; i++) {
-          if (romancesObject[i].id === parentId) {
-            src_iframe = romancesObject[i].content;
-            description_iframe = romancesObject[i].description;
-            break;  // Para o loop após encontrar a correspondência
-          }
+function replaceWithIframe_romance(event) {
+    var parentId = event.currentTarget.parentNode.id;
+    var parentElement = document.getElementById(parentId);
+    
+    var iframe = document.createElement("iframe");
+    var title_iframe = document.createElement("h2");
+    
+    var src_iframe;
+    var description_iframe;
+    
+    for (var i = 0; i < romancesObject.length; i++) {
+        if (romancesObject[i].id === parentId) {
+        src_iframe = romancesObject[i].content;
+        description_iframe = romancesObject[i].description;
+        break;  // Para o loop após encontrar a correspondência
         }
-      
-        iframe.src = src_iframe;
-        iframe.frameborder = "1";
-        iframe.allowFullscreen = true;  
-        iframe.playbackRate = 1;  
-      
-        title_iframe.innerHTML = description_iframe;
-        title_iframe.classList.add("title_description");
-      
-        parentElement.innerHTML = "";  // Limpa o conteúdo atual do elemento
-      
-        var container = document.createElement("div");
-        container.appendChild(iframe);
-        container.appendChild(title_iframe);
-      
-        parentElement.appendChild(container);
-      }
+    }
+    
+    iframe.src = src_iframe;
+    iframe.frameborder = "1";
+    iframe.allowFullscreen = true;  
+    iframe.playbackRate = 1;  
+    
+    title_iframe.innerHTML = description_iframe;
+    title_iframe.classList.add("title_description");
+    
+    parentElement.innerHTML = "";  // Limpa o conteúdo atual do elemento
+    
+    var container = document.createElement("div");
+    container.appendChild(iframe);
+    container.appendChild(title_iframe);
+    
+    parentElement.appendChild(container);
+    }
+
+
+// Funcao para substituir a img do adventure por iframe
+
+function replaceWithIframe_adventure(event) {
+    var parentId = event.currentTarget.parentNode.id;
+    var parentElement = document.getElementById(parentId);
+    
+    var iframe = document.createElement("iframe");
+    var title_iframe = document.createElement("h2");
+    
+    var src_iframe;
+    var description_iframe;
+    
+    for (var i = 1; i < adventuresObject.length; i++) {
+        if (adventuresObject[i].id === parentId) {
+        src_iframe = adventuresObject[i].content;
+        description_iframe = adventuresObject[i].description;
+        break;  // Para o loop após encontrar a correspondência
+        }
+    }
+    
+    iframe.src = src_iframe;
+    iframe.frameborder = "1";
+    iframe.allowFullscreen = true;  
+    iframe.playbackRate = 1;  
+    
+    title_iframe.innerHTML = description_iframe;
+    title_iframe.classList.add("title_description");
+    
+    parentElement.innerHTML = "";  // Limpa o conteúdo atual do elemento
+    
+    var container = document.createElement("div");
+    container.appendChild(iframe);
+    container.appendChild(title_iframe);
+    
+    parentElement.appendChild(container);
+}
+
+
+
+// Funcao desenvolvida para abrir o modal e as configuracoes do mesmo
+function openModal(event) {
+    var parentId = event.currentTarget.id;
+    const settingModal = document.getElementById("display-modal");
+    settingModal.innerHTML = "";
+    const divModalContent = `<div class="close-modal" id="close-modal"></div>
+                             <div class="modal-content" id="modal-content"></div>`;
+    settingModal.insertAdjacentHTML("beforeend", divModalContent);
+  
+  
+    const createCloseButtonModal = document.getElementById("close-modal");
+    createCloseButtonModal.insertAdjacentHTML(
+      "beforeend",
+      `<button class="close" onclick="removerBlur()">x</button>`
+    );
+    
+  
+    var iframe = document.createElement("iframe");
+    var src_iframe;
   
 
-    // Funcao para substituir a img do adventure por iframe
+    if (adventuresObject[0].id === parentId) {
+        src_iframe = adventuresObject[0].content;
+    }
+  
+    iframe.src = src_iframe;
+  
+    var container = document.getElementById("modal-content");
+    container.appendChild(iframe);
+  
+    settingModal.appendChild(container);
+  
+  
+    let el = document.getElementById("display-modal");
+    el.style.display = 'block';
+  
+    var elements = document.querySelectorAll('body > *:not(.display-modal)');
+  
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.filter = 'blur(2px)';
+    }
+  
+    scroll(0, 1);
+    
+}
 
-    function replaceWithIframe_adventure(event) {
-        var parentId = event.currentTarget.parentNode.id;
-        var parentElement = document.getElementById(parentId);
-        
-        var iframe = document.createElement("iframe");
-        var title_iframe = document.createElement("h2");
-      
-        var src_iframe;
-        var description_iframe;
-      
-        for (var i = 0; i < adventuresObject.length; i++) {
-          if (adventuresObject[i].id === parentId) {
-            src_iframe = adventuresObject[i].content;
-            description_iframe = adventuresObject[i].description;
-            break;  // Para o loop após encontrar a correspondência
-          }
-        }
-      
-        iframe.src = src_iframe;
-        iframe.frameborder = "1";
-        iframe.allowFullscreen = true;  
-        iframe.playbackRate = 1;  
-      
-        title_iframe.innerHTML = description_iframe;
-        title_iframe.classList.add("title_description");
-      
-        parentElement.innerHTML = "";  // Limpa o conteúdo atual do elemento
-      
-        var container = document.createElement("div");
-        container.appendChild(iframe);
-        container.appendChild(title_iframe);
-      
-        parentElement.appendChild(container);
-      }
+
+  
+// Funcao desenvolvida para fechar o modal e as configuracoes do mesmo
+function removerBlur() {
+    var elements = document.querySelectorAll('body > *:not(.display-modal)');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.filter = '';
+    }
+    let el = document.getElementById("display-modal");
+    el.style.display = 'none';
+}

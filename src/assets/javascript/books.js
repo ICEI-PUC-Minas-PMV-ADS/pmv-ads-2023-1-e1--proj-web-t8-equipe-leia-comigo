@@ -27,6 +27,10 @@ var pageObjects = [
 
 var adventuresObject = [
   {
+    "id": "adventures_x",
+    "content": "https://drive.google.com/file/d/1iV7FMSsNzxSEORi74-wgE2dm8DfEjFOT/preview"
+  },
+  {
     "id": "adventures_0",
     "type": "adventures",
     "image": "https://www.lpm.com.br/livros/imagens/carta_roubada__a_9788525412775_9788525424693_hd.jpg",
@@ -419,7 +423,7 @@ for (var i = 0; i < pageObjects.length; i++) {
 // Construindo div que ira armazenar todos os cards de classe row__posters dos adventures
 
 const cardsCreate_adventures = document.getElementById(pageObjects[0].id_card);
-for (var i = 0; i < adventuresObject.length; i++) {
+for (var i = 1; i < adventuresObject.length; i++) {
   cardsCreate_adventures.insertAdjacentHTML(
     "beforeend",
     `<div class="row__posters" id="${adventuresObject[i].id}" onclick="openModal(event)"></div>`
@@ -458,7 +462,7 @@ for (var i = 0; i < romancesObject.length; i++) {
 
 // Construindo e preenchendo o conteudo que ira ficar em cada card do carrossel de livros
 
-for (var i = 0; i < adventuresObject.length; i++) {
+for (var i = 1; i < adventuresObject.length; i++) {
   const cards_adventures = document.getElementById(adventuresObject[i].id);
   const html_adventures = `<img class="img-${adventuresObject[i].id} slider-img" src="${adventuresObject[i].image}"/>
     <h2 class="title_description">${adventuresObject[i].description}</h2>`;
