@@ -212,6 +212,7 @@ com a cor do conteúdo que vem a seguir */
   text-shadow: 2px 2px 5px black;
   font-weight: bold;
   height: 100%;
+  text-decoration: none;
   min-width: 25px;
   line-height: 250px;
   font-size: 45px;

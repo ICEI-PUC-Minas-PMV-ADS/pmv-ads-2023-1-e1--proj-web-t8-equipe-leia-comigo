@@ -27,102 +27,97 @@ var pageObjects = [
 
 var adventuresObject = [
   {
-    id: "adventures_0",
-    type: "adventure",
-    image: "../assets/img/Livros/a_carta_roubada.png",
-    description: "A Carta Roubada - Edgar Allan Poe",
-    content:
-      "(Resumo de 'A Carta Roubada') Nessa emocionante aventura, acompanhamos um renomado detetive enquanto ele investiga o misterioso desaparecimento de uma valiosa carta que contém a chave de um segredo escandaloso. Com tramas astutas e reviravoltas inesperadas, Edgar Allan Poe leva os leitores em uma jornada de suspense pelas profundezas do engano humano e da intriga.",
+    "id": "adventures_0",
+    "type": "adventures",
+    "image": "https://www.lpm.com.br/livros/imagens/carta_roubada__a_9788525412775_9788525424693_hd.jpg",
+    "description": "A Carta Roubada - Edgar Allan Poe",
+    "content": "https://drive.google.com/file/d/1Ei63v5JSx0cYqY6DZhxhcZHjwZot3LuE/preview"
   },
   {
-    id: "adventures_1",
-    type: "adventure",
-    image: "../assets/img/Livros/a_ilha_do_teousoro.png",
-    description: "A Ilha do Tesouro - Robert Louis Stevenson",
-    content:
-      "(Resumo de 'A Ilha do Tesouro') Junte-se ao jovem Jim Hawkins em uma aventura perigosa em busca do tesouro escondido do Capitão Flint. Com uma tripulação de piratas audaciosos, mares traiçoeiros e um notório camarada de perna de pau, Robert Louis Stevenson tece um conto inesquecível de coragem, traição e a atração das riquezas enterradas.",
+    "id": "adventures_1",
+    "type": "adventures",
+    "image": "https://trechos.org/wp-content/uploads/2022/08/Livro-A-Ilha-do-Tesouro-por-Robert-Louis-Stevenson.jpg",
+    "description": "A Ilha do Tesouro - Robert Louis Stevenson",
+    "content": "https://drive.google.com/file/d/1hjIAnE5S_Ta5d1FJNwKOiZBxwm-bjGfz/preview"
   },
   {
-    id: "adventures_2",
-    type: "adventure",
-    image: "../assets/img/Livros/a_ilustre_casa_de_ramires.png",
-    description: "A Ilustre Casa de Ramires - Eça de Queiroz",
-    content:
-      "(Resumo de 'A Ilustre Casa de Ramires') Mergulhe no mundo da nobreza portuguesa enquanto Eça de Queiroz apresenta uma história cativante de amor, honra e transformação pessoal. Acompanhe a jornada de Gonçalo Mendes Ramires, um herói romântico dividido entre a tradição e a modernidade, enquanto ele navega pelas complexidades de sua ilustre família e da sociedade.",
+    "id": "adventures_2",
+    "type": "adventures",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/519IHxbSNyL.jpg",
+    "description": "A Ilustre Casa de Ramires - Eça de Queiroz",
+    "content": "https://drive.google.com/file/d/1IgoBTPh2lo2gskb_sk6LPFQ6UUCyw0NF/preview"
   },
   {
-    id: "adventures_3",
-    type: "adventure",
-    image: "../assets/img/Livros/a_recompensa_do_soldado.png",
-    description: "A Recompensa do Soldado - William Faulkner",
-    content:
-      "(Resumo de 'A Recompensa do Soldado') Nesse conto comovente ambientado no pós-guerra, William Faulkner explora as cicatrizes emocionais e dilemas morais enfrentados pelos soldados que retornam para casa. Com descrições vívidas e reflexões profundas, a história mergulha nas consequências da guerra e na busca pela redenção em um mundo para sempre transformado.",
+    "id": "adventures_3",
+    "type": "adventures",
+    "image": "https://www.baixelivros.com.br/media/2021/02/cancao-do-exilio.jpg",
+    "description": "Canção do Exílio - Gonçalves Dias",
+    "content": "https://drive.google.com/file/d/1kepxBj__USBs3JOpy81CFXLJKwy7qZAT/preview"
   },
   {
-    id: "adventures_4",
-    type: "adventure",
-    image: "../assets/img/Livros/cancao_do_exilio.png",
-    description: "Canção do Exílio - Gonçalves Dias",
-    content:
-      "(Resumo de 'Canção do Exílio') Viaje pelas paisagens exuberantes e pelas memórias nostálgicas de Gonçalves Dias, um dos maiores poetas brasileiros. Em sua obra icônica, ele celebra a terra natal e expressa a saudade dos lugares amados, criando um hino à identidade nacional e ao apego afetivo à pátria distante.",
+    "id": "adventures_4",
+    "type": "adventures",
+    "image": "https://livroecafe.com/wp-content/uploads/2022/12/charneca-em-flor.jpg",
+    "description": "Charneca em Flor - Florbela Espanca",
+    "content": "https://drive.google.com/file/d/1QbhzPWUmEOZwNIuaTEnv6jM01oJASebG/preview"
   },
   {
-    id: "adventures_5",
-    type: "adventure",
-    image: "../assets/img/Livros/charneca_em_flor.png",
-    description: "Charneca em Flor - Florbela Espanca",
-    content:
-      "(Resumo de 'Charneca em Flor') Adentre os versos sentimentais de Florbela Espanca enquanto ela tece uma tapeçaria de amor, paixão e introspecção. Com imagens comoventes e emoções cruas, essa coleção de poesias explora as complexidades das relações humanas, a fragilidade da existência e a busca de significado em um mundo repleto de beleza e tristeza.",
+    "id": "adventures_5",
+    "type": "adventures",
+    "image": "https://kbimages1-a.akamaihd.net/fe6e39d5-3ad6-475f-b235-7d09cc194a3e/1200/1200/False/eu-e-outras-poesias.jpg",
+    "description": "Eu e outras poesias - Augusto dos Anjos",
+    "content": "https://drive.google.com/file/d/1-JrUqt6hDwz_7n00dhtowzb9Oz3GIfmP/preview"
   },
   {
-    id: "adventures_6",
-    type: "adventure",
-    image: "../assets/img/Livros/eu_e_outras_poesias.png",
-    description: "Eu e outras poesias - Augusto dos Anjos",
-    content:
-      "(Resumo de 'Eu e outras poesias') Augusto dos Anjos convida os leitores a uma jornada pelas profundezas da psique humana, explorando temas de angústia existencial, mortalidade e a dicotomia da vida e da morte. Com seu estilo único e imagens assombrosas, essa coleção de poesias desafia noções convencionais e provoca reflexões sobre as complexidades da existência.",
+    "id": "adventures_6",
+    "type": "adventures",
+    "image": "https://www.baixelivros.com.br/media/2020/03/o-cortico.jpg",
+    "description": "O Cortiço - Aluísio Azevedo",
+    "content": "https://drive.google.com/file/d/1F4Vrq5-y2BHoIA_elfTCZAbBJejBcSvE/preview"
   },
   {
-    id: "adventures_8",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_7",
+    "type": "adventures",
+    "image": "https://m.media-amazon.com/images/I/815fFEIezPS._AC_UF1000,1000_QL80_.jpg",
+    "description": "O Tronco do Ipu - José de Alencar",
+    "content": "https://drive.google.com/file/d/1qrVz6hqAgB7u-u9sgqB1rVrIkERu04HC/preview"
   },
   {
-    id: "adventures_9",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_8",
+    "type": "adventures",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41hjFyBSP+L.jpg",
+    "description": "As Minas de Prata - José de Alencar",
+    "content": "https://drive.google.com/file/d/1VXYspoG9dqugwGGFh6sDzqTqCzq6jki6/preview"
   },
   {
-    id: "adventures_10",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_9",
+    "type": "adventures",
+    "image": "https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2016/10/viagens-na-minha-terra4.jpg",
+    "description": "Viagens na Minha Terra - Almeida Garrett",
+    "content": "https://drive.google.com/file/d/1GAi9q2w-rAZOy9O7EsWYNWRUPiB9AfxI/preview"
   },
   {
-    id: "adventures_11",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_10",
+    "type": "adventures",
+    "image": "https://2.bp.blogspot.com/-VggcG9SGvOQ/UlDCh9Bg56I/AAAAAAAAAxM/fP_9FQayxRQ/s1600/guarani-shared.jpg",
+    "description": "O Guarani - José de Alencar",
+    "content": "https://drive.google.com/file/d/1OlocUoC1CxqHxWmkU-I_N4SwLeEZgYzg/preview"
   },
   {
-    id: "adventures_12",
-    type: "adventure",
-    image: "../assets/img/Livros/o_cortico.png",
-    description: "O Cortiço - Aluísio Azevedo",
-    content:
-      "(Resumo de 'O Cortiço') Adentre o vibrante mundo dos cortiços do Rio de Janeiro enquanto Aluísio Azevedo expõe as questões sociais, econômicas e morais da época. Através de personagens vívidos e uma narrativa intricada, o romance retrata as lutas e aspirações dos moradores de um bairro urbano movimentado, revelando os efeitos da pobreza, do desejo e da natureza humana.",
+    "id": "adventures_11",
+    "type": "adventures",
+    "image": "https://tocalivros.s3.amazonaws.com/images/audiolivros/200/a/s/as-aventuras-de-tom-sawyer-mark-twain-1048369.jpg",
+    "description": "As Aventuras de Tom Sawyer - Mark Twain",
+    "content": "https://drive.google.com/file/d/164jhsZYhxxePmB5-aHIDMU4OGy5Egd0l/preview"
   },
-];
+  {
+    "id": "adventures_12",
+    "type": "adventures",
+    "image": "https://m.media-amazon.com/images/I/71UKvlLXALL._AC_UF1000,1000_QL80_.jpg",
+    "description": "A Volta ao Mundo em 80 Dias - Júlio Verne",
+    "content": "https://drive.google.com/file/d/1x8NtxCmKx8dC0vD2SMpHN67BTtgKxIms/preview"
+  }
+]
 
 var horrorsObject = [
   {
@@ -322,7 +317,7 @@ const cardsCreate_adventures = document.getElementById(pageObjects[0].id_card);
 for (var i = 0; i < adventuresObject.length; i++) {
   cardsCreate_adventures.insertAdjacentHTML(
     "beforeend",
-    `<div class="row__posters" id="${adventuresObject[i].id}"></div>`
+    `<div class="row__posters" id="${adventuresObject[i].id}" onclick="openModal(event)"></div>`
   );
 }
 
@@ -332,7 +327,7 @@ const cardsCreate_horrors = document.getElementById(pageObjects[1].id_card);
 for (var i = 0; i < horrorsObject.length; i++) {
   cardsCreate_horrors.insertAdjacentHTML(
     "beforeend",
-    `<div class="row__posters" id="${horrorsObject[i].id}"></div>`
+    `<div class="row__posters" id="${horrorsObject[i].id}" onclick="openModal(event)"></div>`
   );
 }
 
@@ -342,7 +337,7 @@ const cardsCreate_thrillers = document.getElementById(pageObjects[2].id_card);
 for (var i = 0; i < thrillersObject.length; i++) {
   cardsCreate_thrillers.insertAdjacentHTML(
     "beforeend",
-    `<div class="row__posters" id="${thrillersObject[i].id}"></div>`
+    `<div class="row__posters" id="${thrillersObject[i].id}" onclick="openModal(event)"></div>`
   );
 }
 
@@ -352,7 +347,7 @@ const cardsCreate_romances = document.getElementById(pageObjects[3].id_card);
 for (var i = 0; i < romancesObject.length; i++) {
   cardsCreate_romances.insertAdjacentHTML(
     "beforeend",
-    `<div class="row__posters" id="${romancesObject[i].id}"></div>`
+    `<div class="row__posters" id="${romancesObject[i].id}" onclick="openModal(event)"></div>`
   );
 }
 
@@ -360,7 +355,7 @@ for (var i = 0; i < romancesObject.length; i++) {
 
 for (var i = 0; i < adventuresObject.length; i++) {
   const cards_adventures = document.getElementById(adventuresObject[i].id);
-  const html_adventures = `<img class="img-${adventuresObject[i].id} slider-img" src="${adventuresObject[i].image}" />
+  const html_adventures = `<img class="img-${adventuresObject[i].id} slider-img" src="${adventuresObject[i].image}"/>
     <h2 class="title_description">${adventuresObject[i].description}</h2>`;
   cards_adventures.insertAdjacentHTML("beforeend", html_adventures);
 }
@@ -369,7 +364,7 @@ for (var i = 0; i < adventuresObject.length; i++) {
 
 for (var i = 0; i < horrorsObject.length; i++) {
   const cards_horrors = document.getElementById(horrorsObject[i].id);
-  const html_horrors = `<img class="img-${horrorsObject[i].id} slider-img" src="${horrorsObject[i].image}" onclick="replaceWithIframe_horror(event)"/>
+  const html_horrors = `<img class="img-${horrorsObject[i].id} slider-img" src="${horrorsObject[i].image}"/>
     <h2 class="title_description">${horrorsObject[i].description}</h2>`;
   cards_horrors.insertAdjacentHTML("beforeend", html_horrors);
 }
@@ -378,7 +373,7 @@ for (var i = 0; i < horrorsObject.length; i++) {
 
 for (var i = 0; i < thrillersObject.length; i++) {
   const cards_thrillers = document.getElementById(thrillersObject[i].id);
-  const html_thrillers = `<img class="img-${thrillersObject[i].id} slider-img" src="${thrillersObject[i].image}" />
+  const html_thrillers = `<img class="img-${thrillersObject[i].id} slider-img" src="${thrillersObject[i].image}"/>
     <h2 class="title_description">${thrillersObject[i].description}</h2>`;
   cards_thrillers.insertAdjacentHTML("beforeend", html_thrillers);
 }
@@ -387,7 +382,7 @@ for (var i = 0; i < thrillersObject.length; i++) {
 
 for (var i = 0; i < romancesObject.length; i++) {
   const cards_romances = document.getElementById(romancesObject[i].id);
-  const html_romances = `<img class="img-${romancesObject[i].id} slider-img" src="${romancesObject[i].image} " onclick="replaceWithIframe_romance(event)"/>
+  const html_romances = `<img class="img-${romancesObject[i].id} slider-img" src="${romancesObject[i].image}"/>
     <h2 class="title_description">${romancesObject[i].description}</h2>`;
   cards_romances.insertAdjacentHTML("beforeend", html_romances);
 }
@@ -537,3 +532,69 @@ function sliderScrollRight_romances() {
 
 scrollPerClick_romances =
   document.querySelector(".img-romances_0").clientWidth + imagePadding_romances;
+
+
+function openModal(){
+
+}
+
+
+// Funcao desenvolvida para abrir o modal e as configuracoes do mesmo
+
+function openModal(event) {
+  var parentId = event.currentTarget.id;
+  const settingModal = document.getElementById("display-modal");
+  settingModal.innerHTML = "";
+  const divModalContent = `<div class="close-modal" id="close-modal"></div>
+                           <div class="modal-content" id="modal-content"></div>`;
+  settingModal.insertAdjacentHTML("beforeend", divModalContent);
+
+
+  const createCloseButtonModal = document.getElementById("close-modal");
+  createCloseButtonModal.insertAdjacentHTML(
+    "beforeend",
+    `<button class="close" onclick="removerBlur()">x</button>`
+  );
+  
+
+  var iframe = document.createElement("iframe");
+  var src_iframe;
+
+  for (var i = 0; i < adventuresObject.length; i++) {
+    if (adventuresObject[i].id === parentId) {
+      src_iframe = adventuresObject[i].content;
+      break;  // Para o loop após encontrar a correspondência
+    }
+  }
+
+  iframe.src = src_iframe;
+
+
+  var container = document.getElementById("modal-content");
+  container.appendChild(iframe);
+
+  settingModal.appendChild(container);
+
+
+  let el = document.getElementById("display-modal");
+  el.style.display = 'block';
+
+  var elements = document.querySelectorAll('body > *:not(.display-modal)');
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.filter = 'blur(2px)';
+  }
+  
+}
+
+
+// Funcao desenvolvida para fechar o modal e as configuracoes do mesmo
+
+function removerBlur() {
+  var elements = document.querySelectorAll('body > *:not(.display-modal)');
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.filter = '';
+  }
+  let el = document.getElementById("display-modal");
+  el.style.display = 'none';
+}
