@@ -1,0 +1,390 @@
+/* Zerando margens */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2021/11/14/20/08/background-6795626_1280.png");
+  background-size: cover;
+}
+
+/* Fonte arial e fundo preto */
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Configuração do tamanho da fonte */
+.nav__logo {
+  width: 100px;
+  object-fit: contain;
+}
+
+/* Configuração do tamanho do menu */
+.select_menu {
+  width: 650px;
+  object-fit: contain;
+}
+
+/* Configuração do estilo da lista */
+.components_li {
+  display: inline-flex;
+}
+
+/* Configuraçções da lista */
+.components_li a {
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Configuração de quando a lista for coberta pelo mouse */
+
+.components_li a:hover {
+  background: rgb(246, 246, 246);
+  border-radius: 10px;
+  color: #333;
+}
+
+/*CONFIGURAÇÃO DE ICONE DE USUÁRIO*/
+
+.accountGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 10px;
+}
+
+/* Configuração da imagem de "avatar" */
+.nav__avatar {
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/*CONFIGURAÇÃO REFERENTE A POPUP "MINHA CONTA" */
+.box {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  background-color: rgb(215, 215, 215);
+
+  padding: 1em 1em;
+  border-radius: 1px;
+  display: none;
+}
+
+.box .options {
+  font-size: 0.9em;
+  margin: 0.5em 0em;
+
+  font-weight: 500;
+}
+
+.box .options:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*AQUI ENCERRA A CUSTOMIZAÇÃO DE ICONE DE USUÁRIO*/
+
+/* Configuranção do menu */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 10%,
+    transparent
+  );
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 1;
+}
+
+/* Configuração do espaçamento para o menu */
+.main__menu {
+  display: flex;
+}
+
+
+
+#footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+#footer div h3{
+  text-shadow: 0.1em 0.1em #333;
+  font-weight: bold;
+}
+
+
+.avisosLegais{
+  font-size: 1.4vh;
+  top: 60px;
+  padding: 20px;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.propriedadeIntelectual{
+  font-size: 1.4vh;
+  padding: 20px;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.linkTerceiros{
+  font-size: 1.4vh;
+  padding: 20px;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.termosUso{
+  font-size: 1.4vh;
+  padding: 20px;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.EntreContato{
+  font-size: 1.4vh;
+  padding: 20px;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+#footer h4, #footer p{
+  display: block;
+}
+
+
+/* cor de fundo preta */
+.nav__black {
+  background-color: #111;
+}
+
+
+.popup {
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 70vw;
+  min-height: auto;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.popup .myAccount {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+
+  position: relative;
+
+  color: white;
+  padding: 2em 0em;
+
+  width: 100%;
+  border-radius: 10px;
+}
+
+.myAccount img {
+  cursor: pointer;
+}
+
+.myAccount .closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+
+  cursor: pointer;
+
+  font-size: 1.5em;
+}
+
+.modalTitle {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.modalContent {
+  display: flex;
+
+  justify-content: space-around;
+  padding: 2em;
+  min-width: 50vw;
+}
+
+.profileIcon {
+  max-width: 13em;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.personalInfo {
+  display: flex;
+  flex-direction: row;
+  margin: 0.8em 0em;
+  align-items: center;
+}
+
+.personalInfo label {
+  font-weight: 600;
+  min-width: 4em;
+}
+
+.personalInfo input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  color: rgba(152, 152, 152, 0.9);
+
+  font-size: 1em;
+  font-weight: 800;
+  width: 100%; 
+}
+
+.box-form {
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
+  min-height: 50vh;
+  min-width: 50vw;
+  background: black;
+
+  padding: 3em;
+  display: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-form form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.box-form button {
+  padding: 1em 3em;
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.box-form h2 {
+  color: white;
+  text-align: center;
+
+  margin-bottom: 2em;
+}
+
+.inputForm {
+  width: 100%;
+}
+
+.inputForm input {
+  background-color: #333;
+  color: white;
+  border: 1px solid transparent;
+  outline: none;
+
+  padding: 1em;
+  margin: 1em 0em;
+  width: 100%;
+  border-radius: 10px;
+
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.registre-se {
+  color: #333;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.9em;
+
+  font-weight: 800;
+}
+
+.box-form-login {
+  display: block;
+}
+
+.box-form-registrar {
+  display: none;
+}
+
+.register-link {
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.login-link {
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.closeForm {
+  color: white;
+  text-align: right;
+
+  cursor: pointer;
+}
